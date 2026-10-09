@@ -10,6 +10,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 
 - **The Evolution Atlas:** one massive, history-sensitive progression system spanning cellular biology through cosmic and reality-altering powers.
 - **No fixed classes:** anatomy, abilities, mutations, discoveries, diet, environment, and player choices define each build.
+- **Character identity and development:** body plan, evolution history, saved forms, active traits, and readable strengths/trade-offs create distinct characters.
 - **Free-flow combat:** chain melee, weapons, powers, mobility, defense, summons, transformations, ultimates, and player-discovered combinations.
 - **Adaptive body-as-weapon:** tendrils, transforming limbs, wings, tails, armor, extra arms, energy organs, and other evolved anatomy change combat and movement.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
@@ -29,6 +30,7 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 
 | System | Purpose |
 |---|---|
+| Character profile & evolution history | Track current anatomy, active/inactive traits, forms, adaptations, and major changes |
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
