@@ -805,3 +805,81 @@ Every movement or interaction checks: (1) body/ability capability and reach; (2)
 - Input remapping and camera comfort options are supported.
 - All rules are tested before the system is described as implemented.
 
+## 26. Object handling, creature handling, and physical manipulation
+
+**Status: approved design specification; not implemented or tested.** This section extends the movement and interaction rules in Section 25. Objects and creatures use shared interaction rules, while their distinct properties determine which actions are possible.
+
+### Interaction targets and affordances
+
+Each interactable target exposes data-driven properties rather than a fixed universal action list:
+- **Physical properties:** mass, size, shape, material, durability, center of mass, grip/anchor points, fragility, and whether it can be moved or broken.
+- **State:** fixed, loose, held, carried, damaged, harvested, consumed, captured, unconscious, dead, decaying, or otherwise unavailable, as applicable.
+- **Biological properties:** species, anatomy, vital state, defenses, danger, eligible tissues, preservation needs, and known/unknown research status.
+- **Context:** terrain, nearby obstacles, water/current/wind, temperature, permissions, witnesses, and relevant world/NPC reactions.
+- **Player capability:** reach, appendage type, grip strength, limb availability, body size, movement mode, learned technique, and required resources.
+
+The interface offers only actions supported by these properties. If an action is unavailable, explain the main reason when useful—insufficient reach, incompatible grip, excessive mass, protected target, dangerous condition, or missing ability—rather than displaying a misleading prompt.
+
+### Grab, carry, drag, and throw
+
+Direct physical controls should let the player intentionally reach for, grab, release, push, pull, drag, carry, place, and throw supported objects. Contextual prompts provide an accessible alternative to precise manual targeting. Both paths resolve through the same rules and world state.
+
+- A held object occupies the appendage or grip used to hold it. That appendage cannot simultaneously perform incompatible actions.
+- Extra limbs, tails, jaws, feet, or tendrils may provide alternate grips only if their anatomy definition explicitly supports that function.
+- Carrying limits depend on mass, leverage, grip, body structure, movement style, stamina/energy, and terrain—not only a single inventory number.
+- Dragging a heavy object may be possible when lifting is not. It is slower, noisier, may leave tracks, and is affected by friction, slope, obstacles, and the object's shape.
+- Throwing depends on grip, mass, momentum, body mechanics, aim, and available space. Large or awkward objects may be pushed or dropped rather than thrown accurately.
+- Carrying changes movement, climbing, dodging, swimming, flight, combat options, and visibility where physically appropriate. The UI should show significant restrictions before the player commits.
+- Objects cannot pass through solid geometry, be duplicated by releasing/re-grabbing, or be moved through access restrictions without a valid ability or rule.
+
+### Anatomy creates different handling styles
+
+The same target can support different interactions based on the player's evolved body:
+- **Hands or gripping forelimbs:** precise manipulation, tool use, turning mechanisms, handling small specimens, and careful placement.
+- **Jaws or mouthparts:** carry suitable objects or prey while sacrificing eating, biting, speech, or other incompatible actions.
+- **Tendrils or prehensile tails:** reach around obstacles, anchor, pull, swing, or hold multiple objects if the number, strength, and control of those appendages support it.
+- **Claws and hooks:** attach to valid surfaces or grip suitable materials, but may damage fragile samples or lack fine manipulation.
+- **Heavy limbs, horns, armor, or body mass:** shove, brace, break, pin, or move large objects without implying delicate grip.
+- **Telekinetic, gravity, or other powers:** manipulate only within their defined range, line-of-effect, mass limit, energy cost, and resistance rules.
+
+These are capability examples, not exclusive classes. Compatible features can combine through the general interaction resolver. Animation and feedback should make clear which appendage is doing the work.
+
+### Creature handling and post-encounter choices
+
+Living creatures are not ordinary physics props. Interactions must consider their awareness, movement, strength, size, danger, social behavior, and current condition. A player may observe, lure, feed, restrain, capture, carry, defend against, hunt, or communicate with a creature only when the relevant anatomy, abilities, target state, and world rules permit it. A creature may struggle, flee, attack, call for help, or attract other predators. Restraints and captures require valid control and can fail if the player cannot maintain them.
+
+After a qualifying kill, the player can assess the remains and choose among supported actions such as securing the area, harvesting, preserving, carrying/dragging, absorbing/consuming, researching, or leaving the remains. These actions can compete for time and resources. They are not all guaranteed to be available on every species or body plan.
+
+- **Harvesting** extracts eligible materials or tissues and updates the specimen's remaining state; it does not create unlimited copies of the same part.
+- **Preservation** protects eligible tissues for later research or Vault storage, using suitable organs, containers, environment, or abilities where specified.
+- **Absorption/consumption** follows the existing biology, compatibility, research, and progression requirements; it does not automatically grant every trait.
+- **Transport** depends on target mass/shape, player capacity, route, grip, terrain, and interference. A large body may require dragging, cutting an eligible section, using multiple appendages, or abandoning the attempt.
+- **Deterioration and scavenging** may change the value or availability of remains over time according to the world's decay rules. Valuable specimens can attract scavengers, rivals, investigators, or territorial creatures where justified.
+- **Living capture** and **dead specimen handling** are separate states with different risks, affordances, and outcomes.
+
+The interface must communicate meaningful trade-offs before irreversible actions, especially when consuming, damaging, or harvesting a rare specimen could remove a research opportunity. Never silently destroy an eligible unique specimen or permanently remove a player's earned build.
+
+### Persistence, multiplayer, and fairness
+
+Object and creature state is authoritative and shared. If a player moves a crate, breaks a barrier, harvests a rare organ, or leaves a carcass, other players should encounter the corresponding world state subject to the persistence and simulation rules. Concurrent attempts to grab or harvest the same target must resolve safely: one valid state transition wins, or the action is explicitly contested; neither player receives duplicated objects or rewards.
+
+Important safeguards:
+- Server-authoritative validation for contested, valuable, or combat-relevant interactions.
+- No item duplication through latency, disconnects, repeated inputs, death, or save/load transitions.
+- Clear ownership, access, and permission rules for protected objects, player-built structures, and private spaces.
+- No hidden player knowledge: witnesses and NPCs react only to what they could observe, infer, or learn.
+- Bounded physics and simulation budgets; distant objects and creatures may use simplified simulation without changing important outcomes unfairly.
+- Safe handling of server interruption so a failed request does not consume a unique specimen without recording the result or award it twice.
+
+### Acceptance criteria
+
+Before this system is described as implemented, verify that:
+- Different anatomies expose distinct, understandable handling options.
+- Contextual and direct controls produce the same valid state changes.
+- Grip occupancy, mass, reach, terrain, and resource costs constrain carrying and manipulation consistently.
+- Living creatures can resist or respond when their behavior and condition allow it.
+- Harvesting, preservation, consumption, and transport update one consistent specimen state.
+- Shared world state remains consistent under simultaneous interactions, latency, disconnects, and save/load.
+- Unique specimens, objects, and rewards cannot be duplicated or silently lost through invalid state transitions.
+- The game explains important restrictions and irreversible trade-offs before commitment.
+
