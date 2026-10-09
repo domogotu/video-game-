@@ -770,3 +770,38 @@ Before either system is called implemented, verify that:
 
 These are design acceptance targets only; no playable implementation or tests are claimed.
 
+## 25. Movement, camera, and world interaction
+
+**Approved direction:** hybrid responsive action movement with anatomy and terrain effects; hybrid contextual and direct physical interactions; adaptive third-person camera. This is a design specification, not an implementation claim.
+
+### Movement principles
+Movement should feel responsive like an action RPG while preserving readable momentum, body weight, traction, collision, and terrain consequences. Acceleration, braking, turning radius, jump arc, landing recovery, grip, and stamina/energy use depend on anatomy, mass distribution, movement specialization, condition, and surface. Avoid making every build feel identical or making complex anatomy sluggish by default.
+
+Support applicable locomotion modes: walk/run/sprint, crouch/crawl, jump, dodge/evade, slide, climb, wall-cling or wall-run, swim/dive, glide/flight, burrow, tendril grapple/swing, and later biological spaceflight. These are capability-based, not universal moves. Each mode requires appropriate anatomy/ability and environmental conditions. Bodies can transition fluidly between compatible modes without unnecessary mode menus; incompatible transitions give clear feedback.
+
+Movement is compositional: wings plus tendril anchors can support dive-grapple-release-flight; claws plus extra limbs can support climbing while carrying eligible objects; a heavy body may break fragile terrain but turns more slowly; aquatic anatomy can swim efficiently while being less agile on dry land. These outcomes use data-driven properties and interaction rules, not bespoke scripts for every combination. Preserve accessibility and input consistency across body plans.
+
+### Adaptive camera
+Use third-person as the baseline with camera framing that adapts to the active body, movement mode, and encounter. Pull back or shift framing for large forms, wide wings, long tails, aerial flight, fast traversal, and Titan-scale encounters; move closer for precision inspection, tight spaces, and detailed interactions. Keep the target and movement direction readable, reduce obstruction and clipping, and avoid sudden camera motion that causes discomfort. Provide player options for sensitivity, camera distance, shake, motion effects, target framing, and manual override. Camera changes must not secretly change hitboxes, grant information through walls, or alter gameplay collision.
+
+### Hybrid contextual and physical interaction
+Contextual interaction offers clear available actions when aiming at or approaching a supported target. Direct physical interaction lets the player deliberately reach, grab, push, pull, carry, throw, climb, harvest, open, or manipulate an object when anatomy, reach, strength, target state, and environment permit it. Both use the same authoritative action rules and object state; neither is a separate exploit path. The interface should show only plausible actions, explain why an action is unavailable when useful, and never promise actions that the body cannot perform.
+
+Objects and organisms may support distinct affordances: observe/scan, communicate, feed, track, harvest, consume, carry, rescue, capture, or attack, as appropriate. Context and player intent should determine the prompt; direct controls should allow skilled play without requiring a radial menu for every small action. Holding an object can occupy limbs or appendages and affect movement, combat, climbing, and carrying capacity. Multiple limbs can enable concurrent actions only when animation, physics, and game rules support them.
+
+### Persistent world response
+Movement and interactions update the same persistent world state used by other players: displaced objects, broken vegetation, damaged structures, tracks, harvested resources, opened paths, creature injuries, alarms, and NPC reactions. Materials respond according to defined properties; do not simulate arbitrary destruction for every asset. Changes persist or recover according to world rules and bounded simulation budgets. NPC knowledge must come from observation, evidence, reports, or supported senses—not omniscience.
+
+### Unified action validation
+Every movement or interaction checks: (1) body/ability capability and reach; (2) target and environmental affordances; (3) collision, terrain, and current body state; (4) resource/time costs and interruption rules; (5) authoritative result and consequences; and (6) what nearby players and NPCs can observe. Reuse these checks for combat, traversal, harvesting, object manipulation, and ability effects to keep the rules consistent.
+
+### Acceptance criteria
+- Different anatomy produces visibly and mechanically distinct movement options.
+- Hybrid traversal chains work when every required ability, anchor, surface, and resource is valid.
+- Context prompts and direct physical controls resolve to the same valid world actions.
+- The adaptive camera frames small, standard, aerial, and large forms without persistent clipping or loss of directional readability.
+- Objects, terrain, resources, creatures, and NPCs respond consistently and persist according to world rules.
+- Unsupported actions fail clearly; no interaction bypasses costs, compatibility, collision, permissions, or multiplayer authority.
+- Input remapping and camera comfort options are supported.
+- All rules are tested before the system is described as implemented.
+
