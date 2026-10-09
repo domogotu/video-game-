@@ -31,7 +31,7 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 | System | Purpose |
 |---|---|
 | Character profile & evolution history | Track current anatomy, active/inactive traits, forms, adaptations, and major changes |
-| Modular anatomy workshop | Preview and manage compatible body-part upgrades, trade-offs, forms, and combat effects |
+| Modular anatomy workshop | Open-ended mix-and-match anatomy builds with data-driven part interactions, compatibility previews, trade-offs, and combat effects |
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
