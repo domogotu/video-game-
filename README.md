@@ -13,6 +13,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Character identity and development:** body plan, evolution history, saved forms, active traits, and readable strengths/trade-offs create distinct characters.
 - **Free-flow combat:** chain melee, weapons, powers, mobility, defense, summons, transformations, ultimates, and player-discovered combinations.
 - **Adaptive body-as-weapon:** a modular Anatomy Workshop lets compatible limbs, organs, armor, senses, wings, tails, tendrils, and other evolved parts change combat and movement; the design is documented but not implemented.
+- **Adaptive movement and interaction:** responsive traversal changes with anatomy and terrain; adaptive third-person camera and contextual/direct physical interactions share consistent world rules.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -34,6 +35,7 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 |---|---|
 | Character profile & evolution history | Track current anatomy, active/inactive traits, forms, adaptations, and major changes |
 | Modular anatomy workshop | Open-ended mix-and-match anatomy builds with data-driven part interactions, compatibility previews, trade-offs, and combat effects |
+| Movement, camera & world interaction | Responsive anatomy-aware traversal, adaptive third-person framing, contextual prompts plus direct physical manipulation, and persistent world reactions |
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
