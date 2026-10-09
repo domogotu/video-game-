@@ -642,6 +642,26 @@ A part may have a small number of meaningful development tiers rather than endle
 
 An upgrade should change at least one meaningful property where appropriate: animation, move set, reach, movement option, defensive response, perception, resource behavior, environmental resistance, or interaction with other abilities. Purely cosmetic variations may exist, but must be labeled cosmetic and must not imply mechanical benefits.
 
+### Open-ended mix-and-match combinations
+
+**Design rule: the number of viable anatomy combinations is open-ended, not capped by a fixed catalog of hand-authored builds.** The game should support an effectively unbounded combination space as the library of body parts, mutations, organs, traits, abilities, delivery methods, materials, environments, and evolutionary stages expands. “Unlimited” describes creative combination potential; it does not mean every combination is physically compatible, free, automatically unlocked, or guaranteed to be equally powerful.
+
+The system must be **compositional and data-driven**, not a giant list of individually scripted recipes. Each part exposes structured properties and interfaces—such as attachment points, tissue/genetic requirements, shape and scale, movement effects, damage types, energy use, environmental interactions, tags, and supported actions. The interaction resolver evaluates the properties of the selected components and composes their effects. Authored special cases may provide memorable signature results, but they must extend the general rules rather than become the only combinations that work.
+
+Examples of player-authored builds include a blade-arm paired with a grappling tendril, toxin delivery through a winged dive, an armored tail that conducts electricity, a regeneration organ supporting extra limbs, or a gravity effect routed through a living ranged organ. These are examples, not an exhaustive list. New valid combinations should emerge from shared properties even if designers did not name that exact build in advance.
+
+The system should:
+- Let players combine all components whose explicit compatibility and world rules permit them, without an arbitrary fixed number of named recipes.
+- Resolve interactions consistently across combat, traversal, defense, senses, resource costs, environmental effects, animations, and NPC/world reactions.
+- Support multi-part and chained interactions, not just pairs, while preventing recursive effects, infinite resource generation, duplicated unique components, and unbounded server work.
+- Explain which properties combine, which are suppressed or conflict, what the result costs, and what counters or drawbacks apply.
+- Offer a preview or safe test where practical; if a combination is unknown, show a hypothesis or uncertainty instead of falsely claiming a guaranteed result.
+- Preserve player discoveries in the Codex and let players save named techniques or anatomy loadouts when the configuration is valid.
+- Use reusable animation/action families, procedural composition, and graceful fallback behavior so an open-ended design space does not require a bespoke animation or script for every possible build.
+- Keep compatibility, resource, progression, and PvP rules authoritative and deterministic where needed for multiplayer.
+
+A combination can be novel without being compatible. When parts conflict, the interface must explain the reason and, where possible, suggest a valid alternative or a route to evolve the required support anatomy. It must never silently remove a selected part. Balance should emerge from readable costs, counters, timing, risk, and situational strengths—not from arbitrarily forbidding creative combinations.
+
 ### Compatibility, capacity, and trade-offs
 
 The body has finite compatibility and maintenance capacity. Upgrades may require a compatible tissue type, genetic pattern, energy channel, anatomical space, structural support, or adaptation period. Conflicting structures should be blocked or offered as explicit alternatives; never silently discard an existing feature. Costs and limits should follow from the fiction and balance model, not arbitrary restrictions designed to suppress creative builds.
