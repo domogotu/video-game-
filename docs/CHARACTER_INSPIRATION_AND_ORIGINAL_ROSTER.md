@@ -139,3 +139,10 @@ A small goblin survivor who turns scavenging, careful consumption, field craftin
 
 The detailed action gates and working ability families are maintained in [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](SHADOW_SOVEREIGN_LIMIT_BREAKER_GOBLIN_ROUTES.md). Names are placeholders subject to originality review. These concepts are not final canon and have not been implemented.
 
+
+
+### 14. The Mythic Staff Ascendant
+
+A wandering staff fighter whose strength comes from footwork, reach, feints, aerial traversal, counters, and trials that test restraint as well as force. The route can be a playable discipline and can support original mentors, rivals, and mythic trial bosses. Its staff and transformation options have explicit costs, recovery, and counterplay. The broad inspiration is mythic staff-fighter agility and transformation—not a copied Sun Wukong depiction or any specific game's version. Whether the route is a starting option or a hidden unlock remains open.
+
+Detailed route design: [Mythic Staff Ascendant (Wukong-Inspired)](WUKONG_INSPIRED_MYTHIC_STAFF_ASCENDANT.md). Design-only; not implemented.
