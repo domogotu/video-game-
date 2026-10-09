@@ -126,3 +126,13 @@ The [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](docs/SHADOW_S
 ## Wukong-inspired mythic staff ascendant
 
 The [Mythic Staff Ascendant](docs/WUKONG_INSPIRED_MYTHIC_STAFF_ASCENDANT.md) specification makes Wukong-inspired staff-fighter gameplay an explicit part of the planned roster. The route focuses on technical staff combat, agility, feints, traversal, mythic trials, and bounded transformations. It uses original characters, lore, visuals, and abilities. Starting availability versus a hidden unlock remains an open decision. Design-only; not implemented or tested.
+
+
+## Expanded ability coverage matrix
+
+The approved ability roadmap now includes a cross-route coverage matrix for the shadow-command sovereign, limit-breaking martial ascendant, adaptive goblin reclaimer, mythic staff trickster, hidden god-tier slime, and undead spell sovereign. It records the intended ability families, progression gates, costs/counters, combinations, and implementation acceptance gates. This is design coverage—not implemented gameplay.
+
+- [Expanded Ability Coverage Matrix](docs/EXPANDED_ABILITY_COVERAGE_MATRIX.md)
+- [Power & Ability Catalogue](docs/POWER_ABILITY_CATALOGUE.md)
+
+The goal is broad coverage of the power fantasies across the referenced shows and games through original mechanics and presentation, not a direct copy of exact licensed move lists, character designs, animations, or storylines. Every ability must become an individual catalogue record and pass implementation and test gates before it can be described as playable.
