@@ -367,7 +367,7 @@ Settlements may develop through survival camp → stable habitat → established
 
 ## 17. Original base species roster (100 concepts)
 
-These are proposed original species concepts, not a claim that they are implemented. Not every species appears on every planet. Variants must change gameplay, not just recolor a model. Each future species entry should define habitat, diet/prey, behavior, combat anatomy, absorption data, mutation conditions, evolutionary role, and confirmed/speculative Codex discoveries.
+These are proposed original species concepts, not a claim that they are implemented. Not every species appears on every planet. Variants must change gameplay, not just recolor a model. Each future species entry should define habitat, diet/prey, behavior, combat anatomy, absorption data, mutation conditions, evolutionary role, and confirmed/speculative Codex discoveries. The dedicated [Species and Body-Plan Catalogue](SPECIES_AND_BODY_PLAN_CATALOGUE.md) expands this roster and defines how players encounter, analyze, absorb, and evolve compatible traits. The player does not select a fixed species class or automatically copy an entire organism: eligible body-plan traits can be combined under explicit compatibility rules. Bipedal, quadrupedal, serpentine, aquatic, aerial, many-limbed, amorphous, crystalline, and hybrid bodies are all valid directions; humanoid anatomy is not mandatory. The roster remains design-only until species, AI, animation, and gameplay are implemented and verified.
 
 ### Family 1 — Cellular and primitive
 1. Nucleon Slime
