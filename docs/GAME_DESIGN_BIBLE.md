@@ -709,6 +709,18 @@ These are acceptance targets only; no playable implementation or test pass is cl
 
 **Status: approved design specification; not implemented or play-tested.** These are two related but distinct systems: shared discoveries make knowledge available across the player community, while player-legacy NPCs let defeated characters leave a world presence without undoing permanent death.
 
+### Global boss-defeat ability unlocks
+
+A qualifying boss defeat is a global progression event. When any player defeats a boss and earns or reveals an ability, that ability and its connected branch are added to the shared Evolution Atlas/skill tree for all players. This is a real shared skill-tree unlock, not merely a Codex note. Credit the first discoverer and meaningful collaborators, but do not reserve the branch for the winning player or party.
+
+The boss's full verified dossier is added to the Evolutionary Codex and made available to all players. Record, where known: identity and variants; habitat and location; appearance and anatomy; behavior and encounter phases; attacks, ability effects and telegraphs; resistances, weaknesses and counters; environmental interactions; eligible organs, genetic material, drops and rewards; newly unlocked ability nodes; prerequisites, costs, compatibility, risks and known combinations; supporting evidence; version history; and contributor attribution. Label unknown or unverified details clearly rather than inventing them.
+
+Global availability does not grant every player the ability automatically. All players can see and pursue the newly available branch, while each character must meet the stated personal requirements to learn, acquire, install, evolve, or master it. The shared unlock expands community progression options without erasing individual progression.
+
+The event and dossier must be stored in an authoritative shared record and remain consistent across supported worlds and future sessions. Repeated kills may grant eligible personal rewards or new verified findings, but cannot duplicate the global unlock or create a false first-discovery claim. Patches must preserve history and identify the current version. Unconfirmed kills or disputed events must not be published as verified.
+
+Acceptance criteria: one qualifying boss defeat exposes the ability branch beyond the winning group; all eligible players can inspect the full dossier; personal prerequisites still apply; shared records persist; duplicate events and invalid reward claims cannot corrupt global progression; and evidence, unknowns, credit, and version history are retained.
+
 ### Shared Discovery Network
 
 When a player discovers a previously unknown species, mutation, anatomy combination, ability interaction, environmental adaptation, or Evolution Atlas route, the game may record a verified discovery in a **Shared Discovery Network**. Once the discovery meets its verification requirements, it becomes discoverable by other players through the Codex, research terminals, community records, or other appropriate in-world interfaces. A discovery should not remain permanently exclusive merely because one player found it first.
