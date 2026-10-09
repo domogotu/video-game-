@@ -1081,3 +1081,12 @@ This is an approved design baseline, not a claim that the powers have been coded
 Use original ability names, lore, silhouettes, animations, effects, and combinations. The project is targeting broad capability and gameplay coverage across its inspirations, not a move-for-move reproduction of licensed characters or their exact expression. A vertical slice may stage delivery, but it must not silently erase the approved roadmap. Runtime implementation and verification status must be reported honestly.
 
 **Status:** design specification only; not implemented or tested.
+
+
+## 35. Character-specific powersets are a required content target
+
+The six named routes—Sung Jinwoo, Goku, the *Re:Monster* goblin protagonist, Sun Wukong, Rimuru Tempest, and Ainz Ooal Gown—must not be reduced to generic archetypes or loose thematic inspirations. The intended content target is a route-specific inventory of individual abilities, passive traits, skills, transformations/forms, upgrades, summons, resistances, and their unlock/progression conditions, based on a declared set of source versions. See [Character-Specific Powerset Requirements](CHARACTER_SPECIFIC_POWERSET_REQUIREMENTS.md).
+
+Every ability must be individually catalogued, with source/version traceability, unlock method, active/passive/conditional status, route/form prerequisites, gameplay effects, costs, counters, upgrade chains, interactions, and implementation status. The roadmap may stage release, but deferred powers must remain tracked. Where exact franchise character names, signature expression, visuals, or other protected content is planned for commercial release, rights/licensing must be addressed or the content must be separately adapted into original expression.
+
+**Status:** requirement documented; canonical source-by-source inventories and gameplay implementation remain outstanding. Documentation must not be represented as playable implementation.
