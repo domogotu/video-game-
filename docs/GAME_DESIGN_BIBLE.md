@@ -611,3 +611,76 @@ Before calling this system implemented, verify that:
 - UI, save data, combat rules, Codex, and evolution history agree on the character’s current state.
 
 These criteria are design targets, not evidence that tests have been run.
+
+
+## 23. Modular anatomy workshop and body upgrades
+
+**Status: design-specified concept; not implemented or play-tested.** This system uses the broad appeal of individually upgrading body regions and adding specialized parts found in character-focused action RPGs, but Lethal Absorption's expression is original: anatomy is grown, absorbed, engineered, evolved, or bonded to compatible supernatural/cosmic structures rather than being limited to cybernetic implants.
+
+### Anatomy Workshop
+
+A dedicated **Anatomy Workshop** lets the player inspect a full-body model, select a body region, compare compatible upgrades, preview visual and gameplay changes, and apply or save a configuration. It is a design target, not a built screen. Regions include:
+- **Arms/hands:** claws, gripping structures, tendril launchers, shields, transforming blades/hammers, ranged organs, precision manipulators.
+- **Legs/locomotion:** sprinting, jumping, pouncing, climbing, wall-running, impact landings, specialized aquatic movement, and later-stage propulsion.
+- **Torso/core:** armor, reinforced skeleton, energy reserves, regeneration, metabolism, toxin filtering, oxygen processing, and elemental organs.
+- **Head/senses:** vision modes, hearing, scent, thermal detection, biological scanning, threat perception, jaws, horns, and specialized communication.
+- **Back/auxiliary anatomy:** wings, tails, extra limbs, tendrils, dorsal armor, auxiliary organs, and propulsion structures.
+- **Skin/skeleton:** surface armor, flexible plating, camouflage, insulation, pressure resistance, and structural reinforcement.
+- **Special slots:** rare supernatural, dimensional, or cosmic structures where the character's stage and body plan permit them.
+
+These are logical regions, not a promise that every character has every slot. A character can have non-humanoid anatomy, and a slot only appears when the body plan supports it. Some upgrades occupy multiple slots or conflict with others. Extra limbs, large wings, and heavy armor must be represented in silhouette, collision, animation, traversal, and combat—not merely as inventory icons.
+
+### Upgrade sources and installation
+
+Parts may become available through consuming eligible organisms, researching specimens, surviving an environment, completing a feat, finding rare material, or developing an Evolution Atlas branch. Acquisition does not automatically install or master a part. A typical flow is: discover source → obtain required biological/genetic data → check compatibility → preview the result and trade-offs → pay the relevant resources or meet adaptation conditions → install/evolve → test and master.
+
+Use in-world language such as **graft, grow, adapt, integrate, evolve, or bond** according to the part's origin. Cybernetic-style visual motifs can be used as broad genre inspiration, but do not copy Cyberpunk 2077's proprietary implants, names, visual designs, interface, or lore. Tech-like function may arise from evolved organs, mineral structures, living armor, symbiotic organisms, or supernatural mechanisms.
+
+### Upgrade depth and progression
+
+A part may have a small number of meaningful development tiers rather than endless flat-stat ranks. Example forelimb path: reinforced limb → clawed limb → transforming blade → energy-conductive blade. Example leg path: spring tendons → pounce adaptation → wall-running anatomy → advanced propulsion. Example sensory path: low-light vision → thermal perception → biological scan → specialized supernatural perception. Branches may diverge, converge, or require traits from multiple species and environments.
+
+An upgrade should change at least one meaningful property where appropriate: animation, move set, reach, movement option, defensive response, perception, resource behavior, environmental resistance, or interaction with other abilities. Purely cosmetic variations may exist, but must be labeled cosmetic and must not imply mechanical benefits.
+
+### Compatibility, capacity, and trade-offs
+
+The body has finite compatibility and maintenance capacity. Upgrades may require a compatible tissue type, genetic pattern, energy channel, anatomical space, structural support, or adaptation period. Conflicting structures should be blocked or offered as explicit alternatives; never silently discard an existing feature. Costs and limits should follow from the fiction and balance model, not arbitrary restrictions designed to suppress creative builds.
+
+Examples of readable trade-offs:
+- Heavy armor improves protection but may reduce acceleration, climbing, or stamina efficiency.
+- Long tendrils improve reach and control but may expose appendages to severing, restraint, or energy drain where those counters exist.
+- High-output organs increase burst damage but consume more energy and may reveal a detectable signature.
+- Extra arms enable additional attack or utility routes but increase animation complexity and may require more energy/coordination.
+- Specialized senses reveal certain targets or traces but can be disrupted by relevant environmental interference.
+
+Every part must have understandable strengths, limitations, counters, and UI descriptions. No upgrade should be universally best across all situations.
+
+### Active, stored, and saved anatomy
+
+The interface distinguishes **installed/active**, **owned or researched but not installed**, **incompatible**, and **speculative/unconfirmed** parts. Where storage is supported, eligible organs/specimens or genetic patterns can be kept in the Evolution Vault; storage rules remain subject to the open Vault persistence and death-loss decisions. Saved forms reference known anatomy configurations, but cannot duplicate unique parts, bypass resources, or equip mutually exclusive structures.
+
+Swapping parts must show what changes in the character's silhouette, movement, attacks, defenses, resource costs, and compatible abilities. Major changes may require a safe adaptation window, resources, or a suitable location. The player confirms significant changes after reviewing effects. Earned mastery and Evolution History remain recorded even when a part is not currently active; the system must clearly state whether a mastery effect requires the corresponding part to be equipped.
+
+### Combat, traversal, and world integration
+
+The same anatomy definition must drive character appearance, animation, hitboxes/reach, traversal, combat moves, damageable appendages, NPC recognition, environmental interaction, and save data. Examples:
+- A grappling tendril can pull an enemy, anchor to a surface, retrieve eligible objects, or enable a traversal route if the environment supports a valid anchor.
+- Wing upgrades affect flight and aerial attacks, but do not grant vacuum survival without the required space adaptations.
+- A toxin organ creates and stores a defined toxin; resistance and delivery depend on target biology and world rules.
+- A regeneration organ repairs eligible living tissue according to resource and damage rules, but does not reverse permanent character death.
+- Conductive anatomy interacts with electricity, water, and metal according to the existing ability-interaction model.
+
+Damage to appendages may temporarily disable their functions where the combat system supports localized injury. Recovery depends on anatomy, time, energy, treatment, and available resources. Avoid randomly removing a player's permanent build without clear rules, warning, and recovery design.
+
+### Implementation acceptance criteria
+
+Before calling this system implemented, verify that:
+- The player can inspect supported body regions and compare compatible parts.
+- Applying an upgrade updates the visual model and all dependent movement/combat behaviors.
+- Unsupported body plans and incompatible combinations are rejected with a clear reason.
+- Upgrade previews state meaningful benefits, drawbacks, resource costs, and lost/replaced functions.
+- Active, stored, researched, and speculative parts are clearly distinguished.
+- Saved forms cannot duplicate unique items or bypass compatibility, cost, progression, or death rules.
+- Character saves, Codex records, Evolution History, NPC awareness, and combat state agree after an upgrade or swap.
+
+These are acceptance targets only; no playable implementation or test pass is claimed.
