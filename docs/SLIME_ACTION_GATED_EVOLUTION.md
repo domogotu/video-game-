@@ -4,9 +4,11 @@
 
 ## User intent
 
-A player must be able to start as a weak, simple slime-like organism and become an exceptionally powerful slime through specific in-world actions, discoveries, survival feats, absorption choices, and evolution milestones. The player must not simply select the final form from a menu. The route should feel earned, visible in the Evolution Atlas, and replayable through different choices.
+The intended secret is a **god-tier basic slime lineage hidden among the game's many monsters, species, abilities, and transformations**. The player is not selecting a known anime protagonist or copying a full franchise character. The player discovers that a seemingly unimpressive, low-tier slime can—through rare, specific actions and hidden evolution conditions—reach an extraordinary godlike ceiling.
 
-The user specifically referenced the progression and powers of the slime protagonist from *That Time I Got Reincarnated as a Slime*. Treat that as the desired reference for progression density and ability fantasy. **Exact franchise character identity, named signature skills, dialogue, story events, visual design, and other distinctive expression must not be copied into the unlicensed game.** If exact franchise content is desired, licensing is a separate requirement. Without a license, implement the same broad mechanics using original names, presentation, lore, and balanced rules.
+The desired reference is the *kind* of abilities and progression fantasy associated with *That Time I Got Reincarnated as a Slime*: absorption, analysis, shapeshifting, regeneration, resistance, rapid learning, ability synthesis, transformations, and escalating power. Use original names, lore, character identity, art, animation, and presentation. Do not copy the anime's protagonist or its distinctive named skills and exact expression. The secret slime is part of Lethal Absorption's own world and story.
+
+The secret should be discoverable through clues, experiments, unusual survival feats, rare encounters, and combinations of actions. Do not advertise it on character creation or in the ordinary species description. Players should initially see a basic slime with low stats and a modest survival kit. The route's deeper branches appear only as the player uncovers evidence. This is a hidden possibility, not a guaranteed reward for every slime player.
 
 ## Route principles
 
@@ -19,9 +21,9 @@ The user specifically referenced the progression and powers of the slime protago
 7. Major milestones should trigger an explicit evolution scene, updated body/visual effects, a Codex entry, and new optional branches.
 8. Maintain counters, costs, and multiplayer validation. High power does not mean unlimited use, universal knowledge, or immunity to all counterplay.
 
-## Proposed action-gated progression
+## Hidden lineage and action-gated progression
 
-These are candidate gates for tuning, not a finalized numerical balance specification.
+These are candidate gates for tuning, not a finalized numerical balance specification. The earliest steps should look ordinary; unusual clues and secret branches emerge only after relevant actions. The full godlike destination is never shown at the start.
 
 | Milestone | Required actions / proof | Unlocks |
 |---|---|---|
@@ -75,15 +77,18 @@ The following mechanics should be designed as distinct abilities with visible un
 - **Cosmic Adaptation:** progressively withstand vacuum, radiation, temperature extremes, and stellar hazards.
 - **Godlike Assimilation:** after the project's three-planet conquest requirement and other open ascension checks, increase eligible absorption yield from evolved targets. This does not remove eligibility, multiplayer, or permanent-death rules.
 
-## Exactness and licensing boundary
+## Originality and reference boundary
 
-The reference anime may contain particular named skills, character-specific forms, and story-gated abilities. For the unlicensed design:
-- Record the *mechanical behavior* the user wants in neutral terms.
-- Create original skill names, visual language, animation, lore, and progression gates.
-- Avoid copying exact dialogue, character models, costumes, signature move names, story scenes, or a one-to-one character build.
-- If the user wants the exact franchise character and its exact named powers as depicted, treat that as a licensed-content path and seek appropriate rights before including those assets or distinctive expression.
+The goal is to preserve the desired broad ability families and action-gated progression—not the same character, exact named powers, story, or presentation. The hidden slime should have original lore and a place in Lethal Absorption's ecosystem.
 
-The goal is to preserve the desired feeling of action-gated growth, selective absorption, analysis, transformation, ability synthesis, and escalating power—not to promise unlicensed reproduction of the anime itself.
+## Secret-discovery requirements
+
+- The basic species listing must not reveal the godlike endpoint.
+- Early discoveries should appear plausible as ordinary slime adaptations; later discoveries connect them into a rare hidden lineage.
+- Clues may come from unusual absorption outcomes, anomalous resistance, rare ecological records, boss interactions, and experimentation with compatible abilities.
+- No single random roll should be the only route. The secret must be reproducible through its action conditions once understood.
+- Codex and Atlas reveal information progressively. A discovered prerequisite can be tracked openly, while unknown conditions remain unknown rather than falsely represented as complete.
+- The secret should be exceptionally powerful but not universally superior at every stage or invulnerable to counters.
 
 ## Player-facing UI requirements
 
@@ -112,7 +117,9 @@ For every ability node, the Evolution Atlas should show:
 
 ## Open decisions
 
-- Whether the slime route is a main progression branch, an optional starting lineage, or an early mutation path available to other lineages.
+- Whether the secret slime route is available only to a slime lineage or can be uncovered by other lineages through a rare transformation path.
+- How much evidence is discoverable by a single player versus the Shared Discovery Network.
+- Whether the hidden branch is lost on permanent character death or can be rediscovered through a new character's actions.
 - Exact numeric costs, cooldowns, capacity limits, and stage thresholds.
 - Which elemental and energy systems are present in the first playable scope.
 - How companions or AI-like internal assistants are represented without copying a franchise character's distinctive identity.
