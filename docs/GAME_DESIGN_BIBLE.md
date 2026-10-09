@@ -532,3 +532,18 @@ Do not silently treat these as settled:
 13. Codex information must distinguish confirmed knowledge from hypotheses.
 14. Large-scale simulation is an architectural goal, not a current implementation claim.
 15. Keep the project original and do not reproduce copyrighted characters, designs, or assets.
+
+## 21. Ongoing repository maintenance and status discipline
+
+This repository is the central source of truth for Lethal Absorption. For each continued design or implementation session:
+
+1. Record each newly agreed feature and material rule change in the relevant section of this bible during the same work sequence.
+2. Update the README when a change affects the project overview, major systems, or project status.
+3. Keep system dependencies, constraints, examples, and unresolved decisions synchronized across documents.
+4. Distinguish **proposed**, **approved/design-specified**, **in progress**, **implemented**, and **verified** states. Approval of a design is not implementation; code changes are not verified until relevant checks have actually run.
+5. When implementation work occurs, document the affected code areas, configuration/dependencies, migration or compatibility concerns, and verification evidence where applicable.
+6. Do not fabricate test results, completed work, files, commits, or runtime capabilities. State blockers and unverified items explicitly.
+7. After updating a repository file, retrieve it from the target branch to confirm the update landed.
+8. Preserve unresolved decisions in the open-decision list until they are explicitly resolved.
+
+Documentation updates are part of the ongoing workflow; they do not imply the game systems themselves have been built.
