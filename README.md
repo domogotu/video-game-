@@ -70,3 +70,7 @@ Broad design inspiration includes action RPG combat, open-world exploration, pro
 The design bible identifies unresolved choices including the exact level curve, NG+ inventory carryover, post-1050 progression, Vault persistence/death-loss rules, boss recovery, spawn protection, controller bindings, standard-form scale limits, species details, world privacy/access, investigation timings, and the technical architecture required for persistent multiplayer.
 
 The working title **Lethal Absorption** has not been checked for trademark or title availability.
+
+## Ongoing documentation and implementation workflow
+
+This repository is the central source of truth for the project. As development continues, record every agreed new feature or material design change in the relevant documentation during the same work sequence. Update this README when the project overview, major systems, or status changes. Keep the Game Design Bible synchronized with the detailed rules and dependencies. When features are implemented in code, update implementation-specific documentation and record what changed and what verification was actually performed. Clearly distinguish **proposed**, **approved/design-specified**, **in progress**, **implemented**, and **verified** work; never report a feature as implemented or tested without evidence. Preserve unresolved questions as open decisions rather than inventing answers. After repository changes, retrieve the changed files to confirm the updates landed.
