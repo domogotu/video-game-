@@ -990,3 +990,13 @@ Before this progression is called implemented, verify that:
 
 Exact XP thresholds and transition timing, the formal definition of a qualifying planetary conquest, whether godlike powers include time/reality manipulation at launch or later, the numerical increase in absorption yield, transformation duration/costs, and the final stage-specific UI remain open for explicit design and balancing.
 
+## 28. Master Power and Ability Catalogue
+
+**Status: initial design inventory documented; powers are not thereby implemented or balanced.** The dedicated catalogue at [docs/POWER_ABILITY_CATALOGUE.md](POWER_ABILITY_CATALOGUE.md) is the broad index for potential powers and abilities across biological, physical, elemental, psychic, magical, technological, dimensional, cosmic, and godlike systems. It includes locomotion, senses, defense, combat techniques, transformations, absorption, creation, support, and combinations.
+
+The catalogue is intentionally expandable rather than a claim that any finite list captures every imaginable power. It draws on broad genre concepts across games, anime, television, comics, mythology, fantasy, science fiction, and speculative biology. It must not copy another franchise's protected character, art, narrative, text, or distinctive implementation.
+
+Every detailed ability must distinguish its source/mechanism, effect, delivery, eligible targets, applications, prerequisites, body-plan compatibility, costs, range, duration, recovery, environmental dependencies, counters, failure modes, combinations, visual feedback, world/NPC consequences, multiplayer validation, stage-specific evolution, and acceptance tests. Separate generation, control, absorption, conversion, resistance, immunity, sensing, and movement when they have distinct gameplay.
+
+Abilities are candidates, not automatic launch commitments. No power is unrestricted by default. Range, duration, targets, energy, compatibility, counterplay, permanent-death rules, and server-authoritative fairness must remain coherent. New and untested combinations are hypotheses until their outcomes are verified and recorded in the Codex. The next design pass will deduplicate the index, define full ability records, classify rarity, map abilities to progression stages, and document interactions.
+
