@@ -883,3 +883,110 @@ Before this system is described as implemented, verify that:
 - Unique specimens, objects, and rewards cannot be duplicated or silently lost through invalid state transitions.
 - The game explains important restrictions and irreversible trade-offs before commitment.
 
+## 27. Bottom-up evolution stages and planetary ascension
+
+**Status: approved design specification; not implemented or tested.** This section establishes the intended macro-progression sequence. It refines the existing level bands, Evolution Atlas, transformation, and space-travel systems; exact XP thresholds and implementation remain open.
+
+### Stage progression principle
+
+Progression is experienced as a series of meaningful biological and perceptual transitions, not just a level number or menu unlock. Each stage changes the player's available movement, sensory reach, body plan, interactions, survival needs, and scale of challenges. Transitions should be visible in the world and in the player's body, with clear requirements and a brief, readable explanation of new capabilities.
+
+Evolution is based on the player's accumulated discoveries, consumed organisms, genetic information, environmental adaptations, and selected mutations. The game does not force every player through an identical final anatomy. Bipedal, quadrupedal, serpentine, multi-limbed, aquatic, aerial, and other viable body plans remain possible when supported by the player's acquired traits and compatible anatomy.
+
+### Stage 1 — Cellular life: amoeba survival
+
+The player begins as a simple amoeba-like organism at the smallest scale of the progression.
+
+- Move with limited, low-speed cellular locomotion such as drifting, crawling, and extending pseudopod-like structures where appropriate.
+- Gather and absorb compatible nutrients or microscopic life; avoid threats that are dangerous at this scale.
+- Learn the core loop through play: detect, approach, absorb, survive, mutate, and adapt.
+- Perception is limited and close-range. The environment should feel vast and only partly understood.
+- Early adaptations may improve sensing, movement, membrane defense, energy storage, absorption, or resistance, but should not instantly grant complex creature powers.
+- The first transition occurs when the organism meets a defined evolutionary threshold through survival, absorption, and compatible development.
+
+### Stage 2 — Primitive organism: first complex mobility and clearer perception
+
+The player evolves beyond the single-cell stage into a primitive multicellular or otherwise more complex organism.
+
+- Movement becomes more deliberate but remains limited. The player may struggle to travel, turn, climb, or cross difficult terrain until relevant structures evolve.
+- Sensory range and environmental clarity improve, revealing more of the nearby habitat, food sources, hazards, tracks, and organisms.
+- New structures may include basic locomotor tissue, primitive sensory organs, attachment/gripping structures, and specialized absorption or defense organs.
+- This stage teaches how body structures affect mobility and survival. It should feel meaningfully different from cellular drifting, not like the same controls with a larger model.
+- Progression into the main creature stage depends on suitable biological complexity and survival milestones, not simply a cinematic timer.
+
+### Stage 3 — Main creature stage: open-ended body plans and core gameplay
+
+This is the primary long-running creature gameplay stage. The player develops a recognizable organism while retaining freedom over anatomy.
+
+- Viable forms may be bipedal, quadrupedal, serpentine, multi-limbed, winged, aquatic, burrowing, or other compatible plans. No default humanoid form is mandatory.
+- What the player has consumed, researched, survived, and adapted to influences which body parts, organs, traits, movement modes, and skill branches become available.
+- Players develop individual body regions and organs, learn and master abilities, form custom techniques, and discover combinations.
+- The world opens up to deeper exploration, hunting, rival creatures, territorial behavior, harvesting, specimen preservation, and more complex environmental interactions.
+- Body-plan choice changes reach, grip, locomotion, carrying, combat chains, sensory strengths, weaknesses, and which actions are possible. The game explains compatibility and trade-offs rather than silently removing parts.
+- The player may continue evolving within this stage for a substantial portion of the game. It is not a narrow mandatory humanoid tutorial.
+- This stage includes the previously established standard-form scale principle: ordinary player forms remain broadly comparable in overall scale for fair baseline encounters; specialized transformations and titan-scale activities are governed by their own rules.
+
+### Stage 4 — Species-dependent transformation
+
+After meeting evolutionary prerequisites, the player receives an important transformation that reflects their species, anatomy, and evolution history.
+
+- The transformation is earned through a defined combination of progression, relevant discoveries or mastery, compatible anatomy, and any specified environmental or material requirements.
+- Transformations differ by body plan and evolutionary route. A winged organism may become an aerial combat form; an armored organism may gain a defensive siege form; a serpentine or multi-limbed organism develops a form suited to its own structure.
+- A transformation may change anatomy, movement, control options, combat chains, defenses, resource use, sensory abilities, and available techniques—not only health, size, or damage.
+- Clearly distinguish temporary transformation, persistent anatomical evolution, and saved compatible forms/loadouts. A temporary transformation does not silently overwrite the player's base anatomy.
+- Transformations require clear activation, duration or persistence rules, costs, counters, and recovery conditions. Exact values remain open for balancing.
+- The first transformation is a major progression milestone, but it does not automatically grant space survival or space travel.
+
+### Stage 5 — Spacefaring life and biological space combat
+
+Spacefaring progression becomes available only after the player satisfies the existing planetary departure requirements: explore every continent, defeat all designated planetary bosses, complete the planet-specific conquest objectives, and develop enough evolution to survive space. This preserves the prior rule that space is not an early-game shortcut.
+
+- The player evolves their own body for spaceflight. No vehicle or spaceship is required or introduced.
+- Necessary adaptations may include biological propulsion, three-dimensional maneuvering, navigation senses, vacuum survival, radiation/temperature protection, resource reserves, and defenses against cosmic organisms.
+- Spaceflight controls support acceleration, braking, turning, rolling, climbing, diving, and sustained travel, with anatomy and environmental physics shaping handling.
+- Players can explore planets, moons, asteroids, cosmic organisms, and points of interest, and can fight in space where encounters support it.
+- Space combat uses the same anatomy, ability-combination, telegraphing, resource, damage, and multiplayer-authority principles as ground combat, adapted for three-dimensional movement and space hazards.
+- The transition should show a clear change in scale and perspective, but keep the player's identity, history, anatomy, and permanent-death rules continuous. This is the same character evolving, not a separate ship or new character.
+- Conquering one planet does not by itself unlock godlike evolution. The player must complete the three-planet condition below.
+
+### Stage 6 — Godlike evolution after three planetary conquests
+
+After the player has conquered three qualifying planets, the game unlocks a godlike evolutionary stage. The conquest requirements and proof must be recorded in persistent world/player progression so the milestone cannot be duplicated or granted by an invalid state transition.
+
+- Godlike evolution represents accumulated biological knowledge and mastery of absorption. It improves the evolutionary return from creatures, specimens, and mutations.
+- **Gathering itself does not become faster by default.** The player continues to find, approach, gather, and absorb through the established world loop at its normal rate; the increased benefit comes from greater enhancement yield, deeper mutation opportunities, improved compatibility insight, or access to advanced branches.
+- Enhanced returns must be communicated before a meaningful consumption choice. Results still depend on the target, rarity, compatibility, research, anatomy, and applicable progression rules.
+- Godlike progression may unlock powers that influence large-scale processes, environments, travel, or reality according to explicit ability rules. It is not permission to skip all costs, instantly collect every resource, ignore other players, or bypass world simulation.
+- Gathering and absorption remain relevant after ascension. The player still discovers organisms and mutations; the rewards become more profound rather than making the core loop obsolete.
+- Godlike power must preserve meaningful challenge, counters, multiplayer fairness, and server-authoritative validation. No ability may silently erase other players' earned progression or grant automatic victory.
+- Godlike stage does not undo permanent death. If the character dies under the established rules, the character is lost; any retained research or archive follows the separately defined Vault rules.
+
+### Stage transitions and feedback
+
+Every transition should include:
+1. A clear preview of the requirement and the player's current progress.
+2. A visible anatomical and sensory change appropriate to the new stage.
+3. A concise explanation of newly available movement, interactions, organs, abilities, and survival needs.
+4. A comparison of important capabilities gained, lost, or changed.
+5. An updated Evolution Atlas, Character Profile, Codex, and Evolution History.
+6. A safe opportunity to learn changed controls and movement before facing a major lethal threat.
+7. Persistent, server-authoritative recording of the transition and its prerequisites.
+
+Transitions must not grant abilities whose prerequisites are missing, silently discard earned traits, or imply that concept art or design documentation means a feature is already implemented.
+
+### Acceptance criteria
+
+Before this progression is called implemented, verify that:
+- Cellular, primitive, main-creature, transformation, spacefaring, and godlike stages have distinct gameplay and readable transition criteria.
+- Main-stage body plans are determined by compatible evolution and are not forced into one humanoid template.
+- Sensory and mobility improvements across the first two transitions are perceptible in play.
+- Transformations reflect the player's species/anatomy and distinguish temporary forms from permanent evolution.
+- Space access respects the previously specified planetary prerequisites and biological spaceflight rule.
+- Godlike evolution requires three qualifying planetary conquests and increases enhancement/mutation returns without silently increasing the underlying gathering rate.
+- Stage state, unlocks, prerequisites, and history persist consistently across supported sessions and multiplayer.
+- Death, Vault persistence, resource costs, and unresolved rules remain consistent with the rest of the design.
+
+### Open decisions retained
+
+Exact XP thresholds and transition timing, the formal definition of a qualifying planetary conquest, whether godlike powers include time/reality manipulation at launch or later, the numerical increase in absorption yield, transformation duration/costs, and the final stage-specific UI remain open for explicit design and balancing.
+
