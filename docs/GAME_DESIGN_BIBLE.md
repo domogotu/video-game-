@@ -1057,3 +1057,14 @@ Add three original action-gated route concepts that evoke broad qualities associ
 The complete proposed gates, original working ability names, limitations, counterplay, shared secret-route rules, and open decisions are maintained in [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](SHADOW_SOVEREIGN_LIMIT_BREAKER_GOBLIN_ROUTES.md). All three routes keep their endgame hidden at character creation and require discoverable, reproducible action gates. They must obey permanent character death, multiplayer fairness, privacy, server-authoritative validation, and the existing three-planet godlike progression condition where applicable.
 
 **Status:** design proposal only; not implemented or tested. Open decisions include starting-lineage versus hidden-branch availability, exact costs and thresholds, resource architecture, solo/group route requirements, and first-playable scope.
+
+
+## 33. Wukong-inspired mythic staff ascendant route
+
+**Availability requirement:** Wukong-inspired gameplay is part of the planned Lethal Absorption roster and must not be omitted. The intended player experience is a mobile, technically expressive staff fighter with mythic trials, feints, staff-assisted traversal, counterattacks, and earned transformation options. The route may also inspire original mentors, rivals, and bosses.
+
+The route must use original character identity, lore, silhouette, staff design, animations, effects, names, and signature techniques. Broad inspiration from mythic staff-fighter themes does not authorize copying Sun Wukong's specific portrayal or any particular game's/anime's protected character expression.
+
+The detailed progression, original working abilities, strengths, weaknesses, counterplay, acceptance criteria, and open decisions are in [Mythic Staff Ascendant (Wukong-Inspired)](WUKONG_INSPIRED_MYTHIC_STAFF_ASCENDANT.md). The route supports a playable staff-focused build. Whether it is available from character creation, unlocked through a hidden branch, or both remains open. Its abilities must obey resource, recovery, anatomy, terrain, multiplayer fairness, and permanent-death rules.
+
+**Status:** design specification only; not implemented or tested.
