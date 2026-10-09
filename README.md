@@ -15,6 +15,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Adaptive body-as-weapon:** a modular Anatomy Workshop lets compatible limbs, organs, armor, senses, wings, tails, tendrils, and other evolved parts change combat and movement; the design is documented but not implemented.
 - **Adaptive movement and interaction:** responsive traversal changes with anatomy and terrain; adaptive third-person camera and contextual/direct physical interactions share consistent world rules.
 - **Physical world handling:** grabbing, carrying, dragging, throwing, capturing, harvesting, and preserving objects or specimens depends on anatomy, target properties, terrain, and shared-world state.
+- **Bottom-up evolution stages:** begin as a nutrient-gathering amoeba, evolve into a primitive organism, develop an open-ended creature body plan, unlock a species-dependent transformation, evolve for biological spaceflight, then unlock enhanced godlike absorption after conquering three planets.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -38,6 +39,7 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 | Modular anatomy workshop | Open-ended mix-and-match anatomy builds with data-driven part interactions, compatibility previews, trade-offs, and combat effects |
 | Movement, camera & world interaction | Responsive anatomy-aware traversal, adaptive third-person framing, contextual prompts plus direct physical manipulation, and persistent world reactions |
 | Object & creature handling | Anatomy-dependent grabbing, carrying, dragging, throwing, capture, harvesting, specimen preservation, and shared-state safeguards |
+| Evolution stage progression | Cellular survival → primitive organism → open-ended main creature stage → species-dependent transformation → biological spaceflight → godlike evolution after three planetary conquests |
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
@@ -76,7 +78,7 @@ Broad design inspiration includes action RPG combat, open-world exploration, pro
 
 ## Open design decisions
 
-The design bible identifies unresolved choices including the exact level curve, NG+ inventory carryover, post-1050 progression, Vault persistence/death-loss rules, boss recovery, spawn protection, controller bindings, standard-form scale limits, species details, world privacy/access, investigation timings, and the technical architecture required for persistent multiplayer.
+The design bible identifies unresolved choices including the exact level curve, NG+ inventory carryover, post-1050 progression, Vault persistence/death-loss rules, boss recovery, spawn protection, controller bindings, standard-form scale limits, species details, world privacy/access, investigation timings, and the technical architecture required for persistent multiplayer. Stage progression also retains open balancing decisions for transition thresholds, transformation costs, planetary-conquest validation, and godlike absorption yields.
 
 The working title **Lethal Absorption** has not been checked for trademark or title availability.
 
