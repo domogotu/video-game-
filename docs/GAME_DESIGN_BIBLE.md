@@ -1,0 +1,534 @@
+# Lethal Absorption — Game Design Bible
+
+> **Working title:** Lethal Absorption  
+> **Tagline:** “Consume. Evolve. Survive.”  
+> **Status:** Living design specification. This repository documents concepts and design decisions; it does not imply that game systems have been implemented, tested, or production-certified.
+
+## 1. Vision and pillars
+
+Lethal Absorption is an original open-world multiplayer action RPG about evolving from a single cell into a creature, apex organism, sapient/superhuman being, planetary apex, cosmic entity, and potentially godlike existence. The player’s biology, anatomy, abilities, discoveries, environment, diet, combat history, and choices shape their individual evolution. There are no fixed classes.
+
+Design pillars:
+1. **Evolution through action:** consume, observe, survive, research, create, and master to discover possible evolutionary routes.
+2. **Player-authored combat:** chain, modify, transform, and fuse abilities within coherent world rules.
+3. **A persistent reactive ecosystem:** creatures, NPCs, habitats, wounds, evidence, damage, growth, and repairs can continue after players leave.
+4. **Meaningful risk:** permanent character death, dangerous hunting, and explicit high-stakes PvP coexist with safeguards against technical unfairness.
+5. **Scale with purpose:** cellular play, comparable-scale standard combat, optional Battle Mode, titan encounters, and biological spaceflight each have distinct mechanics.
+6. **Discoverability without false certainty:** the Evolutionary Codex distinguishes observed, confirmed, researched, mastered, and hypothesized information.
+7. **Original expression:** inspirations inform broad design goals only; all characters, species, art, story, and implementation should be original.
+
+Inspirational reference points include Dragon Ball Z: Kakarot, Borderlands 4, Marvel’s Spider-Man 2, Hogwarts Legacy, No Man’s Sky, Suicide Squad: Kill the Justice League, Naruto Shippuden: Ultimate Ninja Storm Generations, Watch Dogs 2, The Division, That Time I Got Reincarnated as a Slime, Spore, Overlord, Black Myth: Wukong, Path of Exile, and Star Wars Outlaws. Do not copy protected characters, assets, stories, or signature expression.
+
+## 2. Core progression model
+
+### Character levels and stages
+
+Normal character level cap: **1–1050**. Character level is separate from evolutionary path, ability level, and mastery. Completing the main story unlocks NG+ immediately; players do not need to reach level 1050 first.
+
+Proposed level bands (the XP curve and thresholds remain to be balanced):
+- **1–25:** Cellular Survival
+- **26–100:** Primitive Creature
+- **101–200:** Apex Organism
+- **201–350:** Sapient Evolution
+- **351–500:** Superhuman Evolution
+- **501–650:** Planetary Apex
+- **651–800:** Cosmic Adaptation / biological spaceflight preparation
+- **801–950:** Cosmic Entity
+- **951–1050:** Transcendent Being
+
+The bands are a design proposal, not a finalized experience curve. Reaching level 1050 does not automatically master every ability or unlock every mutation.
+
+### New Game Plus
+
+NG+ becomes available on main-story completion. It restarts the main story/world progression while retaining the character’s earned powers and evolution. It should add meaningful enemy behaviors, boss variants, new discoveries, alternate story decisions, new mechanics, and further mastery—not merely inflate health and damage. Exact inventory/equipment carryover and post-1050 progression remain open design decisions. A proposed approach keeps the normal level cap and adds mastery/evolution milestones and NG+-exclusive content.
+
+## 3. The Evolution Atlas
+
+The **Evolution Atlas** is the unified, zoomable progression system—conceptually “Path of Exile × 1,000”—that begins as a cellular tree and can expand into planetary, stellar, dimensional, and universal routes. Each character’s actual history changes which branches and connections become available.
+
+Node families include:
+- Biological structures, organs, anatomy, and traits
+- Mutations and environmental adaptations
+- Abilities, delivery methods, modifiers, and subskills
+- Fusion nodes, transformation/evolution nodes, and keystones
+- Secret discoveries, cosmic powers, dimensions, time, reality manipulation, and creation
+
+Planned Atlas tools: zoom from individual nodes to regions/galaxies/universe; search by desired capability (flight, regeneration, time manipulation, creation); evolution previews; build planner; discovery log; ability-combo view; and evolution history. Menus adapt to the player’s stage: Character, Evolution Tree, Abilities, Inventory/Equipment, Traits/Genetics, Consumption/Discovery, Knowledge/Mastery, and Evolution History.
+
+Scale is aspirational, not a claim that millions of nodes already exist. Use authored branches plus controlled generated variations, evaluate only relevant combinations, retain progression history, and provide understandable explanations rather than overwhelming players.
+
+## 4. Ability growth and free-flow combat
+
+### Four progression dimensions
+
+Each ability has a proposed level range of **1–20**. Ability level unlocks new mechanics, combo steps, move variants, advanced techniques, alternate uses, modifiers, fusion access, and signature/ultimate combinations—not just higher damage.
+
+Progress is separated into:
+1. **Ability level:** unlocks moves and mechanics.
+2. **Skill branches:** specialize the ability.
+3. **Mastery:** grows through effective use, timing, and application.
+4. **Fusion rank:** develops combined techniques.
+
+A level-1050 character can possess many abilities at different levels and mastery. Ability progression is inspired by the idea of individually developing moves, while combat aims for free-flow action with aerial movement, weapons, melee, ranged powers, dodges, blocks, counters, mobility, summons, gadgets, transformations, ultimates, and fusions.
+
+### Input and combo model
+
+A proposed configurable controller layout:
+- Hold LT + X: power
+- Hold LT + Y: shield, healing, counter, or summon
+- Hold LT + B: mobility/utility
+- Hold LT + A: signature technique
+- Transformation and ultimate have separate configurable controls.
+
+These are placeholders, not final bindings. Inputs may include tap, hold/release charge, double tap, directional inputs, and sequences. Example combo progression:
+- Square ×1: quick strike
+- Square ×2: double strike
+- Square ×3: strike–strike–kick
+- Square ×4+: unlocked extended chains that may transition into power attacks, launchers, aerial attacks, weapon techniques, or signature finishers
+- Hold Square: charged heavy
+- Directional input: alter attack
+- Square → Triangle: transition from melee into a power
+- Mobility may enable aerial follow-ups
+
+There is no arbitrary fixed maximum combo count; the chain must remain valid under input timing, animation state, stamina/energy, ability rules, and unlocks. Earlier moves remain available. Skill, timing, position, and aim matter at max level. Prevent endless stun loops with recovery, interruption, resource, cooldown, and PvP-balancing rules.
+
+### Ability interaction and fusion
+
+There should be no arbitrary ban on combining powers. Combinations work when their physical properties, supernatural rules, environment, costs, and constraints permit them. Examples:
+- Fire + wind → spreads fire / firestorm
+- Fire + barrier → burning protective field
+- Water + ordinary fire → extinguishing; sufficiently heated water may produce steam
+- Lightning + water → conductive hazard/field
+- Life + death → revival-like, reanimation, or soul effects only under relevant rules
+- Gravity + time → temporal compression field
+
+Abilities are built from components: core effect (damage, healing, movement, control, creation, summoning), source/element, delivery method, modifiers, and evolutionary traits. Three interaction layers: basic interactions, advanced fusion, and emergent/discovered powers. The data-driven interaction model considers properties, environment, resistance, traits, and explicit exceptions; do not hardcode every conceivable combo.
+
+Players can save effective discoveries as custom techniques. Each build receives at least one evolution-appropriate ultimate. Transformations can be temporary or permanent, alter form, moves, controls, and playstyle, and are not just stat multipliers.
+
+### Resonance Fusion (co-op)
+
+When consenting players activate compatible abilities in a timing window, **Resonance Fusion** creates a distinct enhanced effect. Example: one player summons one zombie and another summons three; coordinated timing may unlock a Unified Undead Legion with formations, improved command, elite servants, or shared buffs based on ability level, upgrades, mastery, and traits. This is more than adding the summon counts.
+
+Possible pairs include fire + wind, ice + water, lightning + metal, necromancy + shadow, healing + regeneration, gravity + teleport, and compatible transformations. Players retain their original abilities and both receive appropriate credit. Fusion ranks may develop with use. It is optional and consent-based.
+
+## 5. Adaptive anatomy and body-as-weapon
+
+The character’s body is a modular combat platform, not a fixed class. Anatomy changes visible silhouette, animation, reach, movement, hitboxes, and combo branches.
+
+Examples:
+- **Tendrils:** reach, grabs, multi-direction attacks, anchoring, swinging, climbing, shields, whips, spears.
+- **Transforming limbs:** blades, hammers, claws, cannons, shields; alter reach, speed, impact, and combo routes.
+- **Armor/spikes:** counters, charging, area damage, altered dodge/block/heavy attacks, with mobility trade-offs.
+- **Energy organs/supernatural attachments:** elemental projectiles, healing, energy blades, gravity effects.
+- **Additional parts:** wings, tail, extra arms, living weapons, armor plates, and specialized organs.
+
+The same input can produce different attacks depending on anatomy. Example agile hunter: claw slash → tendril pull → spinning kick → aerial pounce. Example heavy bruiser: armored fist → ground slam → spike eruption → crushing grab.
+
+Attachments can interact: electrified blade-tendril, armored-wing dive, fire organ powering claws, or regeneration repairing appendages. Asymmetry is allowed when compatible. Players can control attachments and save anatomy configurations/forms where allowed. The Atlas tracks what each body part enables: a tail adds balance/sweeps/grabs/counters; wings enable flight/aerial branches; multiple arms allow simultaneous attacks; living weapons add moves; mutations combine with elements and cosmic powers.
+
+## 6. Standard combat scale, Battle Mode, and Titans
+
+### Standard Form
+
+The Stage V superhuman evolved warrior is the **visual and scale baseline** for ordinary player combat. Player standard forms should remain within a controlled, broadly comparable combat-height range. This does **not** require every player to be humanoid: alien anatomy, asymmetry, tendrils, wings, and unique body plans remain possible. The goal is to avoid ordinary same-level fights between a roughly 6-foot character and a 30-foot character by default.
+
+Standard Form maintains a comparable combat scale, with reach, hitboxes, movement, and anatomy balanced within the form. Contextual exceptions must be supported by explicit encounter rules.
+
+### Battle Mode
+
+Battle Mode is an optional transformation that expands a character’s size and capabilities based on evolved biology. It may increase height, reach, physical power, and unlock new attacks, animations, heavy finishers, grapples, and body-weapon interactions. It is not a class:
+- Tendril builds gain longer/stronger tendrils.
+- Armored builds gain plates and heavier limbs.
+- Aerial builds gain wings and dive attacks.
+- Energy builds expand energy organs.
+- Multi-limbed builds gain simultaneous-attack options.
+
+### Titan Form and encounters
+
+Titan Form is an advanced large-scale transformation for characters whose evolution supports it. Titan-scale fights belong in dedicated encounters/arenas; they should not be ordinary combat with an oversized health bar. They use sweeping limbs, ground impacts, grapples, area hazards, terrain changes, anatomical targets (armor plates, organs, tendrils, wings), and scale-aware movement/range.
+
+Players can dodge/counter, grapple or climb where possible, target weaknesses, use ranged powers, transform, or coordinate fusion attacks. Rewards can include rare genetic material, large-organism adaptations, signature techniques, and Atlas discoveries. Titan fights are designed for titan-scale characters, groups, or a clearly supported strategy.
+
+### Threat clarity and fair matching
+
+Bosses are visibly marked dangerous before engagement and display threat tier, recommended evolution, known attack characteristics, and current-form suitability. Major attacks are telegraphed; surprises come from new mechanics, not invisible damage. Beginners should not be randomly placed in an unwarned titan fight.
+
+Encounter-scale defaults:
+- Standard vs. standard: comparable height
+- Standard vs. ordinary enemy: suitable encounter tier
+- Battle vs. Battle: comparable transformation scale where the encounter supports it
+- Titan vs. Titan: dedicated large-scale encounter
+- Player vs. boss: explicit threat classification and mechanics
+
+Player choice of form remains central. Size grants tactical options; level alone does not make a 30-foot player automatically beat a 6-foot player.
+
+## 7. Consumption, genetics, diet, and environments
+
+Core loop: encounter and study an organism → consume/absorb → gain nutrients, biomass, genetic patterns, or organs → analyze compatibility → choose an evolution → test and master it.
+
+Consumption does not automatically grant every power of the target. Requirements may include data, compatibility, repeated encounters, rare specimens, research, environmental conditions, and mastery.
+
+Examples:
+- Armored predator: hardened skin/bones, claws, jaw, plates
+- Flying insect: wings, flight, sensors, venom
+- Aquatic/deep organism: pressure resistance, oxygen storage, temperature tolerance, bioluminescence
+- Supernatural organism: shadow adaptation, soul sensitivity, regeneration, energy channels, dimensional traits
+
+Diet influences opportunities, not guaranteed outcomes:
+- Protein-rich food: muscle/strength potential
+- Minerals: bones, armor, claws
+- Toxins: resistance or toxin organs
+- Energy-rich sources: reserves/channels
+- Plants/fungi: resilience/regeneration
+- Aquatic prey: water adaptations
+- Supernatural prey: rare magical/cosmic routes
+
+Poor or incompatible diet can create understandable drawbacks or instability, not arbitrary punishment. Environments such as volcanic heat, frozen regions, toxic swamps, deep oceans, high gravity, and dimensional anomalies unlock adaptations. Some traits require both genetic data and survival in the relevant environment.
+
+Body parts can be independently upgraded. Examples: left arm armor → claws → blade → energy blade; right arm strength → hammer → gravity-impact limb; back tendrils → reinforced → elemental → dimensional; chest nutrient processing → regeneration → energy conversion; eyes normal → thermal → biological scan → supernatural perception; legs run → jump → wall-run → extreme mobility/flight.
+
+### Evolutionary Codex
+
+The Codex records species and variants, observed vs. absorbed traits, materials, compatible organs/mutations/hybrids, environmental requirements, unlocked combinations, research progress, and unknown traits. It answers questions such as “What organisms might help me grow wings?” and labels confirmed information separately from hypotheses. Research should not pretend unverified traits are certain.
+
+### Hybridization example
+
+Armored predator + electric organism + climbing creature may yield conductive armored tendrils that grab/anchor and electrify. Mastery may enable charge spread between connected targets, interaction with water/metal, and combinations with other powers. Hybrids must be supported by the trait interaction system and balanced for PvP.
+
+## 8. Hunting and predation
+
+A kill is not automatically a successful hunt. How a target is found, approached, killed, handled, preserved, carried, and absorbed affects the opportunities it creates.
+
+### Hunt styles
+- **Stalk/ambush:** stealth, silent movement, scent masking, pounce
+- **Apex takedown:** dominance, armor breaking, grappling
+- **Pursuit/interception:** tracking, endurance, turning, trail retention
+- **Secure/transport:** carrying, preserving, efficient absorption
+
+Categories can overlap; they are not a mandatory linear quest.
+
+### Evaluation factors
+
+Hunt evaluation may consider target detection, witnesses, target behavior, method, condition of remains, claim control, carry capacity, absorption rate, compatibility, and environment. No one factor decides every reward.
+
+Witness states: unobserved; suspected; witnessed but not identified; identified; reported/investigated. Being seen does not automatically remove all rewards. Hunting mastery, secrecy achievements, social consequences, and access to the catch are distinct.
+
+### Claim and absorption phase
+
+After a kill, the player chooses whether to absorb, defend, move, or abandon the catch. Carry/drag capacity depends on strength, size, anatomy, grips, appendages, and target mass. Tendrils may drag; multiple limbs may carry more; small specialists may absorb in sections. Weight, terrain, stamina, absorption organs, energy reserves, target size, preservation, and tissue deterioration affect transport and absorption. Predators, scavengers, rivals, defenders, and hazards can interrupt the process. Full absorption is not mandatory.
+
+### Feat-gated traits
+
+Exclusive traits require qualifying feats, not random drops or ordinary grind alone. Proposed examples:
+- **Ghost Predator:** hunt a target that never detects the player → stealth branch
+- **Apex Challenger:** defeat a superior predator under qualifying conditions → dominance/armor-breaking
+- **Unbroken Pursuit:** maintain a difficult trail → tracking/interception
+- **Perfect Specimen:** preserve required tissues → rare-organ/precision absorption
+- **Claim Keeper:** secure a contested catch → claim defense/rapid processing
+- **Living Harvester:** absorb in a dangerous environment → environmental absorption adaptation
+- **Unseen Extraction:** qualifying hunt and secured catch without witnesses → secrecy-related evolution
+- **Apex Assimilator:** rare target plus compatibility/research/absorption → unique branch
+
+A feat may unlock a research opportunity rather than granting the final power immediately. The Codex records hunt conditions, witness status, remains, timing, interruptions, environment, eligible traits, mastery, and unmet requirements. It labels confirmed and speculative outcomes.
+
+Example: a raptor hunt that damages key tissue may yield ordinary resources but not Perfect Specimen. A specialized, unwitnessed ambush may reveal a new discovery. If the catch is too heavy, the player chooses partial absorption, dragging, or securing it. Local creatures or settlements may react later if evidence reaches them.
+
+## 9. Dominance, individual awareness, and reputation
+
+Creatures assess strength, size, body language, visible mutations, scent/energy signature, territory, hunger, offspring, loyalty, and prior encounters. Weaker creatures may retreat, hide, submit, or test; rivals may challenge. Dominance is contextual, not a universal fear meter: territory, desperation, or protection of young can override fear.
+
+NPCs recognize individuals only when they have encountered, witnessed, tracked, or learned about them through credible reports. Recognition may use markings, scent, energy signature, or behavior; radical form changes can weaken recognition. Same species does not imply same individual.
+
+Knowledge stages may include unknown, seen once, survived an encounter, observed abilities, received a report, or established a repeated peaceful/hostile relationship. Reputation spreads locally through travelers, communications, scouts, wildlife signals, or faction networks where those systems exist—not instantly everywhere. Rumors may be wrong. NPCs can counter abilities only if observed or credibly learned; they cannot magically know hidden builds, private Codex data, or unobserved actions.
+
+Possible Atlas branches: Predator Presence, Territorial Instinct, Adaptive Concealment, Scent and Signature Control, Intimidation Display, Social Intelligence, Counter-Hunter Instinct. These influence awareness but do not guarantee control or invisibility.
+
+Public profiles may reveal chosen details such as level, NG+ history, form, transformations, ability levels/mastery, fusion combos, rating, win/loss, tournaments, gear/traits, and public build. Players control privacy. Public reputation and NPC reports must not expose private world coordinates.
+
+## 10. Evidence, investigations, and consequences
+
+**Being seen ≠ identified ≠ reported ≠ caught.** Separate what happened from what any observer or community knows happened.
+
+If nobody survives and no witness exists, there is no immediate witness report. Evidence may later be found by visitors, scouts, neighboring settlements, or intelligent investigators. Evidence does not automatically identify a culprit.
+
+Investigation methods depend on the group:
+- Animals: scent, tracks, missing members, territory changes; flee, follow, or alarm the group.
+- Sapient societies: interviews, wounds/material analysis, records, trackers, researchers.
+- Advanced technology: cameras, sensors, forensics, electronic records, only if present and relevant evidence exists.
+- Supernatural/psychic abilities: residual energy, memory, soul, or event fragments only when supported by powers; results may be limited, misleading, or concealed.
+
+Evidence and knowledge are stored separately. Tracks fade with weather/traffic; biological traces degrade or are scavenged; structural damage persists; electronic records last until damaged/erased; memories may be unreliable; supernatural traces can fade, be hidden, or misread. An undiscovered clue is not a public accusation.
+
+Possible outcomes: unresolved mystery, lead, suspect identified, or confirmed threat. Consequences may include patrols, evacuation, better defenses, researchers, bounty, or ecological change. Investigators can be wrong. Cases may persist as investigators travel, gather evidence, interview witnesses, request help, abandon, or reopen them. If an investigator dies, another may continue if records survive; if all knowledge is destroyed, the case may end. Player actions can evade immediate detection; discovery is neither guaranteed nor impossible.
+
+## 11. Permanent death and PvP
+
+When a character dies, that character starts over completely. There is no resurrection or restoration of that same living character. Healing cannot reverse permanent death.
+
+PvP is allowed, including consensual high-stakes lethal absorption matches. The loser’s character is absorbed by the winner; the winner gains some eligible abilities/traits/materials, not the full build or mastery. High-stakes challenges require clear acceptance and explicit stakes; ordinary practice/nonlethal matches may exist. A lethal match must never be disguised as a routine visit.
+
+Absorption rewards depend on actual defeated development, eligible genetic data/materials, compatible traits, selected abilities, research, and winner compatibility. Incompatible abilities require organs, mutations, research, or environmental conditions. Knowledge can be partial; no automatic copy of all levels/mastery.
+
+Technical safeguards must protect against confirmed server failure, disconnect edge cases, and cheating so a bug does not unfairly delete a character. Server-authoritative combat and anti-cheat/anti-boosting are required.
+
+Leaderboard categories: global PvP, solo duels, team PvP, ability mastery, fusion mastery, evolution discovery, and seasons. Skill matters, not just level.
+
+## 12. Evolution Vault
+
+The **Evolution Vault** is an NPC or machine that stores specimens and research:
+- Preserved specimens and organs/limbs
+- Genetic archive and mutation library
+- Ability research
+- Saved anatomy designs
+
+Proposed upgrade tiers: basic preservation; genetic analysis; adaptive engineering; cosmic archive. The Vault preserves research/materials, not a living character and not resurrection.
+
+Death-loss model proposed: active body, equipped anatomy, carried resources, and unbanked discoveries may be subject to death-loss rules; eligible deposited specimens/research may persist. New characters start at the beginning of their own biology. Archived research guides discovery but never automatically grants the previous character’s level, body, or mastery.
+
+Open decision: whether the Vault is account-persistent or world-based/raidable/capturable. Hybrid option: limited research archive persists, while physical specimens and rare organs can be at risk.
+
+## 13. Persistent worlds and world discovery
+
+Worlds persist: planetary conditions, creatures and food chains, bosses/lairs/encounter state, resources/genetic traits, structures/world changes, and history. A world address/seed identifies a procedural baseline; persistent state stores changes. Boss respawn/recovery rules remain to be defined.
+
+Players can enter world names or coordinates to locate an active player's world and load into it, subject to privacy/discovery settings and any access permissions. A world address is a destination identifier, not automatic disclosure of a private location or a guarantee of access.
+
+New characters spawn on different worlds and may encounter each other later. Beginner spawn selection must place a new player a defined distance away from any player above level 5, checking nearby player levels and also local threats, bosses, and environmental hazards. This is a spawn-distance rule, not a guarantee that players will never meet. Consider beginner-world protections and warnings before high-risk areas.
+
+Possible visit modes: exploration, cooperation, PvP challenge, public frontier, and beginner origin.
+
+### Planet completion before space
+
+No planet travel until the player:
+1. Explores every continent.
+2. Defeats every designated planetary boss.
+3. Completes planet-specific conquest/objective requirements.
+4. Has leveled/evolved enough to survive space travel.
+
+Completion does not require exterminating every living creature unless a future planet-specific objective explicitly says so.
+
+### No vehicles or spaceships
+
+There are **no spaceships or vehicles**. The player’s own evolved body provides propulsion and survival. Space travel unlocks only when evolution supports breaking atmosphere and surviving vacuum; stolen or purchased ships cannot bypass the progression.
+
+Biological spaceflight requirements may include atmospheric resistance, vacuum survival, oxygen independence, temperature regulation, propulsion, energy reserves, navigation, and re-entry adaptation. Space is a dangerous ecosystem with radiation, temperature, gravity wells, hazardous atmospheres, cosmic predators, reserves, and rare organisms.
+
+## 14. Living Ship Form and space exploration
+
+**Living Ship Form** is a true biological transformation of the character into an organic spaceflight body, not a piloted mechanical craft. The same individual, history, and permanent-death rules persist. The player directly controls full 3D movement and can travel from atmosphere into space and re-enter where evolved capabilities allow.
+
+Evolution routes may include propulsion organs, navigation senses, vacuum-adapted tissue, armor/regeneration, energy reserves, maneuvering appendages, and dimensional adaptations. Proposed specialization examples:
+- **Interceptor:** speed and turning
+- **Armored Form:** durability and hazard resistance
+- **Leviathan:** long trips and energy capacity
+
+Hybrids are possible when biology supports them. Some powers remain usable in flight; others require another form. Inspirations include open-space exploration and traversal, but there is no cockpit or conventional ship.
+
+Three traversal layers:
+1. Planetary flight: fly through atmosphere and dive to surface.
+2. Local space: planets, moons, asteroids, organisms, resources, signals.
+3. Interplanetary: travel between planets and star systems after survival and navigation unlocks.
+
+Controls should support 3D acceleration, braking, turning, rolling, diving, climbing, and maneuvering through biological propulsion. Atmosphere, gravity, radiation, and temperature affect flight. Forms may be energy-based, winged (vacuum survival separately required), armored, tendril-based, gravity-evolved, or dimensional/cosmic.
+
+## 15. Reactive environment, persistent damage, growth, and recovery
+
+Environment reacts to form, size, abilities, evolutionary stage, and actions without automatically scaling every enemy to the player or erasing challenge.
+
+- **Standard Form:** consistent terrain scale; small organisms may hide in cracks; movement through tight spaces depends on anatomy.
+- **Battle Mode:** vegetation bends/breaks under weight; jumps leave impact marks; fragile terrain reacts; tight passages may require reverting.
+- **Titan Form:** large-scale terrain deformation, shockwaves, collapsing structures, arena hazards; some changes persist or recover over time.
+
+Interactions follow world rules: fire burns fuel/vegetation and creates smoke/heat; water and ice change surfaces; electricity follows conductivity; gravity affects loose objects; wind redirects smoke/spores/debris/fire; regeneration applies to living systems, not ordinary rock; necromancy requires eligible remains; dimensional powers respect range, cost, and stability.
+
+Combined abilities affect the world when justified, e.g. fire + wind spreads fire; water + electricity creates conductive zones; gravity + ground strike may collapse terrain if the structure supports it.
+
+Regions can change with weather, season, drought, storms, migration, and anomalies. The world remembers meaningful actions: overhunting reduces prey, NPCs defend/relocate/adapt, fires alter habitats, resources deplete/regenerate, boss battles leave damage, and structures persist. Bound destruction and recovery so griefers cannot permanently erase worlds.
+
+### Growth and damage over time
+
+Plants spread, roots expand, and fungi colonize dead wood according to resources, temperature, energy, and space. Burned forests progress from shoots to shrubs to young trees to mature forest where conditions allow. Craters, rocks, and structures may persist and need repair. Water contamination/channels can change and recover. Creatures retain wounds/scars and heal according to biology/energy; lost limbs regrow only if capable. Populations recover or migrate; bosses and arenas change. Cosmic radiation/spatial scars may dissipate or require powers.
+
+Damage-over-time effects may include burns, poison/infection, bleeding, corruption, and soul damage. Each has duration, visible consequences, counters, and interactions. Fire may intensify burns; water may wash away some toxins; cold may slow biological processes; regeneration may close wounds without removing poison. There is no universal cure. Character death remains permanent.
+
+The same environmental model applies from microscopic nutrient/habitat scale to cosmic gravity wells and reality changes. Shared multiplayer history means a fire’s damage remains for other players; communities can repair. Example timeline (illustrative): forest burns day 1, clears and scavengers return day 3, new growth appears day 10, partial recovery occurs weeks later. Simulation detail tiers: active area detailed, nearby/recent simplified, distant areas summarized.
+
+## 16. NPC agency and habitat improvement
+
+NPCs actively repair and improve surroundings:
+- Wildlife rebuilds nests/burrows, collects food, relocates young.
+- Civilizations repair homes, bridges, roads, defenses; farm; improve water; and expand.
+- Advanced/supernatural communities restore networks, study threats, and create living architecture.
+
+An NPC/community detects needs, prioritizes survival/repairs, gathers materials, assigns work, repairs or improves, and evaluates results. They learn from repeated attacks, floods, fires, and corruption. Solutions depend on resources, intelligence, and knowledge; NPCs do not magically know unseen events.
+
+Settlements may develop through survival camp → stable habitat → established settlement → advanced civilization, but not every species needs a settlement. Near NPCs simulate in detail; distant activity is summarized. Habitat work persists while players are away.
+
+## 17. Original base species roster (100 concepts)
+
+These are proposed original species concepts, not a claim that they are implemented. Not every species appears on every planet. Variants must change gameplay, not just recolor a model. Each future species entry should define habitat, diet/prey, behavior, combat anatomy, absorption data, mutation conditions, evolutionary role, and confirmed/speculative Codex discoveries.
+
+### Family 1 — Cellular and primitive
+1. Nucleon Slime
+2. Cilia Drifter
+3. Sporeling
+4. Microburrower
+5. Pulse Jelly
+6. Threadfeeder
+7. Crystivore
+8. Lumen Plankter
+9. Hitchling
+10. Splitcell
+
+### Family 2 — Small terrestrial
+11. Moss Hopper
+12. Razor Beetle
+13. Wallstalker
+14. Dune Scrabbler
+15. Bellfrog
+16. Threadspider
+17. Splitfox
+18. Rollback
+19. Crest Runner
+20. Glowmollusk
+
+### Family 3 — Predators and pack hunters
+21. Blade Hound
+22. Veilcat
+23. Crownmaw
+24. Sickle Raptor
+25. Carrion Splitter
+26. Coilstriker
+27. Gravetusk
+28. Fourblade Stalker
+29. Sky Reaver
+30. Chorus Hunter
+
+### Family 4 — Giants, armored and territorial
+31. Worldback
+32. Trihorn Charger
+33. Bastion Tortoise
+34. Dune Colossus
+35. Crown Grazer
+36. Mire Titan
+37. Cragbreaker
+38. Spirespine
+39. Riftclaw
+40. Hearth Guardian
+
+### Family 5 — Aerial and gliding
+41. Glasswing
+42. Cliff Glider
+43. Silent Mantle
+44. Arcfeather
+45. Cloud Drifter
+46. Echo Bat
+47. Sky Manta
+48. Needlewing
+49. Ash Phoenix
+50. Wind Serpent
+
+### Family 6 — Aquatic and deep ocean
+51. Abyssal Fang
+52. Grasp Leviathan
+53. Reef Sentinel
+54. Volt Eel
+55. Song Titan
+56. Flood Stalker
+57. Lantern Devourer
+58. Trench Breaker
+59. Razor Ray
+60. Thermal Drake
+
+### Family 7 — Insectoid, parasitic and colony
+61. Hive Regent
+62. Scythe Mantis
+63. Burden Ant
+64. Needle Wasp
+65. Tunnel Crown
+66. Veil Moth
+67. Blood Anchor
+68. Stone Termite
+69. Mimic Cicada
+70. Brood Bastion
+
+### Family 8 — Intelligent and sapient
+71. Veyari
+72. Kharuun
+73. Threx Collective
+74. Nymari
+75. Aeralith
+76. Dromek
+77. Umbrin
+78. Sylvaran
+79. Orunai
+80. Prismborn
+
+### Family 9 — Supernatural, undead and dimensional
+81. Grave Stalker
+82. Wraith Grazer
+83. Rift Fiend
+84. Soul Serpent
+85. Cinder Demon
+86. Rotbound Giant
+87. Spectral Crown
+88. Null Crawler
+89. Echo Wisp
+90. Aberrant Chimera
+
+### Family 10 — Cosmic and space
+91. Nebula Leviathan
+92. Star Reaver
+93. Orbital Bastion
+94. Void Medusa
+95. Astral Crystalis
+96. Orbit Serpent
+97. Pulsar Wing
+98. Eventide Behemoth
+99. Chronophage
+100. Genesis Apex
+
+Illustrative mutation-tree concept: Blade Hound variants could include Frostfang, Emberfang, Stormfang, and Riftfang, with a convergence apex such as Primal Tempest when conditions support it. This is a proposed example, not a finalized tree. World archetypes may include temperate, volcanic, frozen, oceanic, and anomalous, with procedural variation beyond those examples.
+
+Taxonomy layers: base species, subspecies, regional variants, mutation species, hybrids, ascended/cosmic forms. Not every species needs every layer. The Codex tracks observed, studied, absorbed, researched, mastered, and hypothesized states.
+
+## 18. Multiplayer and large-scale architecture goals
+
+A persistent universe targeting very large populations is an aspiration, not a present capacity claim. A million-player-scale goal would require distributed regional/zoned architecture, authoritative combat, partitioned persistent world state, and coarse simulation of distant worlds/regions. Active encounters need detailed simulation; distant ecology and NPC activity can be aggregated. Server authority, privacy controls, anti-cheat, anti-boosting, and safe persistence are core requirements.
+
+## 19. Open decisions / unresolved specifications
+
+Do not silently treat these as settled:
+- Exact XP curve, level thresholds, and balance for 1–1050
+- Inventory/equipment carryover in NG+
+- Post-1050 progression beyond proposed mastery/evolution milestones
+- Exact Vault persistence model: account archive vs. physical world Vault risk
+- Death-loss rules for carried resources, unbanked discoveries, and equipped anatomy
+- Boss respawn/recovery rules and precise planet-completion criteria per world
+- Spawn distance, beginner protection duration, and high-risk area warning thresholds
+- Final controller bindings and per-ability resource/cooldown rules
+- Exact standard-form height range, hitbox/reach compensation, and Battle/Titan transformation limits
+- Final list and detailed behavior for the 100 base species and their variants
+- Exact world privacy, invitation, coordinate discovery, and access controls
+- Investigation evidence decay timings and case persistence rules
+- Server scale, regional sharding, persistence, and recovery architecture
+- Title/trademark availability for “Lethal Absorption”
+
+## 20. Governing rules
+
+1. Kill ≠ successful hunt.
+2. Witnessed ≠ identified ≠ reported ≠ caught.
+3. What happened and what a community knows happened are separate.
+4. Consumption creates opportunities; it does not grant every power automatically.
+5. Traits and fusions obey anatomy, properties, compatibility, environment, costs, and explicit supernatural rules.
+6. Player size is controlled by form and encounter context, not level alone.
+7. Bosses communicate danger; titan fights are designed for titan-scale play.
+8. The environment persists, grows, heals, decays, and is repaired according to rules.
+9. NPCs can only act on knowledge they could reasonably acquire.
+10. Death is permanent for the character; the Vault is not resurrection.
+11. PvP lethal stakes are explicit and accepted; technical failures must not unfairly delete characters.
+12. No vehicle or spaceship can bypass biological spaceflight progression.
+13. Codex information must distinguish confirmed knowledge from hypotheses.
+14. Large-scale simulation is an architectural goal, not a current implementation claim.
+15. Keep the project original and do not reproduce copyrighted characters, designs, or assets.
