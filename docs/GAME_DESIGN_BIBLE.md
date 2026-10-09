@@ -1044,3 +1044,16 @@ The desired broad ability fantasy includes necromancy, spell discovery and prepa
 The full milestone gates, working ability suite, secret-discovery rules, UI requirements, acceptance criteria, and open decisions are in [Hidden God-Tier Skeleton Ascendant](HIDDEN_SKELETON_ASCENDANT.md). The route must respect permanent character death; anchor-like lore cannot resurrect a player character. It must also align with the existing late-game and three-planet godlike progression requirements where applicable.
 
 **Status:** detailed design proposal only; not implemented or tested. Open decisions include starting-lineage availability, magic-resource architecture, summon limits, domain ownership, and first-playable-scope selection.
+
+
+## 32. Hidden shadow sovereign, limit-breaker, and goblin evolution routes
+
+Add three original action-gated route concepts that evoke broad qualities associated with *Solo Leveling*, *Dragon Ball*, and *Re:Monster* without copying their protagonists, exact powers, names, designs, lore, dialogue, or signature presentation.
+
+- **Hidden Shadow Sovereign:** a low-status survivor discovers residual traces, earns a first echo through a costly trial, and gradually learns bounded echo command, tactical formations, and late-game sovereign powers. Echo count, command bandwidth, duration, upkeep, counters, and recovery must be explicit. No echo or anchor can resurrect a player character.
+- **Limit-Breaker Martial Ascendant:** a fighter earns techniques and transformations through training, readable combat challenges, energy control, rival encounters, and mastery. Overdrive has costs and vulnerability windows; transformations add choices and trade-offs rather than guaranteeing victory.
+- **Goblin Reclaimer:** a fragile goblin grows through survival, selective consumption, crafting, technique learning, social or solo strategy, and compatible trait evolution. Consumption never grants every target skill automatically; crafting requires materials and learned competence, and NPC allies retain agency.
+
+The complete proposed gates, original working ability names, limitations, counterplay, shared secret-route rules, and open decisions are maintained in [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](SHADOW_SOVEREIGN_LIMIT_BREAKER_GOBLIN_ROUTES.md). All three routes keep their endgame hidden at character creation and require discoverable, reproducible action gates. They must obey permanent character death, multiplayer fairness, privacy, server-authoritative validation, and the existing three-planet godlike progression condition where applicable.
+
+**Status:** design proposal only; not implemented or tested. Open decisions include starting-lineage versus hidden-branch availability, exact costs and thresholds, resource architecture, solo/group route requirements, and first-playable scope.
