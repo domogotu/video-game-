@@ -1033,3 +1033,14 @@ The secret slime must use original lore, identity, ability names, visuals, anima
 The Evolution Atlas must show each known ability's unlock state, prerequisites, action progress, source, compatibility, costs, counters, and mastery separately. Absorption must not automatically copy all of a target's powers or expertise. The existing permanent-death and three-planet godlike-progression rules continue to apply.
 
 **Status:** detailed design proposal; numeric balance, route placement, initial-scope selection, and implementation remain open.
+
+
+## 31. Hidden god-tier skeleton ascendant
+
+The world should contain a secret skeleton evolution route that can turn an apparently ordinary, weak skeleton into an exceptionally powerful undead sovereign. The path is concealed at character creation and uncovered through connected clues, grave/ruin exploration, magical research, survival feats, spell mastery, summon control, preparation, and high-risk evolution trials. It is not a copy of Ainz Ooal Gown or another existing character.
+
+The desired broad ability fantasy includes necromancy, spell discovery and preparation, summoning and commanding undead, layered defenses, resistances, tactical counters, rituals, lair/domain development, and escalating transformations. All names, lore, character identity, visuals, animations, and specific presentation must be original. The route must keep spell discovery, acquisition, preparation, casting, and mastery distinct, and must define summon limits, upkeep, control bandwidth, counterplay, and world consequences.
+
+The full milestone gates, working ability suite, secret-discovery rules, UI requirements, acceptance criteria, and open decisions are in [Hidden God-Tier Skeleton Ascendant](HIDDEN_SKELETON_ASCENDANT.md). The route must respect permanent character death; anchor-like lore cannot resurrect a player character. It must also align with the existing late-game and three-planet godlike progression requirements where applicable.
+
+**Status:** detailed design proposal only; not implemented or tested. Open decisions include starting-lineage availability, magic-resource architecture, summon limits, domain ownership, and first-playable-scope selection.
