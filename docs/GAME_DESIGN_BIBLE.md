@@ -1020,3 +1020,16 @@ Absorption from a character is not automatic copying of identity, complete power
 Each major character needs an original visual read, motive, relationships, narrative role, combat rhythm or utility role, strengths, weaknesses, counterplay, world consequences, eligible absorption rewards if any, and acceptance criteria. Characters must react only to information they could reasonably observe or learn. Character concepts, approved designs, assets, code, and verified behavior must have separate status labels.
 
 **Status:** design specification only. The framework and archetype seeds are not implemented character content. Open decisions include final roster size, story placement, companion boundaries, authored-versus-modular content ratio, and originality review.
+
+
+## 30. Action-gated slime evolution route
+
+The game should support a weak slime-like beginning that can grow into a powerful, highly adaptive organism through specific actions and achievements. Players begin with survival-level absorption and unlock advanced capabilities through encounter, observation, sample acquisition, analysis, compatibility, mutation/evolution choices, practical use, and mastery. Level alone must not grant the entire route.
+
+The detailed route, candidate milestone gates, original working ability suite, player-facing Atlas requirements, acceptance criteria, and open questions are maintained in [Slime Action-Gated Evolution](SLIME_ACTION_GATED_EVOLUTION.md). Candidate unlock families include selective assimilation, trait analysis, form mimicry, elastic morphology, distributed body, regeneration, adaptive resistance, parallel cognition, elemental/energy control, barriers, spatial storage, trait synthesis, sovereign-scale abilities, and cosmic adaptation.
+
+The requested reference is the progression and power fantasy of the slime protagonist from *That Time I Got Reincarnated as a Slime*. Exact franchise character identity, named signature skills, story scenes, dialogue, and distinctive visual expression require a separate licensing path; absent rights, create original names, lore, art, animations, and expression while preserving the desired broad mechanics. This is not a claim that any ability is implemented.
+
+The Evolution Atlas must show each known ability's unlock state, prerequisites, action progress, source, compatibility, costs, counters, and mastery separately. Absorption must not automatically copy all of a target's powers or expertise. The existing permanent-death and three-planet godlike-progression rules continue to apply.
+
+**Status:** detailed design proposal; numeric balance, route placement, initial-scope selection, and implementation remain open.
