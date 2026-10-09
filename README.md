@@ -19,6 +19,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Expandable power catalogue:** a broad, modular index spanning biology, anatomy, movement, senses, defense, elements, energy, psychic and magical abilities, transformations, absorption, technology, space, time, creation, cosmic powers, and godlike effects.
 - **100-species body-plan catalogue:** original cellular, terrestrial, predatory, giant, aerial, aquatic, insectoid, sapient, supernatural, and cosmic species that can supply compatible traits for open-ended player evolution.
 - **Anime- and game-inspired original characters:** distinctive original rivals, mentors, companions, faction leaders, bosses, and cosmic figures that evoke broad genre qualities without copying protected characters or signature expression.
+- **Hidden god-tier slime lineage:** a seemingly basic slime can secretly unlock extraordinary powers and transformations through rare, specific in-world actions; the endgame is not revealed at character creation.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -80,6 +81,10 @@ The current concept roster contains **100 proposed original base species** acros
 ## Inspirations
 
 Broad design inspiration includes action RPG combat, open-world exploration, procedural universe discovery, deep build customization, and evolving ecosystems. Referenced touchstones include Dragon Ball Z: Kakarot, Borderlands 4, Marvel’s Spider-Man 2, Hogwarts Legacy, No Man’s Sky, Watch Dogs 2, The Division, Spore, Black Myth: Wukong, Path of Exile, and Star Wars Outlaws. These are references only: Lethal Absorption should use original characters, species, art, narrative, and implementation.
+
+## Hidden god-tier slime lineage
+
+The [Slime Action-Gated Evolution](docs/SLIME_ACTION_GATED_EVOLUTION.md) specification describes a secret evolution path from an apparently ordinary weak slime to a potential god-tier organism. Players uncover its abilities through specific actions, clues, experiments, and evolution conditions. It uses original lore and power names while drawing on broad slime-evolution ability themes. Design-only; not implemented gameplay.
 
 ## Character inspiration and original roster
 
