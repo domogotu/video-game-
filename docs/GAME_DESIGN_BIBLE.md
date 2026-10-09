@@ -704,3 +704,57 @@ Before calling this system implemented, verify that:
 - Character saves, Codex records, Evolution History, NPC awareness, and combat state agree after an upgrade or swap.
 
 These are acceptance targets only; no playable implementation or test pass is claimed.
+
+## 24. Shared discoveries and player-legacy NPCs
+
+**Status: approved design specification; not implemented or play-tested.** These are two related but distinct systems: shared discoveries make knowledge available across the player community, while player-legacy NPCs let defeated characters leave a world presence without undoing permanent death.
+
+### Shared Discovery Network
+
+When a player discovers a previously unknown species, mutation, anatomy combination, ability interaction, environmental adaptation, or Evolution Atlas route, the game may record a verified discovery in a **Shared Discovery Network**. Once the discovery meets its verification requirements, it becomes discoverable by other players through the Codex, research terminals, community records, or other appropriate in-world interfaces. A discovery should not remain permanently exclusive merely because one player found it first.
+
+Sharing knowledge is not the same as granting everyone the resulting power. Other players may learn the recipe, evidence, location clues, or research method, but they must still meet the applicable personal requirements: obtain the necessary specimens or materials, satisfy anatomy compatibility, complete required research or feats, survive required environments, pay costs, and master the result. If a discovery is account- or world-specific by design, its scope must be stated clearly rather than presented as universal.
+
+Discovery states:
+- **Unverified lead:** a player's observation or hypothesis; clearly labeled and not presented as confirmed fact.
+- **Verified discovery:** enough repeatable evidence exists to publish the finding.
+- **Community-known:** the verified record is available to eligible players through the Shared Discovery Network.
+- **Personally researched:** a player has independently obtained the required evidence or completed the required research.
+- **Personally acquired/mastered:** the player has met the separate acquisition, compatibility, installation, and mastery requirements.
+
+The network should preserve attribution where appropriate, credit the original discoverer and meaningful collaborators, and record subsequent refinements. Players may choose a display name or anonymous credit where supported. Prevent false submissions, duplicated records, exploit recipes, fabricated evidence, and maliciously misleading reports through server-side validation, corroboration rules appropriate to the discovery, versioning, and moderation/rollback tools. Do not require every discovery to be verified by a large crowd; rare or dangerous discoveries may use a suitable evidence standard.
+
+Shared records should explain what is known, how confidence was established, prerequisites, known risks, and whether the result is reproducible. New combinations can be published as discoveries without becoming mandatory recipes: the underlying compositional system must still allow other valid, unlisted combinations to emerge. If a later update changes a rule, mark affected records as revised or version-specific rather than silently treating obsolete instructions as current.
+
+### Defeated-player legacy NPCs
+
+When a player character is defeated under a rule that permanently ends that character—such as a valid accepted lethal PvP match—the game may preserve an eligible **legacy imprint** of that character as an AI-controlled NPC. This NPC can appear in an appropriate world role: a wandering predator, rival, guardian, bounty target, faction recruit, arena challenger, local legend, or other role justified by the character's history and the world. It is a memorial/continuation of the character's recorded influence, **not resurrection** and not a second playable copy of the dead character.
+
+The legacy NPC may be built from permitted, recorded aspects of the defeated character: visible anatomy, eligible abilities, combat tendencies, evolution history, signature techniques, known affiliations, and relevant public reputation. It must not automatically inherit private account data, chat logs, hidden player information, or unearned powers. The NPC's capabilities must be reconstructed from a validated snapshot of the character at the point of defeat and obey normal compatibility, resource, progression, and AI rules. It must not gain abilities the character did not have.
+
+Rules and safeguards:
+- Only a qualifying defeat triggers a legacy NPC; ordinary knockdowns, nonlethal practice, disconnects, server errors, or invalid/cheating outcomes do not.
+- Permanent death remains final for the player character. The NPC cannot restore the same character, its inventory, its level, or its mastery to a new playable life.
+- Use the defeated character's recorded world history to select a plausible role and location; do not spawn the NPC instantly everywhere or grant it knowledge the original character never had.
+- Clearly label it as an AI legacy when appropriate, while allowing an anonymized or lore-based presentation if the player’s privacy settings permit.
+- Provide transparent player settings for whether eligible character appearance, public name, and combat style may be used in legacy NPCs. The precise default and any consent requirements remain an open product/privacy decision; no private account information may be used.
+- Avoid reproducing real-player harassment or humiliation. Provide reporting and removal/appeal handling for impersonation, abusive names, or sensitive appearance concerns.
+- Legacy NPC difficulty must reflect the recorded build and intended encounter tier, with readable threat warnings. It must not receive hidden stat boosts simply because it represents a former player.
+- Defeating a legacy NPC may grant only explicitly eligible rewards. It must not recursively generate unlimited copies, duplicate unique items, repeatedly grant the same discovery, or recreate a permanently dead playable character.
+- A legacy NPC may persist, travel, learn, be defeated, or be removed according to world rules. Whether the same legacy can reappear after a second NPC defeat, and whether a defeated player's legacy is available across worlds, remain open decisions.
+
+### Integration and acceptance criteria
+
+The Shared Discovery Network must integrate with the Evolutionary Codex, Evolution Atlas, research requirements, attribution, anti-exploit validation, and versioned world rules. Legacy NPCs must integrate with permanent death, combat snapshots, NPC awareness/investigation, world persistence, privacy controls, and reward validation.
+
+Before either system is called implemented, verify that:
+- A verified discovery appears to other eligible players while personal prerequisites remain enforced.
+- Unverified hypotheses are not misrepresented as confirmed, and attribution/version changes are retained.
+- A defeated character creates a legacy NPC only after a qualifying permanent-death event.
+- The NPC uses a validated snapshot of eligible character features and cannot restore or duplicate the original playable character.
+- Privacy settings, identity presentation, rewards, spawn rules, and removal/appeal handling are enforced.
+- Repeated defeats or exploits cannot create infinite NPCs, duplicate unique rewards, or repeatedly grant the same unlock.
+- Codex, Atlas, player saves, NPC state, and shared records remain consistent.
+
+These are design acceptance targets only; no playable implementation or tests are claimed.
+
