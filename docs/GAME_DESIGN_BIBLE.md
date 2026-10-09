@@ -1068,3 +1068,16 @@ The route must use original character identity, lore, silhouette, staff design, 
 The detailed progression, original working abilities, strengths, weaknesses, counterplay, acceptance criteria, and open decisions are in [Mythic Staff Ascendant (Wukong-Inspired)](WUKONG_INSPIRED_MYTHIC_STAFF_ASCENDANT.md). The route supports a playable staff-focused build. Whether it is available from character creation, unlocked through a hidden branch, or both remains open. Its abilities must obey resource, recovery, anatomy, terrain, multiplayer fairness, and permanent-death rules.
 
 **Status:** design specification only; not implemented or tested.
+
+
+## 34. Expanded ability coverage across all approved inspiration routes
+
+The game design must cover the complete intended range of ability families for the six approved inspiration routes: shadow-command sovereign, limit-breaking martial ascendant, adaptive goblin reclaimer, mythic staff trickster, hidden god-tier slime, and undead spell sovereign. The detailed matrix is maintained in [Expanded Ability Coverage Matrix](EXPANDED_ABILITY_COVERAGE_MATRIX.md).
+
+Coverage includes perception and analysis; bounded echoes, summons, and command systems; melee, staff, ranged energy, and aerial combat; transformation and temporary amplification; crafting, salvage, selective absorption, trait synthesis, and adaptive anatomy; barriers, wards, resistance, spell research, rituals, domains, and counterplay; movement, decoys, reconstitution limits, endgame/cosmic progression, and eligible cross-route combinations.
+
+This is an approved design baseline, not a claim that the powers have been coded, animated, balanced, or tested. Every ability must have a distinct catalogue record defining action gates, anatomy compatibility, costs/upkeep, range/duration, startup/recovery, mastery stages, counters, combinations, NPC/ecology effects, multiplayer/server-authority rules, accessibility/readability, and test cases. No infinite resources, unrestricted clones or armies, omniscience, universal immunity, free power stacking, or resurrection after permanent character death. Personal unlocks remain personal; the Shared Discovery Network shares knowledge only. Sapient species retain agency and rights.
+
+Use original ability names, lore, silhouettes, animations, effects, and combinations. The project is targeting broad capability and gameplay coverage across its inspirations, not a move-for-move reproduction of licensed characters or their exact expression. A vertical slice may stage delivery, but it must not silently erase the approved roadmap. Runtime implementation and verification status must be reported honestly.
+
+**Status:** design specification only; not implemented or tested.
