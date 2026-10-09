@@ -16,6 +16,8 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
+- **Shared Discovery Network:** verified discoveries become available to other players as knowledge, while personal acquisition, compatibility, and mastery requirements still apply.
+- **Player-legacy NPCs:** qualifying permanent defeats can leave privacy-controlled AI legacies based on validated character snapshots; they do not resurrect the playable character.
 - **Permanent character death:** a dead character starts over; stored research can guide a new life but cannot resurrect the old character.
 - **High-stakes PvP and cooperative Resonance Fusion:** explicit lethal challenges can transfer eligible traits; compatible co-op abilities can form enhanced techniques.
 - **Planetary-to-cosmic progression:** planetary completion and biological survival capabilities are required before space travel. There are no vehicles or conventional spaceships; the player evolves into a Living Ship Form.
@@ -35,12 +37,12 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
-| Evolutionary Codex | Track species, traits, materials, requirements, combinations, and confidence of knowledge |
+| Evolutionary Codex & Shared Discovery Network | Track species, traits, materials, combinations, evidence confidence, attribution, and verified discoveries shared with eligible players |
 | Hunting & predation | Evaluate how a hunt is completed and what rare opportunities it qualifies for |
 | Evolution Vault | Preserve eligible specimens, organs, research, and anatomy plans; never resurrection |
 | Reactive world | Persist ecosystem changes, environmental damage, growth, healing, repairs, and NPC activity |
 | Dominance & investigations | Track individual awareness, witnesses, evidence, reports, and plausible consequences |
-| PvP & Resonance Fusion | Explicit high-stakes absorption matches and optional coordinated co-op abilities |
+| PvP, legacy NPCs & Resonance Fusion | Explicit high-stakes absorption matches, eligible defeated-player AI legacies, and optional coordinated co-op abilities |
 | Living Ship Form | Biological flight from planetary atmosphere to space after required evolution |
 
 ## Species roster
