@@ -21,6 +21,9 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Anime- and game-inspired original characters:** distinctive original rivals, mentors, companions, faction leaders, bosses, and cosmic figures that evoke broad genre qualities without copying protected characters or signature expression.
 - **Hidden god-tier slime lineage:** a seemingly basic slime can secretly unlock extraordinary powers and transformations through rare, specific in-world actions; the endgame is not revealed at character creation.
 - **Hidden god-tier skeleton lineage:** an apparently ordinary skeleton can secretly evolve into an undead spellcaster and sovereign through discoveries, spell mastery, necromancy, summon command, strategic preparation, and rare evolution trials.
+- **Hidden shadow sovereign route:** a seemingly overlooked survivor can earn bounded shadow-echo command through secret action gates, strategic mastery, and costly trials.
+- **Limit-breaker martial ascendant route:** a fighter earns techniques and transformations through training, combat adaptation, energy control, and high-risk challenges.
+- **Goblin reclaimer route:** a weak goblin can evolve through survival, selective consumption, crafting, learned techniques, and adaptive social or solo strategies.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -112,3 +115,8 @@ The working title **Lethal Absorption** has not been checked for trademark or ti
 ## Ongoing documentation and implementation workflow
 
 This repository is the central source of truth for the project. As development continues, record every agreed new feature or material design change in the relevant documentation during the same work sequence. Update this README when the project overview, major systems, or status changes. Keep the Game Design Bible synchronized with the detailed rules and dependencies. When features are implemented in code, update implementation-specific documentation and record what changed and what verification was actually performed. Clearly distinguish **proposed**, **approved/design-specified**, **in progress**, **implemented**, and **verified** work; never report a feature as implemented or tested without evidence. Preserve unresolved questions as open decisions rather than inventing answers. After repository changes, retrieve the changed files to confirm the updates landed.
+
+
+## Additional hidden evolution routes
+
+The [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](docs/SHADOW_SOVEREIGN_LIMIT_BREAKER_GOBLIN_ROUTES.md) specification adds three original route concepts broadly inspired by the kinds of progression the user referenced in *Solo Leveling*, *Dragon Ball*, and *Re:Monster*: a hidden echo-commanding sovereign, a training-driven martial ascendant, and a survival/crafting/consumption-driven goblin evolution. All names and mechanics are working concepts subject to originality review. Their unlocks are action-gated, with explicit limits and counterplay; the endgame is not revealed at character creation. Design-only; not implemented or tested.
