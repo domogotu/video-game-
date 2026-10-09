@@ -136,3 +136,10 @@ The approved ability roadmap now includes a cross-route coverage matrix for the 
 - [Power & Ability Catalogue](docs/POWER_ABILITY_CATALOGUE.md)
 
 The goal is broad coverage of the power fantasies across the referenced shows and games through original mechanics and presentation, not a direct copy of exact licensed move lists, character designs, animations, or storylines. Every ability must become an individual catalogue record and pass implementation and test gates before it can be described as playable.
+
+
+## Character-specific powerset requirement
+
+The six requested routes are required as character-specific content packages—not generic archetypes alone: Sung Jinwoo, Goku, the central goblin protagonist of *Re:Monster*, Sun Wukong, Rimuru Tempest, and Ainz Ooal Gown. Each needs a source/version-scoped inventory of its individual abilities, passive traits, skills, transformations/forms, upgrades, and unlock conditions. Deferred content must remain tracked rather than silently omitted. Exact franchise content may require rights/licensing; do not assume permissions. This is a design requirement, not a claim that powers are already implemented.
+
+- [Character-Specific Powerset Requirements](docs/CHARACTER_SPECIFIC_POWERSET_REQUIREMENTS.md)
