@@ -547,3 +547,67 @@ This repository is the central source of truth for Lethal Absorption. For each c
 8. Preserve unresolved decisions in the open-decision list until they are explicitly resolved.
 
 Documentation updates are part of the ongoing workflow; they do not imply the game systems themselves have been built.
+
+
+## 22. Character identity, creation, and development
+
+**Status: design-specified concept; not implemented or play-tested.** Character development must produce a recognizable individual, not merely a level number or a collection of interchangeable statistics. The character begins as simple life and accumulates a visible, mechanical, and historical identity through evolution.
+
+### Character identity layers
+
+1. **Life origin:** starting organism and its initial survival constraints. Starting origin changes the first available survival options, but does not lock the player into a permanent class.
+2. **Body plan:** symmetry/asymmetry, locomotion, sensory organs, feeding structures, defense, and initial appendages. The body plan must be physically legible and supported by movement/combat rules.
+3. **Evolution history:** recorded origins of acquired organs, mutations, adaptations, and major transformations. The character can retain recognizable inherited features even after major changes.
+4. **Combat expression:** preferred attack ranges, mobility, defense, control, summons, support, and ability combinations emerge from anatomy and choices—not a class-selection screen.
+5. **Ecological identity:** habitat adaptations, diet patterns, hunting methods, environmental tolerances, and known relationships with species/factions can shape opportunities and reactions.
+6. **Personal signature:** players may name their character and saved forms/techniques; names must not grant mechanical power. The interface should surface a concise identity summary, such as key anatomy, defining traits, and known signature techniques.
+
+### Character creation and early play
+
+Character creation should be short enough to avoid overwhelming a new player. It establishes an initial life form and optional visual preferences where those are meaningful at the starting stage. Players should learn anatomy and survival by doing rather than selecting from a large list of late-game powers. Early choices introduce trade-offs and opportunities, not irreversible traps.
+
+As the organism develops, the player reviews a **Character Profile** with:
+- Current form and evolutionary stage
+- Active anatomy and body-part functions
+- Acquired traits, adaptations, resistances, and vulnerabilities
+- Abilities, branches, mastery, and saved techniques
+- Diet/environmental adaptations and relevant research
+- Transformation forms and their costs/requirements
+- A chronological Evolution History and Codex discoveries
+
+Information should be separated into active, unlocked-but-inactive, researched, and hypothesized states. The interface must not imply a trait is equipped or usable just because it was discovered.
+
+### Anatomy loadouts and form continuity
+
+Players should be able to save compatible anatomy configurations as named forms/loadouts once the necessary system is unlocked. A loadout records its anatomy, ability assignments, compatible traits, and transformation configuration; it cannot bypass genetic compatibility, resource costs, form-size rules, or unlock requirements. Switching forms should communicate any unavailable parts, ability changes, energy costs, and risks before confirmation.
+
+Major transformations should preserve continuity: body shape and combat behavior change, but the character’s history, learned mastery, and earned discoveries remain traceable. If an evolution replaces or suppresses an organ, the interface should explain which capabilities are lost, retained, or converted. Avoid silently deleting a player’s earned progress.
+
+### Respecialization and evolutionary consequences
+
+Evolution should allow experimentation without making every choice consequence-free. Reconfiguration may require compatible genetic data, research, biomass/energy, a suitable environment, or a safe adaptation window. Minor loadout changes can be more accessible than rebuilding an entire body plan. The precise costs and reset rules remain open for balancing.
+
+A respec must never create an impossible body state, duplicate unique resources, bypass permanent-death rules, or grant unearned traits. The system should preview downstream effects and offer a clear confirmation before committing major irreversible changes. If a choice is reversible only through a rare process, that restriction must be communicated before selection.
+
+### Strengths, weaknesses, and fair identity
+
+Every major specialization should offer a meaningful advantage and a readable limitation. Examples: heavy armor improves defense but can impair acceleration; extensive tendrils improve reach/control but expose more vulnerable appendages; powerful energy organs increase burst potential but require energy and may reveal a detectable signature; extreme sensory organs improve tracking but may be overwhelmed by interference. These are examples, not universal rules: exact trade-offs depend on anatomy and system balance.
+
+Do not use arbitrary weaknesses solely to punish unusual builds. A weakness must follow from the body, power source, environment, resource demand, or counterplay rule and should be understandable to the player and opponent. PvP fairness should focus on telegraphs, costs, counterplay, and server-authoritative resolution—not forcing every character into the same shape or move set.
+
+### Death, legacy, and the next character
+
+Permanent death ends the current character; it does not restore that same body. The Evolution Vault may preserve eligible deposited research/specimens according to the unresolved Vault rules. A new character begins at the beginning, while any permitted archive provides knowledge or planning context—not the dead character’s level, active body, mastery, or full build. The profile and Vault UI must make this distinction explicit.
+
+### Character development acceptance criteria
+
+Before calling this system implemented, verify that:
+- Two characters can share an origin yet develop meaningfully different anatomy and combat options.
+- The profile distinguishes active traits from discovered, inactive, or speculative traits.
+- Replacing anatomy explains what abilities are gained, lost, or changed.
+- Saved forms cannot bypass compatibility, costs, unlocks, or scale constraints.
+- Evolution choices have previews and clear confirmation for consequential changes.
+- Death and permitted Vault persistence do not duplicate or restore the same character.
+- UI, save data, combat rules, Codex, and evolution history agree on the character’s current state.
+
+These criteria are design targets, not evidence that tests have been run.
