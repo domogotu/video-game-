@@ -20,6 +20,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **100-species body-plan catalogue:** original cellular, terrestrial, predatory, giant, aerial, aquatic, insectoid, sapient, supernatural, and cosmic species that can supply compatible traits for open-ended player evolution.
 - **Anime- and game-inspired original characters:** distinctive original rivals, mentors, companions, faction leaders, bosses, and cosmic figures that evoke broad genre qualities without copying protected characters or signature expression.
 - **Hidden god-tier slime lineage:** a seemingly basic slime can secretly unlock extraordinary powers and transformations through rare, specific in-world actions; the endgame is not revealed at character creation.
+- **Hidden god-tier skeleton lineage:** an apparently ordinary skeleton can secretly evolve into an undead spellcaster and sovereign through discoveries, spell mastery, necromancy, summon command, strategic preparation, and rare evolution trials.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -85,6 +86,10 @@ Broad design inspiration includes action RPG combat, open-world exploration, pro
 ## Hidden god-tier slime lineage
 
 The [Slime Action-Gated Evolution](docs/SLIME_ACTION_GATED_EVOLUTION.md) specification describes a secret evolution path from an apparently ordinary weak slime to a potential god-tier organism. Players uncover its abilities through specific actions, clues, experiments, and evolution conditions. It uses original lore and power names while drawing on broad slime-evolution ability themes. Design-only; not implemented gameplay.
+
+## Hidden god-tier skeleton lineage
+
+The [Hidden God-Tier Skeleton Ascendant](docs/HIDDEN_SKELETON_ASCENDANT.md) specification defines a concealed action-gated path from a weak skeleton to a powerful undead sovereign. Its broad themes include necromancy, spell preparation, summons, layered defenses, tactical magic, domain growth, and cosmic evolution, with original lore and powers. Design-only; not implemented gameplay.
 
 ## Character inspiration and original roster
 
