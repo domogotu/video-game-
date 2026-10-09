@@ -146,3 +146,10 @@ The detailed action gates and working ability families are maintained in [Shadow
 A wandering staff fighter whose strength comes from footwork, reach, feints, aerial traversal, counters, and trials that test restraint as well as force. The route can be a playable discipline and can support original mentors, rivals, and mythic trial bosses. Its staff and transformation options have explicit costs, recovery, and counterplay. The broad inspiration is mythic staff-fighter agility and transformation—not a copied Sun Wukong depiction or any specific game's version. Whether the route is a starting option or a hidden unlock remains open.
 
 Detailed route design: [Mythic Staff Ascendant (Wukong-Inspired)](WUKONG_INSPIRED_MYTHIC_STAFF_ASCENDANT.md). Design-only; not implemented.
+
+
+## Required character-specific routes (not just inspiration)
+
+The project requirement is to plan distinct powerset packages for Sung Jinwoo, Goku, the *Re:Monster* goblin protagonist, Sun Wukong, Rimuru Tempest, and Ainz Ooal Gown. Their individual abilities, traits, skills, transformations/forms, upgrades, and unlock conditions must be tracked against specific source versions. Broad archetype entries alone do not satisfy this requirement. See [Character-Specific Powerset Requirements](CHARACTER_SPECIFIC_POWERSET_REQUIREMENTS.md) for the route checklist and acceptance criteria.
+
+This is a design/content target. Exact commercial use of franchise-specific characters or protected expression requires appropriate rights/licensing or a separately approved original adaptation. No playable implementation is claimed.
