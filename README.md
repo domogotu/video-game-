@@ -17,6 +17,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Physical world handling:** grabbing, carrying, dragging, throwing, capturing, harvesting, and preserving objects or specimens depends on anatomy, target properties, terrain, and shared-world state.
 - **Bottom-up evolution stages:** begin as a nutrient-gathering amoeba, evolve into a primitive organism, develop an open-ended creature body plan, unlock a species-dependent transformation, evolve for biological spaceflight, then unlock enhanced godlike absorption after conquering three planets.
 - **Expandable power catalogue:** a broad, modular index spanning biology, anatomy, movement, senses, defense, elements, energy, psychic and magical abilities, transformations, absorption, technology, space, time, creation, cosmic powers, and godlike effects.
+- **100-species body-plan catalogue:** original cellular, terrestrial, predatory, giant, aerial, aquatic, insectoid, sapient, supernatural, and cosmic species that can supply compatible traits for open-ended player evolution.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
@@ -42,6 +43,7 @@ The Stage V superhuman form is the visual and scale baseline for ordinary player
 | Object & creature handling | Anatomy-dependent grabbing, carrying, dragging, throwing, capture, harvesting, specimen preservation, and shared-state safeguards |
 | Evolution stage progression | Cellular survival → primitive organism → open-ended main creature stage → species-dependent transformation → biological spaceflight → godlike evolution after three planetary conquests |
 | Master power catalogue | Expandable ability index with mechanisms, effects, requirements, limitations, counters, combinations, and stage evolution |
+| Species and body plans | 100 proposed base species plus rules for absorption, hybrid anatomy, compatibility, and evolving beyond fixed species classes |
 | Evolution Atlas | Discover and plan biology, abilities, fusion, transformations, and cosmic evolution |
 | Ability growth | Individual ability levels, specialization branches, use-based mastery, fusion rank |
 | Consumption & genetics | Absorb resources and compatible traits through research and evolution choices |
@@ -77,6 +79,10 @@ The current concept roster contains **100 proposed original base species** acros
 ## Inspirations
 
 Broad design inspiration includes action RPG combat, open-world exploration, procedural universe discovery, deep build customization, and evolving ecosystems. Referenced touchstones include Dragon Ball Z: Kakarot, Borderlands 4, Marvel’s Spider-Man 2, Hogwarts Legacy, No Man’s Sky, Watch Dogs 2, The Division, Spore, Black Myth: Wukong, Path of Exile, and Star Wars Outlaws. These are references only: Lethal Absorption should use original characters, species, art, narrative, and implementation.
+
+## Species and body-plan catalogue
+
+The 100-concept roster and player evolution rules are maintained in [`docs/SPECIES_AND_BODY_PLAN_CATALOGUE.md`](docs/SPECIES_AND_BODY_PLAN_CATALOGUE.md). This is design documentation, not a claim of implemented species.
 
 ## Power and ability catalogue
 
