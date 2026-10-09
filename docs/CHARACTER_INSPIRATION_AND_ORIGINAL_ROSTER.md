@@ -119,3 +119,23 @@ A character concept is ready for detailed design when:
 - Which characters and absorption rewards are required for the main story versus optional discovery.
 
 **Current status:** Proposed design framework. No character, art asset, animation, voice, or in-game behavior is claimed to be implemented.
+
+
+## Additional original route seeds: shadow, martial ascendant, and goblin
+
+These three concepts were added to capture the broad experiences requested from *Solo Leveling*, *Dragon Ball*, and *Re:Monster*. They remain original design directions rather than franchise-character adaptations.
+
+### 11. The Umbral Successor
+
+A disregarded survivor who learns to read residual imprints and bind a small number of temporary echoes after a difficult personal trial. Its identity is command discipline, tactical formations, and the burden of maintaining a growing retinue—not an unlimited army. Potential role: secret player evolution route, recurring rival, or original late-game NPC. Counterplay includes disruption, command overload, upkeep, range limits, and opponents who target the controller rather than the echoes.
+
+### 12. The Limit-Breaker Disciple
+
+A martial artist whose techniques develop through practice, pattern-reading, energy discipline, and increasingly dangerous rivals. Transformations require distinct achievements and bring specific risks, recovery costs, and altered combat options. Potential role: player route, mentor, rival, or tournament/boss character. The character must not reproduce an existing alien warrior lineage, transformation look, named attack, costume, or iconic scene.
+
+### 13. The Scrap-Crowned Goblin
+
+A small goblin survivor who turns scavenging, careful consumption, field crafting, observation, and social strategy into an advanced adaptive lineage. The character's strengths come from preparation and compatible incremental gains rather than automatically stealing every ability from defeated targets. Potential role: player evolution route, companion, faction leader, or rival. A meaningful solo path and group path are both candidates; whether both are required remains open.
+
+The detailed action gates and working ability families are maintained in [Shadow Sovereign, Limit-Breaker, and Goblin Evolution Routes](SHADOW_SOVEREIGN_LIMIT_BREAKER_GOBLIN_ROUTES.md). Names are placeholders subject to originality review. These concepts are not final canon and have not been implemented.
+
