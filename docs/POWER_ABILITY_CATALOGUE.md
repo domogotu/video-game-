@@ -140,3 +140,18 @@ For every selected ability, capture:
 
 ## Next pass
 Expand each family into distinct ability records, resolve synonyms and overlaps, classify common/rare/unique concepts, map each to the six progression stages, and specify interaction rules. Balance, launch scope, and implementation remain open.
+
+## Expanded coverage baseline for the six inspiration routes
+
+The [Expanded Ability Coverage Matrix](EXPANDED_ABILITY_COVERAGE_MATRIX.md) is the required cross-route planning checklist. Before implementation planning is considered complete, enumerate individual original ability records for these coverage groups:
+
+- **Shadow-command sovereign:** threat/residue perception; eligible echo imprinting; roster/recall; tactical orders and formations; specialized bounded echoes; shadow movement; decoys; command growth; limited domain/sovereign pressure.
+- **Limit-breaking martial ascendant:** melee fundamentals; energy control and projection; physical amplification; aerial combat; defensive energy techniques; evidence-based combat reading; training/rivals; staged transformations; telegraphed finishers; advanced energy discipline.
+- **Adaptive goblin reclaimer:** scavenger senses; selective consumption; compatible trait extraction and stabilization; field crafting/salvage; ambush and improvisation; temporary borrowed instincts; pack coordination; anatomical adaptations; partial counter-evolution; lineage branches and resource economy.
+- **Mythic staff trickster:** staff combat and reach profiles; vaulting/aerial movement; feints; timed redirection; earned aspects; limited decoys; sky-route mobility; trial-based combo/mastery progression; endgame zone control.
+- **Hidden god-tier slime:** elastic morphology; selective assimilation; appraisal/analysis; bounded trait archive and synthesis; studied-form echo; limited distributed body; viable-core reconstitution rules; adaptive membrane; organic arsenal; elemental conduits; barriers/storage; parallel cognition; bounded autonomous defense; core fusion; cosmic adaptation and earned god-tier convergence.
+- **Undead spell sovereign:** spell research/preparation/casting/mastery; offensive and defensive schools; control/debuffs; capped summons; bonecraft; rituals/domains; archive and counter-scripts; limited energy extraction; contextual presence; late-game domain combinations.
+
+Each distinct power must be recorded separately rather than treating a family label as implementation. For every record, include prerequisites/action gates, body compatibility, resource/upkeep, range/area/duration, startup/recovery/interruptibility, evolution/mastery, counters/failure states, interactions, NPC/ecology effects, PvP/server validation, accessibility/readability, and tests. Hybrid combinations are conditional on compatibility and must be checked for exploits.
+
+This baseline seeks broad ability-family coverage across the referenced media, expressed through original mechanics, names, art, animation, lore, and effects. It is not an exact licensed move list. Listing a power here does not mean it is implemented or tested.
