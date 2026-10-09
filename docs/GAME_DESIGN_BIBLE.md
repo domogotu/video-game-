@@ -1000,3 +1000,23 @@ Every detailed ability must distinguish its source/mechanism, effect, delivery, 
 
 Abilities are candidates, not automatic launch commitments. No power is unrestricted by default. Range, duration, targets, energy, compatibility, counterplay, permanent-death rules, and server-authoritative fairness must remain coherent. New and untested combinations are hypotheses until their outcomes are verified and recorded in the Codex. The next design pass will deduplicate the index, define full ability records, classify rarity, map abilities to progression stages, and document interactions.
 
+
+
+## 29. Character inspiration and original character roster
+
+Lethal Absorption should include authored characters that deliver the broad appeal of the games and anime named in Section 1: distinctive combat identities, dramatic transformations, signature techniques, tactical tools, magic and supernatural systems, rivalries, memorable bosses, companions, factions, and cosmic-scale figures. These references define desired experience qualities only; the game must use original characters, species, stories, names, silhouettes, costumes, dialogue, animations, and signature techniques.
+
+The detailed framework and first ten original character archetype seeds are maintained in [Character Inspiration and Original Roster](CHARACTER_INSPIRATION_AND_ORIGINAL_ROSTER.md). The framework uses an inspiration-to-originality pipeline: extract a broad design goal, abstract the mechanic, create a new premise and expression, define the character's role in the world, then review for excessive similarity to any single reference.
+
+Character content has five distinct lanes:
+- **Player characters:** open-ended body plans and builds assembled through eligible evolution choices, not permanent preset classes.
+- **Authored NPCs:** original motivations, relationships, culture, and readable combat or non-combat roles.
+- **Rivals and bosses:** advanced combinations and transformations with understandable tells, limits, weaknesses, and counterplay.
+- **Companions and factions:** potential support for research, diplomacy, crafting, exploration, team abilities, and persistent world change.
+- **World and cosmic characters:** beings whose ecological, planetary, or cosmic roles make their existence matter beyond being a source of loot.
+
+Absorption from a character is not automatic copying of identity, complete power set, or mastery. Discovery, sample acquisition, analysis, compatibility, mutation selection, installation, and mastery remain separate. Sapient characters have agency and rights within the fiction; not every character should be an absorbable target, and not every encounter should resolve through combat. Any lethal PvP absorption remains governed by the existing high-stakes PvP and fairness rules.
+
+Each major character needs an original visual read, motive, relationships, narrative role, combat rhythm or utility role, strengths, weaknesses, counterplay, world consequences, eligible absorption rewards if any, and acceptance criteria. Characters must react only to information they could reasonably observe or learn. Character concepts, approved designs, assets, code, and verified behavior must have separate status labels.
+
+**Status:** design specification only. The framework and archetype seeds are not implemented character content. Open decisions include final roster size, story placement, companion boundaries, authored-versus-modular content ratio, and originality review.
