@@ -155,18 +155,17 @@ Mark the slice design ready for implementation handoff only when all mandatory i
 - [ ] Failure and recovery are defined for each essential interaction.
 - [ ] All out-of-scope features are recorded rather than quietly pulled into the slice.
 
-## 8. Exit Decision
+## 8. Exit Decisions — Resolved Design Baseline
 
-The slice design remains **IN PROGRESS** until the acceptance checklist is reviewed and the following are explicitly decided:
-- The two starter trait choices.
-- The precise growth/learning conditions that trigger the first evolution.
-- The minimum animal-stage layout and first objective.
-- The camera perspective and control approach for the animal stage.
-- The resource and active-entity limits for the bounded regions.
+The five required design decisions are resolved provisionally by the working defaults in Section 9. They are sufficient to freeze the **design scope** for implementation planning; exact numeric tuning remains subject to prototype evidence.
 
-After these decisions are made, perform one consistency pass and one correction pass, freeze the slice scope, and move to the next design step. New ideas go to backlog unless they block an acceptance criterion.
+- Starter traits: Current-Sensitive Membrane and Impact-Resistant Membrane.
+- Evolution trigger: visible growth threshold plus demonstration of movement, absorption, dodge, and attack once; killing is not required.
+- Animal-stage layout: compact habitat with arrival clearing, nearby resource patch, cover route, and one readable threat.
+- Camera: first-person-forward as the baseline, with an optional third-person setting if feasible; camera must not change combat rules.
+- Simulation budget: one active threat in the immediate onboarding path, a small handful of neutral/resource creatures nearby, and no off-screen high-cost simulation.
 
-**Current next step:** resolve the five exit decisions above. Do not expand the species catalogue, endgame, or planetary systems while these slice boundaries remain open.
+The consistency review must preserve these decisions and verify that the predator-prey/diet demonstration remains small enough for the slice. New ideas go to the backlog unless they block an acceptance criterion. Do not expand the full species catalogue, cosmic endgame, or planetary systems within this slice.
 
 
 ## 9. Working Defaults to Prevent Design Stalling
@@ -178,7 +177,8 @@ Use these defaults to move the slice forward. They are provisional design decisi
 3. **Animal-stage camera:** Use an immersive first-person-forward presentation to support the animal-exploration fantasy. Preserve body/ability readability through contextual animation, shadow/reflection when appropriate, sensory cues, and an optional third-person camera setting if feasible. Camera choice must not change combat rules.
 4. **Arrival layout:** Use one compact habitat with an arrival clearing, a nearby resource patch, a cover route, and one readable threat. Treat water as optional for this first slice unless safe swimming/breath rules are included in scope.
 5. **Simulation budget:** Begin with one active threat at a time in the immediate onboarding path, a small handful of neutral/resource creatures nearby, and no off-screen high-cost simulation. Exact counts are implementation targets to validate, not promises about final capacity.
+6. **Minimal living-ecosystem proof:** Include one predator and one prey species with readable hunt/escape behavior, plus a bounded diet-driven growth or condition change and one possible adaptation clue. This is a small observable demonstration—not a full food-web simulation, a required rare mutation, or a complex Alpha encounter. Keep it outside the first control-teaching beats so the opening remains simple.
 
 ### Step status clarification
 
-The vertical-slice outline is **READY FOR REVIEW** as a bounded design draft. The defaults above provide a concrete baseline so work can proceed without repeatedly revisiting open questions. Before implementation handoff, perform the single planned consistency pass and one correction pass, then freeze the slice. Until then, do not label the slice implemented, play-tested, or fully verified.
+The vertical-slice design baseline is **SCOPE FROZEN FOR IMPLEMENTATION HANDOFF**, subject to the single consistency review and correction pass recorded in the project audit. The predator-prey/diet proof in item 6 is included as a tightly bounded ecosystem requirement. Exact numeric counts and rates remain prototype tuning items. This is design closure only; do not label the slice implemented, play-tested, or fully verified.
