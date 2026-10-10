@@ -149,6 +149,8 @@ Mark the slice design ready for implementation handoff only when all mandatory i
 - [ ] Growth and transition requirements are visible.
 - [ ] The transition cinematic reflects the chosen path.
 - [ ] The animal-scale area has explicit boundaries and a limited entity budget.
+- [ ] One predator-prey interaction has readable hunt/escape behavior.
+- [ ] At least one diet-driven growth/condition change and one possible adaptation clue are observable without requiring a rare mutation.
 - [ ] The first animal-stage objective and immediate danger are clear.
 - [ ] The character's history and chosen trait carry through the transition.
 - [ ] Skipping the cinematic does not skip required information or break continuity.
