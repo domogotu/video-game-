@@ -62,6 +62,8 @@ GitHub is the persistent design record. Each committed change is part of reposit
 
 ## 4. Connected requirements that must not be lost
 
+- [Master Documentation Consistency Audit](MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md) — current inventory and consistency/correction pass.
+
 The following are cross-system commitments. New specifications must remain consistent with them or explicitly propose a reviewed change.
 
 - The experience starts simple and teaches movement, absorption/gathering, evasion, and a basic attack before exposing deep menus.
