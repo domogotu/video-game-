@@ -1,0 +1,169 @@
+# Vertical Slice 01: Cellular Opening to First Evolution
+
+**Project:** Lethal Absorption  
+**Status:** Bounded gameplay design specification; not implemented or play-tested.  
+**Purpose:** Freeze the smallest representative slice that proves the simple opening, basic controls, staged menu onboarding, earned evolution cinematic, and transition into animal-scale exploration.
+
+## 1. Slice Objective
+
+Prove that a player can learn the basics in a simple colorful cellular environment, grow through understandable actions, make at least one meaningful evolutionary choice, and transition into a distinct animal-scale survival region without being overwhelmed by systems.
+
+This slice is not the full first stage, the full animal stage, or a complete game. It is the minimum representative sequence used to judge whether the central premise works.
+
+## 2. Scope Boundary
+
+### Included
+- One compact, colorful, futuristic cellular environment.
+- One player cell with readable movement and absorption feedback.
+- A small set of nutrient types and a limited number of hazards/predators.
+- Basic movement, absorb/gather, dodge, and a simple attack once taught.
+- A clear growth meter and short-term milestones.
+- Contextual introductions to the basic HUD, inventory/resource view, discovery log, and evolution/skill tree.
+- One early trait choice that has a visible gameplay effect.
+- A threshold-based evolution cinematic reflecting the player's recorded trait choice and absorption history.
+- One bounded animal-scale environment loaded after the cinematic.
+- A new body plan and a short safe introduction to animal movement, gathering, evasion, and basic combat.
+- A clear first objective after transition.
+- A saved progression summary that records the player's choices and explains which prior capabilities carry forward.
+
+### Excluded from this slice
+- Multiplayer networking and PvP.
+- Full open world or planet-scale streaming.
+- Space travel and Living Ship Form.
+- Full 100-species catalogue or complete Evolution Atlas.
+- Large-scale destruction, cosmic abilities, raids, and endgame bosses.
+- Full crafting economy, settlements, faction simulation, or procedural story.
+- Every possible cell-to-animal evolutionary route.
+- Production-quality cinematics and final visual assets; use representative storyboard/animatic requirements during design review.
+
+Excluded features remain backlog items; they are not deleted from the overall vision.
+
+## 3. Opening Sequence and Teaching Order
+
+### Beat 1 — Enter the micro-world
+Show the player in a clean, vibrant micro-environment with a small number of visible nutrients, currents or terrain cues, and one non-lethal environmental hazard. Keep the screen uncluttered. The player can immediately move.
+
+**Teach:** movement only.  
+**Exit:** player can steer, stop, and reach a nearby safe nutrient cluster.
+
+### Beat 2 — Gather and absorb
+Highlight a nearby safe nutrient with a subtle visual cue. On approach, teach the absorb input and show the growth meter increase. The cue fades once the player understands the action.
+
+**Teach:** gathering/absorption.  
+**Exit:** player successfully absorbs enough nutrients to see a clear growth response.
+
+### Beat 3 — Read danger and dodge
+Introduce one readable predator or moving hazard with an unmistakable approach cue and a safe escape route. Teach dodge after the player has experienced the danger cue, not before.
+
+**Teach:** danger recognition and dodge.  
+**Exit:** player avoids one threat using movement or dodge and understands why the attempt succeeded.
+
+### Beat 4 — Learn a simple attack
+Only after the first survival actions are understood, introduce a small hostile target or practice opportunity that can be handled with a simple attack. Do not force the player to attack every creature; evasion remains valid where the space permits it.
+
+**Teach:** attack and target feedback.  
+**Exit:** player successfully uses the attack or safely disengages and understands the basic combat option.
+
+### Beat 5 — Introduce the first menu when it has a purpose
+After the player earns the first meaningful growth milestone, reveal the resource/inventory view and one simple discovery record. Later, reveal the evolution/skill tree at the first trait decision. Do not expose every menu in the opening minute.
+
+**Teach:** only the menu relevant to the current decision.  
+**Exit:** player can find their current resource, see a discovered fact, and understand the available evolution choice.
+
+### Beat 6 — Make one meaningful trait choice
+Offer two clearly different, balanced starter adaptations, for example:
+- **Current-Sensitive Membrane:** improves movement/control in currents or reveals current direction.
+- **Impact-Resistant Membrane:** reduces the effect of one defined environmental collision or minor attack.
+
+These are example candidates, not final names or locked balance. The final pair must be mutually understandable, show trade-offs, and support different approaches without making one a mandatory best choice.
+
+**Teach:** evolution choice and consequence.  
+**Exit:** player selects a trait, sees it recorded, and experiences its effect in the remaining cellular play.
+
+### Beat 7 — Earn the transition
+The player must meet the defined growth threshold and complete the essential learning beats. A clear progress indicator communicates the remaining requirement. Do not require hidden actions or repetitive grinding after the required condition is met.
+
+When ready, offer a clear evolution moment. Save the current evolution history, then play the transition cinematic.
+
+**Exit:** transition conditions are visible and met; the player understands why evolution is happening.
+
+### Beat 8 — Cinematic and animal-scale arrival
+Show the cell's growth into an organism whose anatomy reflects the selected trait and acquired biological history. The scene should show continuity without pretending every microscopic detail must directly determine the final body. The new environment is larger, but bounded and designed for performance.
+
+After arrival, teach the new movement/camera model and the immediate survival objective in context. Avoid repeating the entire first tutorial.
+
+**Exit:** player can move, gather, and avoid a threat as the new organism, and can explain the immediate goal.
+
+## 4. First Transition Contract
+
+The transition from cell to animal is the proof of the game's multi-game structure. It must meet all of these requirements:
+1. The trigger is based on visible growth and completed essential actions, not a hidden timer.
+2. The player’s chosen starter trait affects at least one visible feature or behavior of the evolved organism.
+3. The cinematic can be skipped or replayed through a recap without losing progression.
+4. The transition saves the character’s trait and absorption history before changing stage.
+5. The new stage has a distinct camera/movement feel and a different scale of navigation.
+6. The new stage starts with a clear safe-area objective and one manageable danger.
+7. The new stage introduces only the controls and menus needed now.
+8. The player is not forced to repeat the cellular tutorial.
+9. The new environment is bounded, navigable, and has a planned active-entity budget.
+10. No unexplained loss of an ability, resource, or trait occurs during transition.
+
+## 5. Animal-Scale Arrival Area
+
+Use one bounded habitat that can demonstrate a few different interactions without requiring a huge world. A candidate layout includes:
+- **Arrival clearing:** safe onboarding and a visible landmark.
+- **Gathering patch:** food or biomass with at least two resource choices.
+- **Cover route:** vegetation, rocks, or terrain to hide or break line of sight.
+- **Water edge or shallow pool:** introduces water as a readable environmental option only if the starting body can safely interact with it.
+- **Threat zone:** one predator or hostile creature with readable detection and pursuit behavior.
+- **Shelter/den landmark:** a memorable location that can later serve as a return point or objective.
+
+Do not require all these features if the slice becomes too large. The minimum must have a safe arrival, a resource location, a usable route/cover option, and one readable threat.
+
+The animal-stage region should feel spacious through composition, sightlines, landmarks, and route choices—not through empty acreage. Limit simultaneous active creatures and effects. Distant ecosystem state may be summarized rather than fully simulated.
+
+## 6. Basic Interaction Rules
+
+- **Movement:** immediately responsive and suited to the current body plan.
+- **Absorption:** requires a valid target/resource, range, and a short clear interaction; no silent auto-grant of every trait.
+- **Dodge:** has a defined cost or recovery window and cannot be repeated indefinitely without consequence.
+- **Attack:** communicates range, hit, miss, and target response. Avoid a long combat tutorial before the player understands survival.
+- **Growth:** every gain is visible and the threshold is explainable.
+- **Discovery:** the game distinguishes observed information from confirmed unlocks.
+- **Evolution:** previews the selected trait's effect and any meaningful trade-off.
+- **Persistence:** the selected trait and essential stage-transition state survive leaving and re-entering the slice.
+
+Exact numbers, control bindings, animation timings, and final art are intentionally not frozen until a playable prototype or controlled usability test can inform them.
+
+## 7. First-Slice Acceptance Checklist
+
+Mark the slice design ready for implementation handoff only when all mandatory items below are satisfied:
+
+- [ ] Opening objective is understandable without a wall of text.
+- [ ] Movement is the first mechanic taught.
+- [ ] Absorption/gathering is taught before advanced menus.
+- [ ] Dodge is taught in response to a readable threat.
+- [ ] Attack is taught only after basic survival actions.
+- [ ] Menus appear contextually and in the right order.
+- [ ] At least two starter trait choices produce meaningfully different effects.
+- [ ] Growth and transition requirements are visible.
+- [ ] The transition cinematic reflects the chosen path.
+- [ ] The animal-scale area has explicit boundaries and a limited entity budget.
+- [ ] The first animal-stage objective and immediate danger are clear.
+- [ ] The character's history and chosen trait carry through the transition.
+- [ ] Skipping the cinematic does not skip required information or break continuity.
+- [ ] Failure and recovery are defined for each essential interaction.
+- [ ] All out-of-scope features are recorded rather than quietly pulled into the slice.
+
+## 8. Exit Decision
+
+The slice design remains **IN PROGRESS** until the acceptance checklist is reviewed and the following are explicitly decided:
+- The two starter trait choices.
+- The precise growth/learning conditions that trigger the first evolution.
+- The minimum animal-stage layout and first objective.
+- The camera perspective and control approach for the animal stage.
+- The resource and active-entity limits for the bounded regions.
+
+After these decisions are made, perform one consistency pass and one correction pass, freeze the slice scope, and move to the next design step. New ideas go to backlog unless they block an acceptance criterion.
+
+**Current next step:** resolve the five exit decisions above. Do not expand the species catalogue, endgame, or planetary systems while these slice boundaries remain open.
