@@ -167,3 +167,18 @@ The slice design remains **IN PROGRESS** until the acceptance checklist is revie
 After these decisions are made, perform one consistency pass and one correction pass, freeze the slice scope, and move to the next design step. New ideas go to backlog unless they block an acceptance criterion.
 
 **Current next step:** resolve the five exit decisions above. Do not expand the species catalogue, endgame, or planetary systems while these slice boundaries remain open.
+
+
+## 9. Working Defaults to Prevent Design Stalling
+
+Use these defaults to move the slice forward. They are provisional design decisions for the first prototype, not final balance values. Change them only if review or playtesting reveals a concrete problem.
+
+1. **Starter traits:** Keep the two proposed options: Current-Sensitive Membrane and Impact-Resistant Membrane. Each must provide one immediately observable advantage; neither grants a universally superior build.
+2. **Evolution trigger:** Require the growth meter to reach its threshold and the player to demonstrate movement, absorption, dodge, and attack at least once. A safe evasion or disengagement counts as successful survival; do not require killing a creature. Display the requirements and progress clearly.
+3. **Animal-stage camera:** Use an immersive first-person-forward presentation to support the animal-exploration fantasy. Preserve body/ability readability through contextual animation, shadow/reflection when appropriate, sensory cues, and an optional third-person camera setting if feasible. Camera choice must not change combat rules.
+4. **Arrival layout:** Use one compact habitat with an arrival clearing, a nearby resource patch, a cover route, and one readable threat. Treat water as optional for this first slice unless safe swimming/breath rules are included in scope.
+5. **Simulation budget:** Begin with one active threat at a time in the immediate onboarding path, a small handful of neutral/resource creatures nearby, and no off-screen high-cost simulation. Exact counts are implementation targets to validate, not promises about final capacity.
+
+### Step status clarification
+
+The vertical-slice outline is **READY FOR REVIEW** as a bounded design draft. The defaults above provide a concrete baseline so work can proceed without repeatedly revisiting open questions. Before implementation handoff, perform the single planned consistency pass and one correction pass, then freeze the slice. Until then, do not label the slice implemented, play-tested, or fully verified.
