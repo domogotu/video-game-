@@ -97,10 +97,10 @@ The following is the initial ledger based on the repository state reviewed for t
 | Step | Status | Completion rule / next action |
 |---|---|---|
 | Core gameplay loop and player feedback | DONE — document created and fetched back from GitHub | Use as the baseline for the slice; reopen only for a documented conflict or explicit change request. |
-| Define the first gameplay vertical slice | IN PROGRESS | Specify a bounded ecosystem, player starting state, a few distinct species, a small ability set, absorption and discovery rules, one persistent environmental effect, and one evolution decision. |
-| Specify slice systems and edge cases | NOT STARTED | Begin only after the slice boundaries are accepted; avoid adding unrelated endgame systems. |
+| Define the first gameplay vertical slice | DESIGN SCOPE FROZEN | Scope includes the cellular teaching sequence, first evolution, compact animal habitat, one bounded predator-prey relationship, one diet-driven growth/condition change and adaptation clue, and explicit acceptance criteria. Numeric tuning remains for implementation evidence. |
+| Specify slice systems and edge cases | NEXT — NOT STARTED | Convert the frozen slice rules into bounded system requirements and edge-case outcomes; do not add unrelated endgame systems. |
 | UI/feedback for the slice | NOT STARTED | Define only the information needed to play and understand the slice. |
-| Slice consistency and scope freeze | NOT STARTED | Run one complete checklist and one correction pass; then freeze the scope. |
+| Slice consistency and scope freeze | REVIEWED — DESIGN BASELINE FROZEN | One documentation consistency pass and correction pass recorded in MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md; runtime acceptance remains untested. |
 | Implementation handoff | DEFERRED | This project is currently being focused on gameplay/design. Do not claim implementation or runtime verification. |
 
 ## 8. Definition of “Done” for a Design Step
