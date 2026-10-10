@@ -19,9 +19,10 @@ GitHub is the persistent design record. Each committed change is part of reposit
 1. Read the [README and project overview](../README.md) for the high-level game concept and current status.
 2. Read the [Game Design Bible](GAME_DESIGN_BIBLE.md) for the core vision, progression, game pillars, and overall systems.
 3. Use this master index to find the detailed specification for each subsystem.
-4. Read the [System Alignment and Development Roadmap](SYSTEM_ALIGNMENT_AND_DEVELOPMENT_ROADMAP.md) before planning implementation.
-5. Read the [Design Workflow, Step Gates, and Loop Prevention](DESIGN_WORKFLOW_STEP_GATES_AND_LOOP_PREVENTION.md) before continuing project work.
-6. Use the [first cellular vertical slice](VERTICAL_SLICE_01_CELLULAR_OPENING_TO_FIRST_EVOLUTION.md) as the initial scope boundary; the first slice is not the entire game.
+4. Use the [Master Requirements Ledger](MASTER_REQUIREMENTS_LEDGER.md) to track cross-system requirements, dependencies, status, and acceptance criteria.
+5. Read the [System Alignment and Development Roadmap](SYSTEM_ALIGNMENT_AND_DEVELOPMENT_ROADMAP.md) before planning implementation.
+6. Read the [Design Workflow, Step Gates, and Loop Prevention](DESIGN_WORKFLOW_STEP_GATES_AND_LOOP_PREVENTION.md) before continuing project work.
+7. Use the [first cellular vertical slice](VERTICAL_SLICE_01_CELLULAR_OPENING_TO_FIRST_EVOLUTION.md) as the initial scope boundary; the first slice is not the entire game.
 
 ## 3. Current design-document index
 
