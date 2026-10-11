@@ -31,7 +31,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Shared Discovery Network:** verified discoveries become available to other players as knowledge, while personal acquisition, compatibility, and mastery requirements still apply.
 - **Player-legacy NPCs:** qualifying permanent defeats can leave privacy-controlled AI legacies based on validated character snapshots; they do not resurrect the playable character.
 - **NPC-threat permanent death:** eligible NPC creatures, Alphas, bosses, and designated NPC adversaries can permanently end a character under fair encounter rules; stored research may guide a new life but cannot restore that character.
-- **Protected PvP:** player-versus-player outcomes are always non-permanent, regardless of rank or consent. Another player cannot permanently remove your character, inventory, anatomy, resources, discoveries, specimens, or progression. Cooperative Resonance Fusion remains separate.
+- **Protected, rewarding PvP:** player-versus-player outcomes are always non-permanent, regardless of rank or consent. All eligible participants earn mode-based rewards such as genetic samples/imprints, research clues, crafting materials, items, cosmetics, and rank/season progress; winners may earn a disclosed bonus. Rewards never steal the opponent’s owned assets or automatically copy their full build. Cooperative Resonance Fusion remains separate.
 - **Planetary-to-cosmic progression:** planetary completion and biological survival capabilities are required before space travel. There are no vehicles or conventional spaceships; the player evolves into a Living Ship Form.
 
 ## Progression overview
