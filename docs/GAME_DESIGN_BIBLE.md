@@ -12,7 +12,7 @@ Design pillars:
 1. **Evolution through action:** consume, observe, survive, research, create, and master to discover possible evolutionary routes.
 2. **Player-authored combat:** chain, modify, transform, and fuse abilities within coherent world rules.
 3. **A persistent reactive ecosystem:** creatures, NPCs, habitats, wounds, evidence, damage, growth, and repairs can continue after players leave.
-4. **Meaningful risk:** permanent character death, dangerous hunting, and explicit high-stakes PvP coexist with safeguards against technical unfairness.
+4. **Meaningful risk:** permanent character death comes from eligible NPC-controlled threats, while PvP is never allowed to permanently delete a player character or strip that character’s progression or possessions.
 5. **Scale with purpose:** cellular play, comparable-scale standard combat, optional Battle Mode, titan encounters, and biological spaceflight each have distinct mechanics.
 6. **Discoverability without false certainty:** the Evolutionary Codex distinguishes observed, confirmed, researched, mastered, and hypothesized information.
 7. **Original expression:** inspirations inform broad design goals only; all characters, species, art, story, and implementation should be original.
@@ -264,15 +264,17 @@ Possible outcomes: unresolved mystery, lead, suspect identified, or confirmed th
 
 ## 11. Permanent death and PvP
 
-When a character dies, that character starts over completely. There is no resurrection or restoration of that same living character. Healing cannot reverse permanent death.
+**Permanent character death can be caused only by eligible NPC-controlled threats—not by another player.** This includes dangerous NPC creatures, Alphas, bosses, named/unique adversaries, and other explicitly designated NPC threats. Their attacks may permanently end the current character under the applicable encounter rules. The encounter must communicate danger and provide fair, readable counterplay; tutorial protection and any separately specified safe zones remain in force.
 
-PvP is allowed, including consensual high-stakes lethal absorption matches. The loser’s character is absorbed by the winner; the winner gains some eligible abilities/traits/materials, not the full build or mastery. High-stakes challenges require clear acceptance and explicit stakes; ordinary practice/nonlethal matches may exist. A lethal match must never be disguised as a routine visit.
+**No player-versus-player encounter can permanently kill a player character.** This applies to random encounters, higher-ranked or higher-level players, duels, invasions, ambushes, team fights, consensual challenges, and any absorption-themed PvP mode. A player defeat may cause a temporary knockout, retreat, respawn/recovery, match loss, rank/score change, or a clearly disclosed non-destructive match consequence—but never character deletion, forced restart, or permanent loss of the defeated player's inventory, equipped anatomy, carried resources, unbanked discoveries, specimens, or personal progression. Another player cannot take those assets merely by defeating or encountering the player.
 
-Absorption rewards depend on actual defeated development, eligible genetic data/materials, compatible traits, selected abilities, research, and winner compatibility. Incompatible abilities require organs, mutations, research, or environmental conditions. Knowledge can be partial; no automatic copy of all levels/mastery.
+PvP must clearly communicate its mode, stakes, and outcome before engagement. Consent may enable competitive rules or bounded rewards, but it **cannot opt a player into permanent character death or permanent theft/loss of character assets**. PvP rewards must not grant the winner the defeated player's entire build, mastery, inventory, or progression. Any optional reward-transfer mechanic must be separately defined, limited, explicit, validated, and non-destructive to the defeated player's ownership/progression; no such transfer is implied by winning a match.
 
-Technical safeguards must protect against confirmed server failure, disconnect edge cases, and cheating so a bug does not unfairly delete a character. Server-authoritative combat and anti-cheat/anti-boosting are required.
+Permanent death remains meaningful against eligible NPC threats: the current character starts over, and there is no resurrection or restoration of that same living character. Healing cannot reverse permanent death. The Evolution Vault and any permitted archive may preserve only what its separate rules allow; retained research is not resurrection.
 
-Leaderboard categories: global PvP, solo duels, team PvP, ability mastery, fusion mastery, evolution discovery, and seasons. Skill matters, not just level.
+Technical safeguards must protect against server failure, disconnect edge cases, exploits, cheating, and attribution manipulation. If a player directly or indirectly causes, redirects, or exploits an NPC/hazard encounter against another player, that event must not be used to bypass the PvP protection. When player-caused attribution is uncertain, resolve the event as non-permanent defeat rather than deleting the character. Server-authoritative combat, anti-cheat/anti-boosting, reliable attribution, and audit logs are required.
+
+Leaderboard categories may include global PvP, solo duels, team PvP, ability mastery, fusion mastery, evolution discovery, and seasons. Skill matters, not just level.
 
 ## 12. Evolution Vault
 
@@ -526,8 +528,8 @@ Do not silently treat these as settled:
 7. Bosses communicate danger; titan fights are designed for titan-scale play.
 8. The environment persists, grows, heals, decays, and is repaired according to rules.
 9. NPCs can only act on knowledge they could reasonably acquire.
-10. Death is permanent for the character; the Vault is not resurrection.
-11. PvP lethal stakes are explicit and accepted; technical failures must not unfairly delete characters.
+10. Permanent character death is restricted to eligible NPC-controlled threats; the Vault is not resurrection.
+11. PvP can never permanently kill a player character or permanently take their character assets, regardless of rank or consent; uncertain player-caused attribution resolves non-permanently.
 12. No vehicle or spaceship can bypass biological spaceflight progression.
 13. Codex information must distinguish confirmed knowledge from hypotheses.
 14. Large-scale simulation is an architectural goal, not a current implementation claim.
@@ -745,8 +747,8 @@ When a player character is defeated under a rule that permanently ends that char
 The legacy NPC may be built from permitted, recorded aspects of the defeated character: visible anatomy, eligible abilities, combat tendencies, evolution history, signature techniques, known affiliations, and relevant public reputation. It must not automatically inherit private account data, chat logs, hidden player information, or unearned powers. The NPC's capabilities must be reconstructed from a validated snapshot of the character at the point of defeat and obey normal compatibility, resource, progression, and AI rules. It must not gain abilities the character did not have.
 
 Rules and safeguards:
-- Only a qualifying defeat triggers a legacy NPC; ordinary knockdowns, nonlethal practice, disconnects, server errors, or invalid/cheating outcomes do not.
-- Permanent death remains final for the player character. The NPC cannot restore the same character, its inventory, its level, or its mastery to a new playable life.
+- Only a qualifying NPC-caused permanent defeat triggers a legacy NPC; ordinary knockdowns, all PvP defeats, disconnects, server errors, or invalid/cheating outcomes do not.
+- Permanent death remains final for the player character; PvP can never trigger it. The NPC cannot restore the same character, its inventory, its level, or its mastery to a new playable life.
 - Use the defeated character's recorded world history to select a plausible role and location; do not spawn the NPC instantly everywhere or grant it knowledge the original character never had.
 - Clearly label it as an AI legacy when appropriate, while allowing an anonymized or lore-based presentation if the player’s privacy settings permit.
 - Provide transparent player settings for whether eligible character appearance, public name, and combat style may be used in legacy NPCs. The precise default and any consent requirements remain an open product/privacy decision; no private account information may be used.
@@ -1015,7 +1017,7 @@ Character content has five distinct lanes:
 - **Companions and factions:** potential support for research, diplomacy, crafting, exploration, team abilities, and persistent world change.
 - **World and cosmic characters:** beings whose ecological, planetary, or cosmic roles make their existence matter beyond being a source of loot.
 
-Absorption from a character is not automatic copying of identity, complete power set, or mastery. Discovery, sample acquisition, analysis, compatibility, mutation selection, installation, and mastery remain separate. Sapient characters have agency and rights within the fiction; not every character should be an absorbable target, and not every encounter should resolve through combat. Any lethal PvP absorption remains governed by the existing high-stakes PvP and fairness rules.
+Absorption from a character is not automatic copying of identity, complete power set, or mastery. Discovery, sample acquisition, analysis, compatibility, mutation selection, installation, and mastery remain separate. Sapient characters have agency and rights within the fiction; not every character should be an absorbable target, and not every encounter should resolve through combat. PvP absorption must follow the non-destructive PvP rule: no player-caused permanent death or permanent loss of the defeated player's character assets or progression.
 
 Each major character needs an original visual read, motive, relationships, narrative role, combat rhythm or utility role, strengths, weaknesses, counterplay, world consequences, eligible absorption rewards if any, and acceptance criteria. Characters must react only to information they could reasonably observe or learn. Character concepts, approved designs, assets, code, and verified behavior must have separate status labels.
 
