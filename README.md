@@ -143,3 +143,11 @@ The goal is broad coverage of the power fantasies across the referenced shows an
 The six requested routes are required as character-specific content packages—not generic archetypes alone: Sung Jinwoo, Goku, the central goblin protagonist of *Re:Monster*, Sun Wukong, Rimuru Tempest, and Ainz Ooal Gown. Each needs a source/version-scoped inventory of its individual abilities, passive traits, skills, transformations/forms, upgrades, and unlock conditions. Deferred content must remain tracked rather than silently omitted. Exact franchise content may require rights/licensing; do not assume permissions. This is a design requirement, not a claim that powers are already implemented.
 
 - [Character-Specific Powerset Requirements](docs/CHARACTER_SPECIFIC_POWERSET_REQUIREMENTS.md)
+
+## Cooking, equipment, stamina, and build synergy
+
+Character development combines core attributes and training with meal-based bonuses, equipment and armor-set effects, anatomy/body plans, absorbed genetics, mutations, mastery, and environmental condition. Stamina is a levelable resource for sustained exertion; health, stamina, energy, recovery, defense, mobility, and other attributes must have distinct purposes. Cooking grants clearly timed meal effects without replacing permanent absorption/evolution. Gear provides bonuses and trade-offs, including anatomy-aware equipment and optional set bonuses. Build combinations must remain flexible and bounded rather than creating one mandatory best build.
+
+- [Cooking, Equipment, Stats, and Build Synergy](docs/COOKING_EQUIPMENT_STATS_AND_BUILD_SYNERGY.md)
+
+This is a design specification, not evidence of a playable implementation. Exact formulas, durations, drop rates, gear slots, stacking rules, and balance remain open until prototyped and tested.
