@@ -1092,3 +1092,21 @@ The six named routes—Sung Jinwoo, Goku, the *Re:Monster* goblin protagonist, S
 Every ability must be individually catalogued, with source/version traceability, unlock method, active/passive/conditional status, route/form prerequisites, gameplay effects, costs, counters, upgrade chains, interactions, and implementation status. The roadmap may stage release, but deferred powers must remain tracked. Where exact franchise character names, signature expression, visuals, or other protected content is planned for commercial release, rights/licensing must be addressed or the content must be separately adapted into original expression.
 
 **Status:** requirement documented; canonical source-by-source inventories and gameplay implementation remain outstanding. Documentation must not be represented as playable implementation.
+
+## 24. Cooking, equipment, stamina, and build synergy
+
+Lethal Absorption uses a layered character-development model: core attributes, training and character progression, cooking and nutrition, equipment and set bonuses, anatomy/body plan, absorbed genetics and mutations, mastery, and environmental condition. No one layer replaces the others, and the game must not require a fixed class or single best-in-slot build.
+
+Stamina is a meaningful, levelable resource for sustained exertion such as sprinting, repeated dodges, climbing, swimming, selected physical techniques, and other explicitly costed actions. Health, stamina, energy/power reserve, optional focus/control, recovery, strength, defense, mobility, mastery, and temporary condition must have distinct player-facing purposes. Different body plans can spend and recover resources differently. Strong actions require readable costs and limits; high progression may transform resource use but must preserve meaningful choices, telegraphs, and counterplay.
+
+Cooking provides prepared, time-limited meal effects such as health or stamina support, energy control, resistance, recovery, or activity-specific benefits. Recipes and cooking mastery can persist, while meal effects follow explicit duration and stacking rules. Food preparation is distinct from biological absorption and permanent evolution: eating a meal must not silently grant a full species or complete ability. Nutrition should enhance preparation rather than become constant busywork. Sapient species are not ordinary ingredients or interchangeable loot.
+
+Equipment provides clear stats, protection, trade-offs, specialized effects, and optional set bonuses. Heavy protection may affect mobility or stamina; light equipment may favor evasion; specialized gear may improve energy control while sacrificing another benefit. Equipment must respect anatomy and body-plan compatibility, including non-humanoid forms. Adaptive equipment may be introduced later, but natural anatomy, powers, and worn gear remain distinct systems. Gear appearance should be separable from stats where feasible.
+
+Build synergies must remain legible and bounded. Explain active effects and sources, distinguish flat bonuses from multipliers and conditional effects, and constrain runaway stacking in regeneration, cooldown reduction, damage reflection, evasion, resource refunds, and layered defenses. Multiple builds must remain viable; no armor set, recipe, stat, or combination may become a mandatory universal answer. PvP rewards must never require stealing another player's owned gear or progression, and PvP remains non-permanent.
+
+The full system is not part of the frozen first vertical slice. That slice may demonstrate a small stamina loop and, only if it supports the tutorial, one meal or defense comparison. The full cooking economy, gear catalogue, and all attribute systems remain future scope until separately prototyped and tested.
+
+Canonical specification: [Cooking, Equipment, Stats, and Build Synergy](COOKING_EQUIPMENT_STATS_AND_BUILD_SYNERGY.md).
+
+**Status:** Design requirement documented; implementation, numerical balance, and automated verification remain outstanding.
