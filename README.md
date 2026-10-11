@@ -30,8 +30,8 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
 - **Shared Discovery Network:** verified discoveries become available to other players as knowledge, while personal acquisition, compatibility, and mastery requirements still apply.
 - **Player-legacy NPCs:** qualifying permanent defeats can leave privacy-controlled AI legacies based on validated character snapshots; they do not resurrect the playable character.
-- **Permanent character death:** a dead character starts over; stored research can guide a new life but cannot resurrect the old character.
-- **High-stakes PvP and cooperative Resonance Fusion:** explicit lethal challenges can transfer eligible traits; compatible co-op abilities can form enhanced techniques.
+- **NPC-threat permanent death:** eligible NPC creatures, Alphas, bosses, and designated NPC adversaries can permanently end a character under fair encounter rules; stored research may guide a new life but cannot restore that character.
+- **Protected PvP:** player-versus-player outcomes are always non-permanent, regardless of rank or consent. Another player cannot permanently remove your character, inventory, anatomy, resources, discoveries, specimens, or progression. Cooperative Resonance Fusion remains separate.
 - **Planetary-to-cosmic progression:** planetary completion and biological survival capabilities are required before space travel. There are no vehicles or conventional spaceships; the player evolves into a Living Ship Form.
 
 ## Progression overview
@@ -75,7 +75,7 @@ The current concept roster contains **100 proposed original base species** acros
 5. NPCs can only react to knowledge they could reasonably obtain.
 6. Bosses communicate danger; Titan fights are designed for Titan-scale play.
 7. The world persists and recovers according to its ecology and physical/supernatural rules.
-8. Character death is permanent; research persistence is not resurrection.
+8. Only eligible NPC-controlled threats can cause permanent character death. PvP cannot permanently remove a character or character assets/progression; research persistence is not resurrection.
 9. No ship or vehicle bypasses biological spaceflight progression.
 10. Large-scale population support is an aspiration requiring distributed simulation and authoritative servers, not a current capability claim.
 
