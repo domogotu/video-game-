@@ -29,6 +29,7 @@
 | ECO-004 | Compatible cross-species diets can rarely produce novel hybrid abilities or mutations. | [Creature Diet and Predation](CREATURE_DIET_PREDATION_AND_CROSS_SPECIES_MUTATIONS.md) | An eligible example can produce a documented hybrid result; incompatible combinations cannot bypass rules. | Specified; not tested |
 | ECO-005 | Alpha and special creatures have meaningful identity and ecological influence. | [Alpha and Special Creatures](ALPHA_AND_SPECIAL_CREATURES.md) | An Alpha differs through behavior, history, trait, or regional influence—not only inflated stats. | Specified; later milestone |
 | ECO-006 | Creature discovery includes observation, research, variants, and optional bonding/companions where appropriate. | [Living Creature Ecosystem](LIVING_CREATURE_ECOSYSTEM_AND_COLLECTION.md) | Journal distinguishes seen, observed, studied, bonded, absorbed, and mastered states. | Specified; scope deferred |
+| RIVAL-001 | Persistent adversaries remember plausible encounter history, adapt within fair limits, and create consequential recurring encounters. | [Rivalry and Adaptive Adversary System](RIVALRY_AND_ADAPTIVE_ADVERSARY_SYSTEM.md); [Alpha and Special Creatures](ALPHA_AND_SPECIAL_CREATURES.md); [Creature Diet and Predation](CREATURE_DIET_PREDATION_AND_CROSS_SPECIES_MUTATIONS.md) | Rivals persist across valid encounters, only learn information they could plausibly know, use readable counters with counterplay, preserve outcomes across saves, and never gate mandatory progression behind random spawns. | Specified; later milestone; not implemented or tested |
 | LUCK-001 | Random luck can grant early rare encounters or eligible discoveries. | [Luck and Random Discovery](LUCK_AND_RANDOM_DISCOVERY_SYSTEM.md) | Eligible rare outcomes are possible and clearly recorded; luck cannot violate compatibility. | Specified; not balanced |
 | LUCK-002 | Essential progression remains possible without lucky drops. | [Luck and Random Discovery](LUCK_AND_RANDOM_DISCOVERY_SYSTEM.md); [Alpha and Special Creatures](ALPHA_AND_SPECIAL_CREATURES.md) | Every required progression gate has a deterministic or repeatable alternative route. | Specified; not tested |
 | DISC-001 | Distinguish rumors, observations, verified knowledge, acquisition, stabilization, and mastery. | [Living Creature Ecosystem](LIVING_CREATURE_ECOSYSTEM_AND_COLLECTION.md); [Game Design Bible](GAME_DESIGN_BIBLE.md) | Journal and progression state never misrepresent a clue as an owned/mastered ability. | Specified; not implemented |
@@ -48,7 +49,7 @@
 
 These are intentionally beyond the initial cellular slice, not rejected:
 - Full open-world and planet-scale streaming.
-- Full creature roster, Alpha catalogue, rare variants, and detailed food-web simulation.
+- Full creature roster, Alpha catalogue, rare variants, detailed food-web simulation, and persistent rivalry/adaptive-adversary simulation.
 - Deep companion, bonding, breeding, migration, and ecosystem population systems.
 - Full ability catalogue, all synthesis recipes, environmental destruction at large scales, and cosmic powers.
 - Later evolutionary stages, biological spaceflight, planetary/cosmic content, and specialized secret routes.
