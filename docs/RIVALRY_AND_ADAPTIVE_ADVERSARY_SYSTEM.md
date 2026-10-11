@@ -21,7 +21,7 @@ The system complements Lethal Absorption's core: **Consume. Evolve. Survive.** I
 5. **Victory has options.** Defeat, escape, evasion, research, negotiation, disruption, containment, or alliance may resolve a rivalry where appropriate.
 6. **No mandatory random wall.** Main-story progress cannot depend on one rival spawning, surviving, or dropping a rare item.
 7. **World actors have agency.** Goals and relationships fit their species and intelligence.
-8. **Permanent death remains meaningful.** The current player character is not resurrected by this system. A successor may encounter a limited legacy footprint, not inherit the prior character's complete power.
+8. **Permanent death remains meaningful and PvP-safe.** Only eligible NPC-controlled threats may permanently end the current player character. PvP outcomes are always non-permanent, regardless of rank or consent, and cannot permanently remove assets or progression.
 
 ## 3. How rivals emerge
 
@@ -93,7 +93,7 @@ Leadership is not a universal ladder: some species are solitary, symbiotic, migr
 - **Absorption/discovery:** rewards follow normal eligibility: resources, verified knowledge, clues, partial traits, or compatible mutation opportunities—not automatic full power transfer. Sapient adversaries remain subject to agency, culture, and narrative rules.
 - **Evolution/body plans:** tactics respect anatomy, stage, environment, and resources.
 - **Ability weaving/environment:** counters use plausible cover, spacing, material interaction, disruption, or compatible defense—not blanket immunity. World damage follows existing persistence and protected-area rules.
-- **Permanent death/legacy:** the player's death ends the current character. A successor may encounter an unresolved threat, memorial, faction shift, or journal record, but does not automatically inherit complete rivalry progression or powers.
+- **Permanent death/legacy:** only eligible NPC-controlled threats can permanently end the player's current character. PvP cannot permanently remove a character, inventory, anatomy, resources, discoveries, specimens, or progression. A successor may encounter a legacy footprint after a qualifying NPC-caused defeat.
 
 ## 9. Fairness and player control
 
@@ -145,7 +145,7 @@ The first vertical slice does not implement this full system. It remains a later
 - [ ] Diet and absorption rules govern all rival mutations and rewards.
 - [ ] Mandatory progression does not require a random rival or rare reward.
 - [ ] Save/load preserves history and does not duplicate rewards or reroll outcomes.
-- [ ] Rivalry does not bypass permanent player-character death.
+- [ ] Rivalry does not bypass permanent player-character death.\n- [ ] PvP cannot permanently end a player character or remove their assets/progression.\n- [ ] NPC attribution cannot be used to bypass protection for player-caused or uncertain outcomes.
 - [ ] Difficulty/accessibility options preserve fair warning and agency.
 - [ ] Performance caps and archive policies prevent unbounded persistent-actor growth.
 - [ ] Originality and legal review occur before public release.
