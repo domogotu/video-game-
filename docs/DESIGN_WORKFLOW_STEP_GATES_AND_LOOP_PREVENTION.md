@@ -102,6 +102,7 @@ The following is the initial ledger based on the repository state reviewed for t
 | UI/feedback for the slice | NEXT — NOT STARTED | Define the minimum HUD, objective/progress prompts, trait comparison, discovery-state labels, threat telegraphs, and transition recap needed for this slice. |
 | Slice consistency and scope freeze | REVIEWED — DESIGN BASELINE FROZEN | One documentation consistency pass and correction pass recorded in MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md; runtime acceptance remains untested. |
 | Implementation handoff | DEFERRED | This project is currently being focused on gameplay/design. Do not claim implementation or runtime verification. |
+| Rivalry and adaptive adversary system | SPECIFIED — LATER MILESTONE | Original persistent-rival design is recorded in RIVALRY_AND_ADAPTIVE_ADVERSARY_SYSTEM.md and tracked as RIVAL-001. It does not replace the current UI/feedback step or expand the frozen first slice. |
 
 ## 8. Definition of “Done” for a Design Step
 
