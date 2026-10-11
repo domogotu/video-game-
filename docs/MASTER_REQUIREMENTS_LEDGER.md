@@ -47,6 +47,38 @@
 | DOC-001 | Every accepted idea remains recorded and traceable. | [Master Design Index and Preservation Rules](MASTER_DESIGN_INDEX_AND_PRESERVATION_RULES.md); [Master Documentation Consistency Audit](MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md) | Current design documents are indexed; new ideas have a source, status, dependencies, and acceptance criteria; gaps remain explicitly listed. | Index and initial inventory verified; fine-grained requirement atomization remains ongoing |
 | TEST-001 | Never claim implementation, tests, or verification without evidence. | [Master Design Index and Preservation Rules](MASTER_DESIGN_INDEX_AND_PRESERVATION_RULES.md); [Workflow Gates](DESIGN_WORKFLOW_STEP_GATES_AND_LOOP_PREVENTION.md) | Each implemented milestone has named test evidence and a recorded pass/fail status. | Required workflow rule |
 
+### CORE-STATS-001 — Distinct character attributes and stamina
+
+**Requirement:** Health, stamina, energy/power reserve, recovery, strength, defense, mobility, mastery, and any optional focus/control stat must have distinct purposes. Stamina supports meaningful exertion limits and can improve through progression, training, traits, evolution, food, gear, and mastery, with readable costs and recovery. Different body plans may have different resource behaviors.
+
+**Acceptance:** Costs, regeneration, exhaustion, and unavailable-action reasons are readable; balance prevents infinite action spam without creating tedious interruptions; tests cover exhaustion, recovery, and form-specific behavior.
+
+**Status:** Documented; implementation and tuning outstanding.
+
+### COOK-001 — Cooking, meals, and nutrition
+
+**Requirement:** Cooking supports useful meal effects with explicit duration, stacking, recipe discovery, ingredient quality, and species compatibility. Temporary meal buffs remain distinct from permanent genetic absorption and evolution. Food enhances preparation but is not mandatory constant busywork; sapient species are not treated as ordinary ingredients.
+
+**Acceptance:** Meal effects and durations are visible; stacking rules prevent exploitative buff accumulation; save/load and species compatibility are tested; no meal silently grants a complete species or ability.
+
+**Status:** Documented; implementation and tuning outstanding.
+
+### GEAR-001 — Equipment, armor, and set bonuses
+
+**Requirement:** Gear communicates benefits and trade-offs, supports optional set bonuses, and respects anatomy/body-plan compatibility. Natural defenses, equipment, shields, resistances, regeneration, and evasion remain mechanically distinct. PvP rewards never require stealing another player's owned items or progression.
+
+**Acceptance:** Gear comparisons show current versus proposed stats, set progress and active bonuses; incompatible form changes are clearly explained; defensive stacking has anti-exploit limits; tests cover gear swaps and form changes.
+
+**Status:** Documented; implementation and tuning outstanding.
+
+### BUILD-SYNERGY-001 — Viable combinations without a mandatory meta
+
+**Requirement:** Core stats, meals, gear, anatomy, traits, powers, mastery, and condition can combine into coherent builds with bounded stacking and clear effect sources. Multiple builds must remain viable without one mandatory set or recipe.
+
+**Acceptance:** Bonus types and conditions are understandable; runaway regeneration, cooldown, reflection, evasion, refund, and defense stacking are constrained; tests cover combinations and edge cases.
+
+**Status:** Documented; numerical balance and implementation outstanding.
+
 ## 3. Deferred, not deleted
 
 These are intentionally beyond the initial cellular slice, not rejected:
