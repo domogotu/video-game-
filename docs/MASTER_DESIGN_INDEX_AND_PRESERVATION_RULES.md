@@ -34,6 +34,7 @@ GitHub is the persistent design record. Each committed change is part of reposit
 - [Progressive Stage Transitions: Cell to Cosmic](PROGRESSIVE_STAGE_TRANSITIONS_CELL_TO_COSMIC.md) — progression from early cellular play through later evolutionary and cosmic stages.
 - [Core Gameplay Loop and Player Feedback](CORE_GAMEPLAY_LOOP_AND_PLAYER_FEEDBACK.md) — action loops, feedback, readability, and player learning.
 - [First Vertical Slice: Cellular Opening to First Evolution](VERTICAL_SLICE_01_CELLULAR_OPENING_TO_FIRST_EVOLUTION.md) — deliberately small opening sequence and first stage transition.
+- [Vertical Slice 01 System Interactions and Edge Cases](VERTICAL_SLICE_01_SYSTEM_INTERACTIONS_AND_EDGE_CASES.md) — state transitions, absorption, trait selection, predator/prey and diet rules, recovery, persistence, and implementation acceptance tests.
 
 ### Evolution, abilities, mutations, and combat
 
@@ -124,14 +125,8 @@ Use these statuses consistently:
 
 Documentation alone does not move a feature to Implemented, Tested, or Verified.
 
-## 8. Immediate next preservation step
+## 8. Current preservation and next-step status
 
-Before adding more large feature concepts, conduct a **documentation inventory and consistency pass**:
-- Compare the current repository files with this index.
-- Check for duplicate or conflicting rules across the Game Design Bible and subsystem documents.
-- Identify important ideas that exist only in conversation and capture them without expanding their scope.
-- Create one consolidated requirements ledger with IDs, source document, dependencies, status, and acceptance criteria.
-- Mark what belongs to the first vertical slice versus later stages.
-- Do not begin implementation or claim the game is playable as part of this documentation pass.
+The initial documentation inventory and consistency review are recorded in [Master Documentation Consistency Audit](MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md), and the initial cross-system ledger is in [Master Requirements Ledger](MASTER_REQUIREMENTS_LEDGER.md). The frozen first slice now has a dedicated [system interactions and edge cases specification](VERTICAL_SLICE_01_SYSTEM_INTERACTIONS_AND_EDGE_CASES.md).
 
-**Completion criteria for preservation:** every currently tracked design document is indexed; important cross-system rules are recorded; deferred ideas remain visible; repository content has been fetched and verified; implementation status is stated honestly.
+**Next:** define the first-slice UI and player feedback contract only. Keep implementation and runtime verification separate from design documentation. The ledger remains an initial traceability ledger; fine-grained requirement atomization may continue when a specific implementation milestone requires it.
