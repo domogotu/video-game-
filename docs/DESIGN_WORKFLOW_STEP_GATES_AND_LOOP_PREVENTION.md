@@ -98,8 +98,8 @@ The following is the initial ledger based on the repository state reviewed for t
 |---|---|---|
 | Core gameplay loop and player feedback | DONE — document created and fetched back from GitHub | Use as the baseline for the slice; reopen only for a documented conflict or explicit change request. |
 | Define the first gameplay vertical slice | DESIGN SCOPE FROZEN | Scope includes the cellular teaching sequence, first evolution, compact animal habitat, one bounded predator-prey relationship, one diet-driven growth/condition change and adaptation clue, and explicit acceptance criteria. Numeric tuning remains for implementation evidence. |
-| Specify slice systems and edge cases | NEXT — NOT STARTED | Convert the frozen slice rules into bounded system requirements and edge-case outcomes; do not add unrelated endgame systems. |
-| UI/feedback for the slice | NOT STARTED | Define only the information needed to play and understand the slice. |
+| Specify slice systems and edge cases | DONE — specification created and committed | State transitions, absorption/growth, trait selection, evolution gate, transition/save integrity, bounded predator-prey and diet clue, luck safeguards, recovery, and acceptance cases documented. No runtime implementation or tests claimed. |
+| UI/feedback for the slice | NEXT — NOT STARTED | Define the minimum HUD, objective/progress prompts, trait comparison, discovery-state labels, threat telegraphs, and transition recap needed for this slice. |
 | Slice consistency and scope freeze | REVIEWED — DESIGN BASELINE FROZEN | One documentation consistency pass and correction pass recorded in MASTER_DOCUMENTATION_CONSISTENCY_AUDIT.md; runtime acceptance remains untested. |
 | Implementation handoff | DEFERRED | This project is currently being focused on gameplay/design. Do not claim implementation or runtime verification. |
 
