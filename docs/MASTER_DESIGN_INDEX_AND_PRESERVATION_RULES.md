@@ -77,6 +77,7 @@ The following are cross-system commitments. New specifications must remain consi
 - Diet can affect growth, conditioning, refinements, mutation opportunities, and rare cross-species abilities, but no meal guarantees a power.
 - Alpha and special creatures differ through behavior, ecology, history, or unique adaptations—not just inflated health.
 - Persistent rivals remember only plausible encounter information, adapt within readable limits, and create consequences without bypassing player agency or mandatory progression.
+- Permanent character death is limited to eligible NPC-controlled threats. PvP outcomes are non-permanent and cannot permanently remove a player character or their assets/progression, regardless of rank or consent.
 - Creatures can be observed, researched, avoided, helped, bonded with where appropriate, battled, or absorbed when allowed. Not every creature supports every interaction.
 - Ecosystem consequences must be coherent and observable without simulating every organism at full detail across the entire world.
 - Sapient species have agency and culture; they are not interchangeable loot containers.
