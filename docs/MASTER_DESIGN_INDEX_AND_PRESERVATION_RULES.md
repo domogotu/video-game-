@@ -52,6 +52,7 @@ GitHub is the persistent design record. Each committed change is part of reposit
 - [Creature Diet, Predation, and Cross-Species Mutations](CREATURE_DIET_PREDATION_AND_CROSS_SPECIES_MUTATIONS.md) — NPC diets, wild hunting, food webs, growth, and cross-species mutation opportunities.
 - [Alpha and Special Creatures](ALPHA_AND_SPECIAL_CREATURES.md) — Alpha individuals, rare variants, apex/ancient/anomalous/named creatures, encounter rules, and ecological effects.
 - [Luck and Random Discovery System](LUCK_AND_RANDOM_DISCOVERY_SYSTEM.md) — chance, rare early unlocks, bad-luck protection, useful duplicates, and fair progression.
+- [Rivalry and Adaptive Adversary System](RIVALRY_AND_ADAPTIVE_ADVERSARY_SYSTEM.md) — persistent rivals, encounter memory, bounded counter-adaptation, rematches, and regional consequences.
 
 ### Special evolutionary routes and original character direction
 
@@ -75,6 +76,7 @@ The following are cross-system commitments. New specifications must remain consi
 - NPC creatures have their own diets and behaviors. Wild predators hunt appropriate prey; prey evade, hide, group, or defend.
 - Diet can affect growth, conditioning, refinements, mutation opportunities, and rare cross-species abilities, but no meal guarantees a power.
 - Alpha and special creatures differ through behavior, ecology, history, or unique adaptations—not just inflated health.
+- Persistent rivals remember only plausible encounter information, adapt within readable limits, and create consequences without bypassing player agency or mandatory progression.
 - Creatures can be observed, researched, avoided, helped, bonded with where appropriate, battled, or absorbed when allowed. Not every creature supports every interaction.
 - Ecosystem consequences must be coherent and observable without simulating every organism at full detail across the entire world.
 - Sapient species have agency and culture; they are not interchangeable loot containers.
