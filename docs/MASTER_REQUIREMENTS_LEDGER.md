@@ -79,6 +79,22 @@
 
 **Status:** Documented; numerical balance and implementation outstanding.
 
+### AI-PERCEPTION-001 — Evidence-based enemy perception and investigation
+
+**Requirement:** Enemies use only senses and reports justified by their species and situation. They investigate stimuli, search last-known locations with uncertainty, can lose the trail, and cannot track exact player coordinates without a valid information source.
+
+**Acceptance:** Tests cover line of sight, obstruction, sound source investigation, sensory limits, last-known-position search, lost contact, distraction, and successful escape. No teleporting or omniscient target tracking.
+
+**Status:** Documented; runtime implementation and testing outstanding.
+
+### AI-ADAPT-001 — Bounded adversary learning and tension direction
+
+**Requirement:** Capable adversaries remember plausible witnessed or inferred tactics with confidence and recency, then adapt within readable, counterable limits. A bounded encounter director may vary pacing but cannot force impossible encounters, grant omniscience, bypass safe zones/tutorial protection, or override PvP's non-permanent death rule.
+
+**Acceptance:** Tests verify adaptation tells/counters, scoped knowledge sharing, memory decay, save/load, performance limits, and director restrictions.
+
+**Status:** Documented; runtime implementation and testing outstanding.
+
 ## 3. Deferred, not deleted
 
 These are intentionally beyond the initial cellular slice, not rejected:
