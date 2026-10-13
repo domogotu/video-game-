@@ -27,6 +27,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **Goblin reclaimer route:** a weak goblin can evolve through survival, selective consumption, crafting, learned techniques, and adaptive social or solo strategies.
 - **Wukong-inspired mythic staff ascendant:** a planned playable staff-fighter route built around agility, feints, counters, traversal, mythic trials, and earned transformations, expressed through original character design.
 - **Reactive persistent worlds:** ecosystems, NPCs, structures, wounds, evidence, environmental damage, plant growth, repairs, and recovery can continue after players leave.
+- **Open, living world:** regions are available to discover without arbitrary story locks; physical access and survival still depend on anatomy and adaptation. NPCs, creatures, settlements, and ecosystems follow routines, react to evidence and player actions, and recover through bounded persistent simulation.
 - **Meaningful hunting:** stalking, pursuit, witness awareness, catch security, carrying, specimen preservation, and absorption circumstances can unlock rare evolutionary opportunities.
 - **Dominance and investigation:** creatures and communities remember credible encounters, assess threats, and investigate evidence without magical omniscience.
 - **Shared Discovery Network:** verified discoveries become available to other players as knowledge, while personal acquisition, compatibility, and mastery requirements still apply.
