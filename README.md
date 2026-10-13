@@ -151,3 +151,11 @@ Character development combines core attributes and training with meal-based bonu
 - [Cooking, Equipment, Stats, and Build Synergy](docs/COOKING_EQUIPMENT_STATS_AND_BUILD_SYNERGY.md)
 
 This is a design specification, not evidence of a playable implementation. Exact formulas, durations, drop rates, gear slots, stacking rules, and balance remain open until prototyped and tested.
+
+## Perception-driven adaptive hunter AI
+
+Enemies react to evidence the player creates—sight, sound, scent, vibration, environmental traces, or credible ally reports—according to their actual capabilities. They investigate, search last-known positions, can lose the trail, remember witnessed tactics, and adapt with readable counterplay. A bounded tension director may vary encounter pacing but cannot teleport enemies, grant impossible knowledge, or bypass safe-start and PvP protections.
+
+- [Perception, Investigation, and Adaptive Hunter AI](docs/PERCEPTION_INVESTIGATION_AND_ADAPTIVE_HUNTER_AI.md)
+
+This is a design requirement, not evidence of implemented or tested AI.
