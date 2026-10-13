@@ -10,6 +10,31 @@ Hunting is a complete gameplay activity, not simply attacking a creature after f
 
 Hunting connects the living ecosystem, creature AI, perception and investigation, diet, absorption, research, mutation, mastery, equipment, and the narrator's adaptive field guidance.
 
+## 1A. Core gameplay identity: action RPG first, hunting as a connected system
+
+**Lethal Absorption is not a hunting simulator. It is an evolutionary action RPG in which hunting is one major way to discover threats, gather knowledge, earn resources, and develop the player's body.** The moment-to-moment experience should combine the demanding, readable melee and boss-fight feel associated with *Black Myth: Wukong* with the open-world exploration, training, cooking, character progression, mobility, and spectacular power growth associated with *Dragon Ball Z: Kakarot*. These are high-level references only; the game must use original characters, abilities, visual language, story, and encounters.
+
+### The intended play rhythm
+
+1. **Explore freely:** travel through a reactive world, discover landmarks, gather resources, meet characters, and stumble onto unusual activity without always accepting a formal hunt.
+2. **Notice or investigate:** clues can reveal a creature, rival, rare resource, hidden route, ecological change, or dangerous encounter. Players may investigate, ignore it, or return later.
+3. **Prepare the character:** select abilities, traits, equipment, and a meal where useful. Preparation offers advantages but should not become mandatory busywork before every fight.
+4. **Fight with action-RPG skill:** use responsive movement, dodges, spacing, timing, combos, counters, powers, transformations, and anatomy-specific attacks. Major enemies need readable tells, meaningful openings, and distinct attack patterns—not only oversized health bars.
+5. **Adapt during combat:** identify patterns, switch tactics, combine compatible powers, exploit terrain, and choose when to press the attack or disengage. Enemy counters must be fair and learnable.
+6. **Resolve the hunt and evolve:** outcomes may provide nourishment, materials, mastery, research, access, or eligible evolution opportunities. A kill alone never guarantees every trait or reward.
+7. **Return to the wider adventure:** continue exploration, training, cooking, story, rivalries, social encounters, and other objectives. Hunting should feed the larger RPG loop rather than replace it.
+
+### Combat and exploration principles
+
+- **Combat is active and expressive.** Hunting can end in a direct boss fight, but tracking should create context and tactical choices—not force every encounter into slow stealth.
+- **Multiple valid approaches:** ambush, ranged pressure, staff/weapon-style techniques where equipped, close-range combos, powers, traps, evasion, environmental tactics, or direct challenge. Which options are available depends on the character's anatomy, abilities, equipment, and mastery.
+- **Bosses are skill checks, not stat checks alone.** Distinct phases, telegraphed attacks, punish windows, movement challenges, and opportunities to learn should reward mastery while allowing different builds to succeed.
+- **Exploration stays rewarding between hunts.** Hidden areas, resources, training opportunities, secrets, NPC activity, and environmental storytelling must stand on their own.
+- **Progression changes how the player plays.** New anatomy and abilities should unlock different movement, defense, combos, senses, and strategies—not merely larger damage numbers.
+- **Do not import exact licensed expression.** Borrow broad design lessons, not protected characters, signature animation sequences, exact move lists, story beats, or visual designs.
+- **Scope remains staged.** These are long-term identity goals. They do not expand the frozen opening vertical slice, which remains limited to its already-defined basic movement, gathering/absorption, dodge, attack, growth, and one trait choice.
+
+
 ## 2. The hunt loop
 
 1. **Find signs:** Discover tracks, disturbed plants, shed scales, broken branches, nests, territorial markings, scent traces, blood or other species-appropriate fluids, heat, vibration, sound, energy residue, or prey behavior.
