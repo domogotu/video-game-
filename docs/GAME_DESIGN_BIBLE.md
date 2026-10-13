@@ -1110,3 +1110,17 @@ The full system is not part of the frozen first vertical slice. That slice may d
 Canonical specification: [Cooking, Equipment, Stats, and Build Synergy](COOKING_EQUIPMENT_STATS_AND_BUILD_SYNERGY.md).
 
 **Status:** Design requirement documented; implementation, numerical balance, and automated verification remain outstanding.
+
+## 25. Perception-driven adaptive hunter AI
+
+Lethal Absorption's enemies must react to evidence the player actually creates. Depending on species, anatomy, intelligence, equipment, mutations, and condition, AI may use vision, hearing, scent, vibration, heat/energy sensing, environmental traces, or credible reports from allies. Every sense has defined limits, interference, and counterplay.
+
+When an enemy loses reliable contact, it searches the last-known area using plausible routes and evidence rather than snapping to the player's exact position. Suspicion, investigation, searching, pursuit, lost contact, reassessment, and recovery should be conveyed through consistent behavior, animation, sound, and environmental clues. Players can exploit cover, terrain, distractions, decoys, concealment, and sensory blind spots where their build supports them.
+
+Capable enemies and persistent rivals may remember tactics they plausibly witnessed or inferred. Their adaptation is bounded, readable, and counterable: no instant hard counters, unexplained immunity, endless escalation, or global knowledge sharing without a credible communication path. Prey, pack hunters, territorial predators, ambush species, Alphas, and sapient factions use different behavior profiles while sharing core perception rules.
+
+A separate, bounded encounter director may manage tension and pacing, but cannot teleport enemies, grant impossible knowledge, force unavoidable spawns, or bypass safe zones, tutorial protection, or PvP safety. Only eligible NPC-controlled threats can cause permanent character death; PvP can never permanently kill a character.
+
+Canonical specification: [Perception, Investigation, and Adaptive Hunter AI](PERCEPTION_INVESTIGATION_AND_ADAPTIVE_HUNTER_AI.md).
+
+**Status:** Design requirement documented; AI implementation, performance profiling, balancing, and runtime verification remain outstanding.
