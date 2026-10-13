@@ -155,3 +155,13 @@ The first vertical slice does not implement this full system. It remains a later
 Resolve at a later prototype gate: active rivals per region; first introduction stage; memory retention and information sharing; adaptation slot count/cooldowns; faction simulation depth; difficulty tuning; authored/procedural balance; save/archive strategy; and implementation-specific legal review.
 
 **Current state:** Design specified and ready for review. No playable implementation or runtime test evidence is established.
+
+## 14. Perception-driven hunting and investigation
+
+Persistent rivals and ordinary enemies use the dedicated [Perception, Investigation, and Adaptive Hunter AI](PERCEPTION_INVESTIGATION_AND_ADAPTIVE_HUNTER_AI.md) specification. They must react to evidence rather than receive omniscient player coordinates.
+
+The shared behavior model covers justified senses, stimulus detection, suspicion, investigation, last-known-position searching, pursuit, lost contact, reassessment, and recovery. Rival learning is based on plausible witnessed or inferred events with confidence and recency. Tactical adaptation remains bounded, telegraphed, and counterable; one rival's knowledge is not automatically shared with every creature or faction.
+
+A bounded encounter director may manage tension and pacing only after individual perception and search behavior are fair. It cannot teleport enemies, bypass safe zones or tutorial protection, force unavoidable spawns, or override the rule that PvP can never permanently kill a character. Simulation tiers and bounded memory prevent the system from becoming too expensive or retaining stale omniscient knowledge.
+
+**Status:** Integrated design requirement; implementation and runtime tests outstanding.
