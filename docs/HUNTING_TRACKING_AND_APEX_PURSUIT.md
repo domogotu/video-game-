@@ -130,7 +130,78 @@ Its guidance can adapt to the player's playstyle:
 
 Hint frequency should be configurable where feasible. The player can ignore advice and still progress.
 
-## 10. Connection to existing systems
+## 10. Team Hunts and Asymmetric Monster Pursuit
+
+The hunting concept also supports a coordinated team-versus-monster experience inspired by the broad structure of *Evolve*: one side cooperates to track a dangerous evolving creature, while the target uses stealth, feeding, growth, and its own combat choices to survive. The mode and all creatures, roles, names, visuals, and lore remain original to Lethal Absorption.
+
+### A. Hunting team
+
+A small squad of players or, where appropriate, NPC allies can combine different strengths rather than all using the same tracking tool.
+
+Possible role specializations emerge from equipment, traits, and player choices rather than mandatory fixed classes:
+- **Tracker:** reads trails, predicts routes, and distinguishes fresh evidence from old signs.
+- **Scout:** searches ahead, marks hazards, and locates likely feeding or resting areas.
+- **Controller:** deploys temporary barriers, snares, distractions, or terrain denial where the setting supports them.
+- **Support / field specialist:** helps allies recover, manages supplies, identifies weaknesses, or provides countermeasures.
+- **Striker:** applies pressure and punishes openings, but may be less effective at tracking or support.
+
+These are flexible team functions, not locked classes. Players should be able to change their build and contribute in more than one way. Communication and complementary tools should matter more than raw damage stacking.
+
+### B. The evolving monster
+
+A player-controlled or NPC-controlled monster has a separate survival loop:
+1. Find food or other valid growth sources.
+2. Move through the environment while managing the evidence it leaves.
+3. Learn the hunters' position from credible cues such as sound, line of sight, traps, marked trails, or environmental disturbances.
+4. Decide whether to hide, misdirect, flee, feed, defend a resource, or attack.
+5. Gain growth and choose from eligible evolutionary improvements.
+6. Reassess whether to continue evading or risk a confrontation.
+
+Growth should create strategic trade-offs, not a simple timer that automatically decides the winner. Feeding may reveal the monster's location or leave evidence; remaining hidden may delay growth; fighting early may be risky but can disrupt the team. The hunters must have counterplay, and the monster must have meaningful options besides running until a timer expires.
+
+### C. Hunt stages and escalation
+
+A match or encounter can move through readable phases:
+- **Search:** the team collects clues and estimates the monster's route.
+- **Contact:** hunters confirm the target's presence or force it to react.
+- **Pressure:** the team coordinates tracking, containment, and attacks while the monster uses escape routes or counters.
+- **Adaptation:** the monster may gain eligible growth milestones; hunters respond to observed changes.
+- **Showdown or escape:** either side can create a decisive opportunity, but the outcome depends on play and rules rather than a scripted win.
+
+Phase changes should follow actual evidence and encounter state. The game must not reveal exact coordinates for free, spawn the monster directly in front of the team, or force a final arena without a clear mode rule.
+
+### D. Win conditions and fair asymmetry
+
+Different playlists can support different objectives:
+- **Elimination hunt:** defeat the target within the match's rules.
+- **Survival hunt:** the monster survives or escapes until the objective window ends; the team wins by stopping or containing it.
+- **Objective hunt:** the team protects, studies, or captures a non-sapient target using a specifically designed nonlethal objective, while the monster can disrupt and escape.
+- **Ecological contract:** the team tracks a dangerous NPC creature in the persistent world, with optional objectives for observation, defense, or containment.
+
+A player-controlled monster in a competitive match must follow explicit match defeat and respawn rules. This mode cannot permanently kill a player character or permanently remove the opponent's inventory, anatomy, discoveries, specimens, or progression. This preserves the project's existing rule that PvP never causes permanent character death or permanent loss. Persistent-world permadeath remains restricted to eligible NPC-controlled threats under the established rules.
+
+### E. Rewards and progression
+
+Competitive hunts can award a protected reward pool such as disclosed currency, mastery, rank/season progress, cosmetics, research clues, crafting materials, or consumables. The reward rules must be visible before the match. Winning must not allow players to steal an opponent's build, anatomy, inventory, or permanent discoveries. Avoid repeat-match farming and collusion with participation rules, matchmaking, and reward limits.
+
+Hunting a creature in the persistent world can award knowledge or ecological consequences even when it escapes. Player-versus-player monster matches should not grant guaranteed rare traits or exclusive mandatory progression simply for winning.
+
+### F. Matchmaking and balance
+
+- Match players within reasonable progression and capability bands, or normalize selected match-only values.
+- The monster must be dangerous without relying on unreadable burst damage or unavoidable control.
+- The team must be effective through coordination, not by stacking one unstoppable damage combo.
+- Every major monster power needs a tell, a limitation, and at least one counter or response.
+- Monster growth must be observable and earned, with catch-up and pacing rules still open for later testing.
+- The team should be able to recover from a missed clue; a single early mistake must not automatically decide the match.
+- Prevent queue abuse, intentional feeding, farming, griefing, and reward manipulation.
+- Competitive rules and persistent-world rules must be clearly separated in the UI and design.
+
+### G. Solo and cooperative accessibility
+
+The feature should not require every player to participate in competitive multiplayer. NPC hunting teams, solo contracts, co-op hunts against AI monsters, and optional asymmetrical player matches are possible extensions. The full mode is long-term multiplayer scope and must not expand the opening vertical slice.
+
+## 11. Connection to existing systems
 
 - **Perception, Investigation, and Adaptive Hunter AI:** Hunting uses evidence-driven awareness, last-known-position investigation, bounded memory, and fair pursuit.
 - **Alpha and Special Creatures:** Special hunts use ecological signs, meaningful differences, and consequences rather than inflated health alone.
