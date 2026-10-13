@@ -85,6 +85,7 @@ The current concept roster contains **100 proposed original base species** acros
 ## Documentation
 
 - **[Full Game Design Bible](docs/GAME_DESIGN_BIBLE.md)** — consolidated specification for progression, combat, evolution, anatomy, hunting, species, PvP, world persistence, investigations, NPC behavior, planetary completion, biological spaceflight, modular anatomy upgrades, unresolved decisions, and governing rules.
+- **[Skill Tree and Evolution Atlas](docs/SKILL_TREE_AND_EVOLUTION_ATLAS.md)** — detailed design for interconnected evolution nodes, ability progression, mastery, prerequisites, cross-branch synergies, build planning, respec, and future implementation acceptance gates. Design-only; not implemented or tested.
 
 ## Inspirations
 
