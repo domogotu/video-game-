@@ -46,6 +46,8 @@ NG+ becomes available on main-story completion. It restarts the main story/world
 
 The **Evolution Atlas** is the unified, zoomable progression system—conceptually “Path of Exile × 1,000”—that begins as a cellular tree and can expand into planetary, stellar, dimensional, and universal routes. Each character’s actual history changes which branches and connections become available.
 
+The Atlas is a non-class-based skill tree connecting build-wide evolution nodes, individually leveled abilities, and use-based mastery. It must support anatomy, traits, active skills, modifiers, passive adaptations, fusion/synergy, transformations, research, and planetary-to-cosmic milestones. Nodes show their prerequisites, costs, effects, compatibility, and trade-offs before commitment. Branches can cross-link when supported by actual rules; unlocks and discoveries persist separately from reversible build choices. Build planning must not alter the live character, and the respec policy must be explicit. See [Skill Tree and Evolution Atlas](SKILL_TREE_AND_EVOLUTION_ATLAS.md) for the detailed specification. This remains design-only, not implemented or tested.
+
 Node families include:
 - Biological structures, organs, anatomy, and traits
 - Mutations and environmental adaptations
