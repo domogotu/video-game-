@@ -292,6 +292,37 @@ Open decision: whether the Vault is account-persistent or world-based/raidable/c
 
 ## 13. Persistent worlds and world discovery
 
+### Every region is part of one available world
+
+The intended world feel also draws on the broad open-city freedom and ambient activity of *Marvel's Spider-Man 2*: the player should feel that the world is there to explore, not like a sequence of small levels selected from a menu. This is a design reference, not a request to copy its city, missions, characters, or presentation.
+
+- **World availability:** regions and major destinations should be present and discoverable as part of the open world rather than held behind arbitrary story-completion gates. The player may travel toward dangerous places early and choose to retreat.
+- **Access is not safety:** creatures, hazards, environmental conditions, and enemy capabilities can make a destination extremely dangerous. Some routes may require a credible movement ability, anatomy, environmental adaptation, or a discovered access method; these are physical or capability-based constraints, not arbitrary plot locks.
+- **Continuous exploration:** use seamless traversal where technically feasible, with minimal loading interruptions and clear transitions between distinct biomes, settlements, underground areas, oceans, skies, and later planetary/cosmic spaces. Exact world scale, streaming boundaries, and platform budgets remain technical decisions.
+- **Player-directed pacing:** the main story provides direction but does not monopolize play. Exploration, hunts, training, secrets, side activities, NPC encounters, resources, and emergent threats remain available between major missions.
+- **World-state consistency:** the world should remember meaningful events—creature displacement, damaged structures, player-caused disturbances, discovered routes, local danger, and NPC reactions—according to bounded persistence rules.
+
+### The world must feel alive without the player
+
+- **NPC routines and goals:** important NPCs and groups can travel, work, rest, trade, patrol, investigate, repair, celebrate, evacuate, or respond to local danger. Routines vary by species, culture, role, and world conditions.
+- **Ambient activity:** creatures forage, hunt, migrate, defend territory, compete for resources, communicate, and react to changes. Settlements and wild areas should have activity even when no mission is active.
+- **Emergent encounters:** events can arise from simulated conditions—such as a predator entering a settlement's outskirts, a migration crossing a route, a damaged structure attracting investigators, or rival creatures competing for prey—rather than always appearing as scripted mission markers.
+- **Consequences and recovery:** people and ecosystems respond to credible evidence, witnesses, damage, and loss. Repairs, regrowth, migration, and recovery occur at species- and location-appropriate rates; not every change must be permanent, but resets should not erase major consequences without a rule.
+- **Player presence matters:** NPCs may recognize the player, remember witnessed actions, react to visible anatomy or reputation, and change their behavior within fair, bounded memory. They cannot know private actions or exact locations without evidence.
+- **Activity without noise overload:** ambient events should create opportunities, not constant interruptions. Players can ignore most optional encounters and continue their chosen activity.
+- **Simulation tiers:** nearby and mission-relevant actors receive detailed simulation; distant regions use lower-cost summaries that preserve important state and plausible outcomes. This is a proposed design requirement, not evidence that seamless planet-scale simulation has been implemented or is technically solved.
+
+### World discovery and access rules
+
+The world map, local navigation, discovered knowledge, and physical senses should complement one another. A marker may point to a known objective, but exploration should also reward observation and unmarked discoveries. The game should distinguish:
+1. **Available to visit:** the region exists and can be approached.
+2. **Physically reachable:** the current body and route can reach it.
+3. **Survivable:** the player has sufficient adaptation, preparation, or skill to endure its hazards.
+4. **Understood:** the player has enough knowledge to interpret its ecology, secrets, and threats.
+
+These are different states. Discovering a location must not automatically mean the player can survive it or has solved its secrets. Conversely, a high-level story flag should not arbitrarily hide an otherwise reachable region.
+
+
 Worlds persist: planetary conditions, creatures and food chains, bosses/lairs/encounter state, resources/genetic traits, structures/world changes, and history. A world address/seed identifies a procedural baseline; persistent state stores changes. Boss respawn/recovery rules remain to be defined.
 
 Players can enter world names or coordinates to locate an active player's world and load into it, subject to privacy/discovery settings and any access permissions. A world address is a destination identifier, not automatic disclosure of a private location or a guarantee of access.
