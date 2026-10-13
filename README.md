@@ -12,6 +12,7 @@ Lethal Absorption is an original open-world multiplayer action RPG concept in wh
 - **No fixed classes:** anatomy, abilities, mutations, discoveries, diet, environment, and player choices define each build.
 - **Character identity and development:** body plan, evolution history, saved forms, active traits, and readable strengths/trade-offs create distinct characters.
 - **Free-flow combat:** chain melee, weapons, powers, mobility, defense, summons, transformations, ultimates, and player-discovered combinations.
+- **Action-RPG-first hunting:** tracking and pursuit feed into responsive, skill-based melee, dodging, combos, counters, cinematic boss encounters, and evolution; exploration, training, cooking, and progression remain equally important parts of the wider adventure.
 - **Adaptive body-as-weapon:** a modular Anatomy Workshop lets compatible limbs, organs, armor, senses, wings, tails, tendrils, and other evolved parts change combat and movement; the design is documented but not implemented.
 - **Adaptive movement and interaction:** responsive traversal changes with anatomy and terrain; adaptive third-person camera and contextual/direct physical interactions share consistent world rules.
 - **Physical world handling:** grabbing, carrying, dragging, throwing, capturing, harvesting, and preserving objects or specimens depends on anatomy, target properties, terrain, and shared-world state.
