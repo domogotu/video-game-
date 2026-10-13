@@ -387,6 +387,34 @@ Damage-over-time effects may include burns, poison/infection, bleeding, corrupti
 
 The same environmental model applies from microscopic nutrient/habitat scale to cosmic gravity wells and reality changes. Shared multiplayer history means a fire’s damage remains for other players; communities can repair. Example timeline (illustrative): forest burns day 1, clears and scavengers return day 3, new growth appears day 10, partial recovery occurs weeks later. Simulation detail tiers: active area detailed, nearby/recent simplified, distant areas summarized.
 
+### Destruction response: five-minute investigation and repair trigger
+
+When a repairable structure, public asset, settlement feature, or important world object is destroyed or significantly damaged, the world should create a persistent **Destruction Incident** record. The default response timer is **five minutes of in-world time from the moment destruction is confirmed**.
+
+At the five-minute mark, the system should trigger both of these responses:
+1. **Investigation begins:** an appropriate NPC, responder, worker, faction, or automated system acknowledges the damage, approaches or examines the site, and starts gathering plausible evidence about what happened.
+2. **Repair work begins:** repair-capable NPCs or crews assess the damage, secure the site if needed, and begin available repairs or cleanup. Work can begin alongside the investigation; identifying the culprit is not a prerequisite for fixing the damage.
+
+#### Trigger rules
+
+- Start the timer only after a valid destruction/damage event is recorded, not for every harmless collision or cosmetic particle effect.
+- Deduplicate repeated damage events for the same incident so one destroyed object does not spawn endless investigations or repair crews.
+- If the site is unsafe, inaccessible, under active attack, or missing required materials/tools, responders should still acknowledge or investigate it when plausible; physical repair waits until the relevant blocker is resolved. The incident remains active and retries through normal NPC scheduling.
+- If the responsible NPCs are absent, use the settlement/faction's normal communication and dispatch rules. Do not teleport a worker to the site or give NPCs knowledge without a witness, report, sensor, or other credible signal.
+- Minor damage may receive a repair visit; complete destruction may require debris removal, rebuilding, replacement materials, and a longer work period.
+- Critical services and inhabited locations receive higher priority than decorative objects. Emergency response, ongoing danger, resource shortages, local laws, and faction capability can change the actual repair duration, but should not silently suppress the five-minute initial response.
+- If the damage is reversible through world recovery rather than construction, the incident may trigger cleanup, regrowth, stabilization, or ecological restoration instead.
+- Player-caused damage can be investigated through evidence and witnesses, but attribution is not automatic. NPCs may identify the player only when the available evidence supports it.
+- The timer and incident state persist when the player leaves the area. Distant simulation may summarize work, but must preserve the response deadline and meaningful outcomes.
+
+#### Incident lifecycle
+
+**Damage confirmed → five-minute timer → investigation and repair initiated → cause/evidence assessed → repair or rebuild progresses → completion verified → incident closed.**
+
+The five-minute rule is the default response target, not a promise that every object will be fully repaired within five minutes. Investigation and repair should visibly start at the trigger; completion depends on damage severity, available resources, access, and the capabilities of the local community.
+
+**Status:** design specification only; timer, incident records, NPC dispatch, persistence, and repair behavior are not implemented or tested.
+
 ## 16. NPC agency and habitat improvement
 
 NPCs actively repair and improve surroundings:
