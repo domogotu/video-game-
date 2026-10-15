@@ -134,3 +134,14 @@ Provide a compact summary of active build identity: key anatomy, main combat app
 9. Automated tests cover node graphs, prerequisites, costs, refunds, save migration, and combinations; playtests evaluate clarity, build diversity, and combat usability.
 
 **Implementation status:** This is a design specification only. The Atlas UI, node data, unlock logic, respec system, save persistence, multiplayer validation, and acceptance tests have not been implemented or verified by this document.
+
+
+## 14. Ultimate and secret skill progression standard
+
+The Atlas must distinguish secret discovery, eligibility, unlock/acquisition, evolution or upgrade, mastery, loadout/equipping, and actual activation. An ultimate is not automatically granted by character level, and unlocking it does not imply full mastery or unlimited use. Hidden branches reveal clues first and confirmed prerequisites after discovery; the interface must explain unmet conditions and why activation is unavailable.
+
+Every ultimate or secret skill must define its action-gated prerequisites, compatible forms/anatomy, resource threshold, startup, duration or completion condition, upkeep, interruption/cancellation, cooldown/recovery, effects and exclusions, counters, combinations, world consequences, telegraphs, and acceptance tests. Distinct routes should produce distinct ultimate identities; do not copy the slime's damage-conversion rules onto every character.
+
+**Absolute Nullification** is the slime's actual activated ultimate, unlocked through a connected defensive/offensive capstone path. It nullifies defined incoming damage only while the skill is active and qualified; it uses explicit conversion routes, caps, overflow, and boundaries for non-damage control effects. The shared standard and cross-route candidate examples are documented in [Ultimate and Secret Skill Framework](ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md).
+
+This remains design-only. No ultimate unlock logic, Atlas node implementation, activation UI, or gameplay test is claimed implemented or verified.
