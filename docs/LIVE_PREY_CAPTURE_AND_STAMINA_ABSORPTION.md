@@ -1,10 +1,10 @@
-# Lethal Absorption — Live Prey Capture and Stamina-Driven Absorption
+# Lethal Absorption — Live Prey Capture and Contested Absorption
 
 > **Status:** Approved design direction; design-only, not implemented or tested.
 >
 > **Scope:** Universal combat and hunting mechanic for eligible playable species and abilities. This is not a Slime-only mechanic.
 >
-> **Core rule:** The player must create and recognize a live-capture opportunity during combat. There is no universal “press this button to absorb” prompt that replaces the encounter. The player initiates and maintains a grab/engulf attempt through the relevant held input, and stamina is the primary cost.
+> **Core rule:** The player must create and recognize a live-capture opportunity during combat. There is no universal “press this button to absorb” prompt that replaces the encounter. The player initiates and maintains a grab/engulf attempt through the relevant held input, and stamina is one important cost among several interacting combat systems.
 
 ## 1. Intended player experience
 
@@ -23,12 +23,13 @@ Capture is an active contest, not a menu action or guaranteed finisher. The targ
 7. **Resolve:** If the hold completes and the target is eligible, absorption begins according to the character's abilities and target rules. If the target escapes, the player releases, stamina is exhausted, or an interruption succeeds, the attempt fails and combat continues.
 8. **Aftermath:** The world responds to visible or audible evidence: allies may investigate, prey may flee, predators may approach, and surviving groups may remember the encounter.
 
-## 3. Resource rules: stamina first
+## 3. Interacting combat systems and resource rules
 
-- **Stamina is the primary cost** for physical pursuit, grappling, restraining, holding, struggling against resistance, and maintaining a live absorption attempt.
+- **Stamina is important but not decisive by itself.** It governs exertion for pursuit, grappling, restraining, holding, struggling, and maintaining a live absorption attempt. Health, strength, body mass, anatomy, injuries, posture, resistance, abilities, energy, and situational advantages remain equally meaningful parts of the contest.
 - Starting a capture attempt has a stamina commitment; maintaining the hold drains stamina over time. Powerful, larger, struggling, or highly resistant prey can increase the drain.
-- Low stamina reduces the player's ability to maintain control and increases the risk of escape or interruption. The exact thresholds and drain rates require balancing.
+- Low stamina reduces the player's ability to maintain control and increases the risk of escape or interruption. The target's stamina and recovery matter too: if it recovers enough stamina or uses a strength/condition advantage during the hold, it may break free. Thresholds and rates require balancing.
 - Movement, dodging, sprinting, heavy attacks, and other exertion may compete for the same stamina reserve. The player must choose between continuing pressure and saving enough stamina to secure the capture.
+- **Health is not a capture meter alone.** A high-health target may survive the attempt, resist progress, and shake the player off. A grab/absorption animation does not itself kill the target; health changes only through explicitly defined damage or absorption rules.
 - **Energy remains separate** for designated supernatural, elemental, ranged, or otherwise energy-based abilities. Routine grabbing and holding do not default to energy costs unless a particular ability explicitly changes the rule.
 - Biomass, digestion capacity, compatibility, and trait-storage limits govern what happens after successful absorption; stamina alone does not guarantee that any target can be absorbed.
 - No infinite hold, infinite resource conversion, or stamina-free repeated capture loop.
@@ -69,7 +70,20 @@ A successful live absorption can open a later process of digestion, safety check
 
 Sapient beings retain agency and are not interchangeable loot containers. Any absorption involving sapient characters needs explicit world, narrative, and gameplay rules and must not silently turn people into ordinary ingredients. Existing protections against permanent PvP character death and theft of progression/assets remain absolute.
 
-## 8. Failure states and counterplay
+## 8. Contested absorption and encounter escalation
+
+Initiating a grab does not mean the target has been defeated. A target may be too healthy, strong, resistant, or incompatible for the player's current absorption capability. Progress depends on the condition and abilities of both participants, plus the specific target's rules—not stamina alone.
+
+- **High-health resistance:** A healthy or powerful target may endure the initial attempt. Absorption can stall, make little progress, or become unstable under target-specific rules.
+- **Two-sided exertion:** The player spends stamina to hold on. The target can spend stamina struggling and may recover stamina during lower-exertion phases when its condition permits. Health, stamina, strength, anatomy, injury, size, resistance, energy, defenses, and abilities remain distinct variables.
+- **Break-free:** The target can reach an escape condition, shake the player off, force release, counterattack, or create separation. The hold does not automatically kill it. Absorption cannot bypass its health or defenses unless a defined ability explicitly allows that.
+- **Return to combat:** After a break-free, combat resumes. The player may need to weaken the target further, target a relevant limb, reposition, use another ability, isolate it, or retreat. A later grab is a new commitment and does not guarantee inherited progress.
+- **Time has consequences:** Struggling can create sound, visible movement, scent, energy traces, or other evidence. The target may call for help or flee; allies may approach, interrupt, attack, or attempt a rescue; other enemies may reposition or arrive only when awareness, distance, and travel time plausibly permit it.
+- **Adaptive escalation:** Repeated attempts can worsen the player's tactical position or cause the target to change tactics when its intelligence and capabilities support that response. The target can also become more vulnerable if the player creates a genuine new opening.
+- **Readable counterplay:** Convey whether progress is stalled by health/defense, strength, resistance, injury, incompatible anatomy, player exhaustion, or outside interruption through behavior, animation, sound, and appropriate UI. Avoid arbitrary hidden rolls and omniscient AI.
+- **All systems remain relevant:** Stamina is one part of the contest. Health, injury, anatomy, body size, strength, defense, abilities, energy, terrain, environment, AI decisions, ally support, and time pressure must remain in the design.
+
+## 9. Failure states and counterplay
 
 Capture can fail if:
 - The target is already dead or becomes dead before the live hold begins.
@@ -82,7 +96,7 @@ Capture can fail if:
 
 Failure should have readable causes and meaningful consequences, not arbitrary hidden rolls. The target may escape, reposition, call for help, or resume fighting. The player should retain control and be able to respond.
 
-## 9. Localized limb damage and escape capability
+## 10. Localized limb damage and escape capability
 
 Limb and appendage damage is part of the same combat, hunting, and capture system. Injury must change what a creature can physically do; it is not merely a health penalty. This applies across eligible creature species and body plans, including player forms where the rules allow localized injury.
 
@@ -110,7 +124,7 @@ Injury also affects the player: a damaged limb may impair the player's own pursu
 - Injuries must have counters and recovery paths. Do not use hidden random limb breakage as a substitute for readable combat, and do not make permanent injury the default.
 - PvP safeguards remain unchanged: players cannot permanently kill other player characters or permanently steal their assets or progression.
 
-## 10. Tuning and fairness
+## 11. Tuning and fairness
 
 Exact stamina costs, capture windows, hold duration, struggle strength, health eligibility, and resistance scaling are intentionally not hard-coded in this design document. They should be data-driven and tuned per target family, player form, ability rank, and difficulty.
 
@@ -118,7 +132,7 @@ Avoid a single dominant strategy. Fast damage, stamina preservation, tracking, a
 
 PvP cannot permanently kill the player or permanently remove owned assets/progression. If live capture is permitted in PvP, it must obey those protections and have explicit release, rescue, duration, and counter rules.
 
-## 11. HUD and feedback requirements
+## 12. HUD and feedback requirements
 
 During a hold, show enough information to support decisions:
 - Player stamina remaining and current drain.
@@ -129,22 +143,25 @@ During a hold, show enough information to support decisions:
 
 Avoid a universal “absorb now” marker. The encounter state, target animation, prior knowledge, and the player's deliberate held input should communicate the opportunity.
 
-## 12. Acceptance criteria before implementation is considered complete
+## 13. Acceptance criteria before implementation is considered complete
 
 1. The mechanic works across eligible species and body plans, not only Slime.
 2. A dead target cannot be live-captured; the player must begin before health reaches zero.
 3. The player must actively initiate and maintain the hold; no universal prompt performs absorption automatically.
-4. Stamina is the primary resource for physical grab/hold/struggle actions; energy is only used where a defined ability requires it.
-5. Target behavior can include struggle, escape, counterattack, alarm/call for help, and ally intervention when plausible.
-6. Multiple enemies can create meaningful interruption risk.
-7. Eligibility reflects more than a single universal health percentage and is data-driven.
-8. Success/failure feedback is clear and supports accessibility without removing player agency.
-9. Absorption results obey digestion, compatibility, mastery, and sapient-agency rules.
-10. PvP protections and multiplayer-authoritative validation cannot be bypassed.
-11. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.
-12. Localized injury changes movement, combat, and escape capabilities according to anatomy and severity.
-13. A creature whose wings are too damaged for lift cannot use powered flight, while compatible alternate movement and defenses remain available.
-14. Capture AI and navigation respect injuries, and limb damage creates opportunities without automatically guaranteeing capture.
-15. Injury recovery, player impact, feedback, and PvP protections are defined and verified before implementation is called complete.
+4. Resolution considers both participants' health and stamina/recovery, strength, size, anatomy, injury, resistance, abilities, energy, and situation; stamina alone never decides the outcome.
+5. A high-health or resistant target can stall absorption, break free, and return combat without being killed by the hold itself.
+6. Failed attempts consume time and can plausibly trigger calls for help, ally intervention, enemy repositioning, or pursuit.
+7. Stamina is a key resource for physical grab/hold/struggle actions; energy is only used where a defined ability requires it.
+8. Target behavior can include struggle, escape, counterattack, alarm/call for help, and ally intervention when plausible.
+9. Multiple enemies can create meaningful interruption risk.
+10. Eligibility reflects more than a single universal health percentage and is data-driven.
+11. Success/failure feedback is clear and supports accessibility without removing player agency.
+12. Absorption results obey digestion, compatibility, mastery, and sapient-agency rules.
+13. PvP protections and multiplayer-authoritative validation cannot be bypassed.
+14. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.
+15. Localized injury changes movement, combat, and escape capabilities according to anatomy and severity.
+16. A creature whose wings are too damaged for lift cannot use powered flight, while compatible alternate movement and defenses remain available.
+17. Capture AI and navigation respect injuries, and limb damage creates opportunities without automatically guaranteeing capture.
+18. Injury recovery, player impact, feedback, and PvP protections are defined and verified before implementation is called complete.
 
 **Implementation status:** Design-only. This document does not claim the combat, stamina, capture, AI response, absorption, UI, or tests are implemented.
