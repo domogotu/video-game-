@@ -112,6 +112,16 @@ The 100-concept roster and player evolution rules are maintained in [`docs/SPECI
 
 The expandable master index is maintained in [`docs/POWER_ABILITY_CATALOGUE.md`](docs/POWER_ABILITY_CATALOGUE.md). It is a design inventory, not a claim that listed abilities are implemented or approved for launch.
 
+## Ultimate and secret skill framework
+
+Major ultimate and hidden skills are designed to be earned through specific actions, clues, research, survival feats, training, mastery, and combinations of conditions. Every skill needs explicit activation rules, effects and boundaries, costs, duration/recovery, counters, world response, readable telegraphs, and acceptance tests. Character routes should have distinct ultimate identities rather than sharing one universal power model.
+
+**Absolute Nullification** is the slime's actual activated ultimate; its skill-tree capstone path unlocks and qualifies the skill. When active and fully qualified, it nullifies defined incoming damage and converts it into capped reserves. It is not always-on and does not automatically negate non-damage control effects.
+
+- [Ultimate and Secret Skill Framework](docs/ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md) — shared quality bar and candidate ultimate directions for the slime, shadow-command sovereign, martial ascendant, goblin reclaimer, mythic staff ascendant, and undead spell sovereign.
+
+This is design documentation only. The skills, unlock logic, UI, animations, balance, and tests are not claimed implemented or verified.
+
 ## Open design decisions
 
 The design bible identifies unresolved choices including the exact level curve, NG+ inventory carryover, post-1050 progression, Vault persistence/death-loss rules, boss recovery, spawn protection, controller bindings, standard-form scale limits, species details, world privacy/access, investigation timings, and the technical architecture required for persistent multiplayer. Stage progression also retains open balancing decisions for transition thresholds, transformation costs, planetary-conquest validation, and godlike absorption yields.
