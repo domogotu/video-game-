@@ -29,7 +29,8 @@ Capture is an active contest, not a menu action or guaranteed finisher. The targ
 - Starting a capture attempt has a stamina commitment; maintaining the hold drains stamina over time. Powerful, larger, struggling, or highly resistant prey can increase the drain.
 - Low stamina reduces the player's ability to maintain control and increases the risk of escape or interruption. The target's stamina and recovery matter too: if it recovers enough stamina or uses a strength/condition advantage during the hold, it may break free. Thresholds and rates require balancing.
 - Movement, dodging, sprinting, heavy attacks, and other exertion may compete for the same stamina reserve. The player must choose between continuing pressure and saving enough stamina to secure the capture.
-- **Health is not a capture meter alone.** A high-health target may survive the attempt, resist progress, and shake the player off. A grab/absorption animation does not itself kill the target; health changes only through explicitly defined damage or absorption rules.
+- **Absorption drains the target's remaining health over time.** Once the live absorption process is genuinely underway, it applies a defined, ongoing health drain to the target. The drain rate and progress depend on the player's absorption capability and mastery, the target's remaining health, defenses, resistance, size, condition, compatibility, and relevant abilities. It is not necessarily instant or uniform across species.
+- **Health still matters during absorption.** A high-health or highly resistant target may take longer to absorb and can remain capable of resisting or breaking free before the process finishes. If the hold breaks, the ongoing drain stops; any damage or absorption already applied follows the defined rules, and the target survives unless its health legitimately reaches zero under the system's explicit resolution rules. A grab animation alone does not drain health; the actual absorption state must have started.
 - **Energy remains separate** for designated supernatural, elemental, ranged, or otherwise energy-based abilities. Routine grabbing and holding do not default to energy costs unless a particular ability explicitly changes the rule.
 - Biomass, digestion capacity, compatibility, and trait-storage limits govern what happens after successful absorption; stamina alone does not guarantee that any target can be absorbed.
 - No infinite hold, infinite resource conversion, or stamina-free repeated capture loop.
@@ -74,9 +75,10 @@ Sapient beings retain agency and are not interchangeable loot containers. Any ab
 
 Initiating a grab does not mean the target has been defeated. A target may be too healthy, strong, resistant, or incompatible for the player's current absorption capability. Progress depends on the condition and abilities of both participants, plus the specific target's rules—not stamina alone.
 
-- **High-health resistance:** A healthy or powerful target may endure the initial attempt. Absorption can stall, make little progress, or become unstable under target-specific rules.
+- **Health drain during absorption:** Once absorption starts, it drains the target's remaining health over time. The rate is data-driven and affected by the player's capabilities and the target's defenses, resistance, condition, and compatibility. High health can mean a longer absorption window, giving the target more opportunity to recover stamina, struggle, break free, or call for help.
+- **High-health resistance:** A healthy or powerful target may endure the initial attempt and resist or slow the process. The player must maintain a valid hold while the target remains able to contest it.
 - **Two-sided exertion:** The player spends stamina to hold on. The target can spend stamina struggling and may recover stamina during lower-exertion phases when its condition permits. Health, stamina, strength, anatomy, injury, size, resistance, energy, defenses, and abilities remain distinct variables.
-- **Break-free:** The target can reach an escape condition, shake the player off, force release, counterattack, or create separation. The hold does not automatically kill it. Absorption cannot bypass its health or defenses unless a defined ability explicitly allows that.
+- **Break-free:** The target can reach an escape condition, shake the player off, force release, counterattack, or create separation before the drain finishes. Breaking free stops the ongoing absorption drain; previously applied effects remain according to the defined rules. The target is not automatically killed just because absorption began.
 - **Return to combat:** After a break-free, combat resumes. The player may need to weaken the target further, target a relevant limb, reposition, use another ability, isolate it, or retreat. A later grab is a new commitment and does not guarantee inherited progress.
 - **Time has consequences:** Struggling can create sound, visible movement, scent, energy traces, or other evidence. The target may call for help or flee; allies may approach, interrupt, attack, or attempt a rescue; other enemies may reposition or arrive only when awareness, distance, and travel time plausibly permit it.
 - **Adaptive escalation:** Repeated attempts can worsen the player's tactical position or cause the target to change tactics when its intelligence and capabilities support that response. The target can also become more vulnerable if the player creates a genuine new opening.
@@ -148,9 +150,10 @@ Avoid a universal “absorb now” marker. The encounter state, target animation
 1. The mechanic works across eligible species and body plans, not only Slime.
 2. A dead target cannot be live-captured; the player must begin before health reaches zero.
 3. The player must actively initiate and maintain the hold; no universal prompt performs absorption automatically.
-4. Resolution considers both participants' health and stamina/recovery, strength, size, anatomy, injury, resistance, abilities, energy, and situation; stamina alone never decides the outcome.
-5. A high-health or resistant target can stall absorption, break free, and return combat without being killed by the hold itself.
-6. Failed attempts consume time and can plausibly trigger calls for help, ally intervention, enemy repositioning, or pursuit.
+4. Once absorption actually begins, it drains the target's remaining health over time at a rate governed by both participants and target-specific rules; a valid break-free interrupts that ongoing drain.
+5. Resolution considers both participants' health and stamina/recovery, strength, size, anatomy, injury, resistance, abilities, energy, and situation; stamina alone never decides the outcome.
+6. A high-health or resistant target can resist or outlast the attempt, break free, and return combat; a failed hold does not itself kill the target.
+7. Failed attempts consume time and can plausibly trigger calls for help, ally intervention, enemy repositioning, or pursuit.
 7. Stamina is a key resource for physical grab/hold/struggle actions; energy is only used where a defined ability requires it.
 8. Target behavior can include struggle, escape, counterattack, alarm/call for help, and ally intervention when plausible.
 9. Multiple enemies can create meaningful interruption risk.
