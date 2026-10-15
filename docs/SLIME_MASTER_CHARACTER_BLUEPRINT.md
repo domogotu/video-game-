@@ -468,6 +468,93 @@ The Null Sovereign is the endpoint of the slime life path and a secret-boss test
 - The secret-boss build can be more capable than a normal player build, but must obey legible resource and timing rules.
 - If this boss is the narrative's ultimate body, tie its origin to the existing endgame consciousness/replica concept only after the story connection is deliberately approved.
 
+## 8A. Secret ultimate skill: Absolute Nullification
+
+**Purpose:** This is the slime's final defensive-offensive capstone. After mastering the connected defensive, resource-conversion, adaptation, and absorption branches, the slime can activate a state where all defined incoming hostile damage is nullified and converted into useful reserves. It is an earned, conditional endgame ability—not a passive buff available from the beginning.
+
+### Core effect
+
+When the ultimate is active and all activation conditions are satisfied, qualifying incoming damage causes **zero health loss**. Instead, the slime's core routes the absorbed attack into eligible resources:
+- **Health / repair:** restores missing health or repairs viable body mass.
+- **Mana / energy:** converts compatible energy, elemental, or spell-like attacks into power reserves.
+- **Stamina:** converts compatible impact, momentum, and physical exertion into stamina.
+- **Biomass:** recovers material from compatible physical or biological attacks when the correct trait is unlocked.
+- **Stability / knowledge:** records unfamiliar attack signatures if the sensory and analysis branches are mastered.
+- **Offensive charge:** stores surplus conversion for tendrils, counterattacks, pressure waves, or the final absorption sequence.
+
+The general damage model does not need to be globally rebalanced. This skill changes how damage is handled by the slime; other characters' attacks continue to work normally against other targets.
+
+### Conversion matrix
+
+| Attack type | Main route | Required development |
+|---|---|---|
+| Blunt / kinetic melee | Stamina, kinetic charge, repair | Elastic damping and force routing |
+| Cutting / piercing | Membrane repair, biomass if compatible | Membrane hardening and damage sealing |
+| Physical projectiles | Momentum reserve, counterforce | Projectile observation and force routing |
+| Energy beams / blasts | Energy or mana-like reserve | Energy buffer and energy routing |
+| Elemental attacks | Matching elemental reserve | Acquired elemental trait and containment |
+| Acid / corrosion | Corrosion buffer, repair reserve | Corrosion analysis and neutralizer |
+| Poison / status damage | Detoxification and repair | Toxin isolation and status purge |
+| Explosive / area damage | Distributed energy and impact routing | Multi-vector absorption and core shielding |
+| Psychic / control effects | Specific cognitive/status protection | Relevant defensive branch; not covered by damage nullification alone |
+| Gravity / dimensional / exotic attacks | Matching exotic reserve | Relevant late-game interface |
+| Unknown or mixed attacks | Nullification plus signature analysis | Final capstone and trait archive |
+
+At the final rank, every defined incoming damage class—including mixed and previously unseen types—is nullified during the active window. Non-damage effects such as forced movement, imprisonment, arena removal, or an objective are not automatically erased unless a separate ability explicitly covers them.
+
+### Required skill-tree links
+
+1. **Membrane Mastery:** Membrane Seal → Membrane Hardening → Reactive Membrane → Perfect Structural Response.
+2. **Impact Conversion:** Elastic Damping → Elastic Counter → Force Routing → Kinetic Assimilation.
+3. **Core Recovery:** Nutrient Core → Damage Seal → Regeneration → Emergency Core Shield → Core Reconstitution.
+4. **Energy Conversion:** Energy Buffer → Elemental Containment → Energy Routing → Multi-Channel Conversion.
+5. **Trait Knowledge:** Threat Signature Archive → Compatibility Map → Counter-Adaptation → Unknown-Signature Analysis.
+6. **Stability and Control:** Fusion Stabilizer → Advanced Fusion Regulator → Parallel Cognition → Null-State Control.
+7. **Offensive Absorption:** Engulf → Adhesive Snare / Tendril Bind → Absorption Preparation → Sovereign Capture.
+8. **Capstone:** **Absolute Nullification** → **Null Sovereign: Unanswerable State**.
+
+These are linked progression prerequisites, not final numeric costs. Exact level gates, points, duration, and resource values require prototyping.
+
+### Activation and resource rules
+
+- The slime must be in a compatible body form with its core and membrane systems online.
+- Required defensive and offensive branches must be unlocked and configured as specified by the final build.
+- The core needs a minimum starting reserve and sufficient stability.
+- The player deliberately activates the state; the startup has a readable animation and cue.
+- While active, qualifying damage is nullified and routed to health, energy, stamina, biomass, analysis, or offensive charge according to a documented priority.
+- Each resource has a cap. When full, its share routes to another eligible reserve or dissipates harmlessly; repeated weak attacks cannot generate infinite resources.
+- The active state ends at its stated duration, when its reserve is spent, or when the player cancels it. A visible cooldown/recovery period follows.
+- Fully mastering the skill can improve conversion and shorten setup, but permanent uninterrupted uptime is not assumed unless explicitly approved as a separate endgame rule.
+
+**Design promise:** once properly unlocked and activated, the slime cannot be defeated by simply increasing damage, changing damage type, stacking damage-over-time, or repeating attacks. Those attacks feed the slime instead. The ability's activation window and resource limits are explicit; it does not require changing everyone else's base damage.
+
+### Offensive link: Absorption Preparation → Sovereign Capture
+
+1. **Receive:** stand still or hold position while qualifying attacks are nullified.
+2. **Classify:** analyze signatures that the current build can understand.
+3. **Charge:** convert incoming force into reserves and an offensive absorption meter.
+4. **Prepare:** tendrils or an adhesive field telegraph the target entering capture range.
+5. **Bind:** a successful, clearly signaled move briefly restricts the target.
+6. **Sovereign Capture:** attempt to engulf an eligible target, subject to size, resistance, interruption, and story rules.
+7. **Resolve:** award only validated material, knowledge, or trait rewards; sapient beings are not ordinary loot or ingredients.
+
+### Secret-boss presentation
+
+The Null Sovereign may stand motionless while the player attacks. A distinctive core/membrane effect, animation, sound cue, and resource feedback show attacks being absorbed rather than dealing damage. The boss then prepares a tendril bind, arena-control move, or capture attempt. Its timing and rules remain consistent and learnable.
+
+### Acceptance tests
+
+- Every defined attack class has a documented conversion route.
+- During the fully qualified active window, qualifying attacks cause no health loss, including mixed or unfamiliar damage types.
+- Resource caps and overflow rules prevent infinite-resource loops.
+- The skill clearly explains missing prerequisites and never silently fails to activate.
+- The active window and recovery period are communicated to the player.
+- Bind/capture attacks are telegraphed and have a defined escape, interrupt, or objective response.
+- The same classification and conversion rules support the player build and secret-boss version.
+- PvP protections remain unchanged: no permanent player death and no theft of assets or progression.
+
+**Implementation status:** Design-only. Damage routing, skill nodes, status classification, UI, and boss logic have not been implemented or tested.
+
 ## 9. Weaknesses and counterplay catalogue
 
 | Weakness | Why it matters | Counterplay / adaptation |
