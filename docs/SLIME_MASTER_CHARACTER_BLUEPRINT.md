@@ -47,21 +47,55 @@ Stages are evolutionary milestones, not rigid level brackets. A character can re
 
 ### Stage 0: Dormant cell
 - **Body:** tiny single cellular mass; no limbs, eyes, mouth, skeleton, lungs, or separate hands.
-- **Perception:** chemical gradients, contact, temperature, pressure, light/dark intensity, and fluid vibration at very short range.
-- **Movement:** membrane contractions and passive drift. No conventional jump, sprint, or attack.
+- **Perception:** primarily chemical gradients, contact, pressure, and fluid/ground vibration at very short range. The starting cell is functionally blind to image-forming vision; it may register crude ambient light or temperature changes only as non-visual cues, not as a usable thermal-vision display.
+- **Movement:** membrane contractions and passive drift. No conventional jump, sprint, or attack at Stage 0; short hops and limited surface climbing unlock with the Stage 1 primitive-slime body and appropriate control.
 - **Survival loop:** detect safe nutrients → pulse toward them → absorb small particles → stabilize membrane → evade environmental hazard.
 - **Threats:** drying, extreme temperature, toxins, violent currents, crushing pressure, and larger organisms.
 - **First lesson:** sensory information is partial; moving toward food may expose the cell to danger.
 
 ### Stage 1: Primitive slime
 - **Body:** one soft mass with a central nutrient core and outer membrane.
-- **Movement:** contract, flatten, roll, ooze through gaps, cling briefly to rough surfaces.
+- **Movement:** contract, flatten, roll, crawl/ooze through gaps, perform short compression hops, and cling briefly to suitable surfaces. Surface climbing is limited by texture, moisture, slope, body condition, and stamina.
 - **Attack:** weak body bump, adhesive contact, engulf tiny resources. No standard melee combo yet.
 - **Defense:** compress under some attacks, but piercing, drying, heat, and membrane disruption are dangerous.
 - **Progression:** nutrient storage, membrane integrity, basic digestion, and first safe absorption.
 - **Failure recovery:** early tutorial setbacks are recoverable; no permanent death before the core movement, absorption, and evasion lessons are taught.
 
 Base metrics should be qualitative in early prototypes. Exact HP, damage, speed, resource caps, and multipliers are balancing decisions, not yet established.
+
+## 3A. Locked base-form perception, sensory controls, and locomotion
+
+These choices define the intended starting experience and supersede any earlier broad wording that could imply functional thermal vision or conventional eyesight at the beginning.
+
+### Starting perception: mostly blind
+- The Stage 0 cell and Stage 1 primitive slime do not begin with conventional image-forming eyesight.
+- The player's primary early information comes from **chemical sampling/scent traces, contact, pressure, and vibration** transmitted through the body or connected surfaces.
+- Chemical sensing can reveal nutrient traces, toxins, familiar biological signatures, and possible trails, but wind, water, contamination, competing traces, and unfamiliar chemistry can mislead it.
+- Vibration sensing can suggest direction, proximity, and intensity of movement through connected ground or fluid. Soft terrain, airborne movement, environmental noise, and deliberate slow movement can reduce its usefulness.
+- Crude temperature or ambient-light changes may exist as limited non-visual cues, but **thermal vision is not the default view** and the Slime cannot see heat-shaped silhouettes at the start.
+- Senses provide evidence, not omniscient identification. The player must infer what is nearby; walls and opaque objects block direct visual sight, and sensing through them is limited to physically plausible transmitted cues.
+
+### Manual sensory-view switching
+- The player manually switches between available sensory interpretations using dedicated controls.
+- At the start, available views emphasize chemical traces and vibration/contact information; the presentation should communicate what each cue means and its confidence.
+- A selected sensory view changes the information emphasized, not the underlying world or the creature's actual location. It must not reveal hidden entities without a valid sensory path.
+- New modes become selectable only when the Slime has evolved a compatible sense. The interface should show unavailable modes as locked or undiscovered rather than silently enabling them.
+- Sensory modes have distinct blind spots, range, environmental interference, and attention/cost trade-offs. Avoid a single mode that reveals every threat without counterplay.
+
+### Species-specific eye branches
+- Different eye-bearing species unlock **distinct visual evolution branches**; absorbing one eye-bearing creature does not grant universal perfect eyesight or every visual ability.
+- A source may contribute a photoreceptor pattern, directional light sensor, compound-eye pattern, low-light specialization, motion sensitivity, color receptor, focusing structure, or other species-specific feature, if that feature is actually present and compatible.
+- Each branch has prerequisites for acquisition, analysis, integration, and mastery. Complex vision may require several compatible structures or later evolutionary development; an isolated eye trait does not magically create a complete visual nervous system.
+- Example branches include: **light/dark sensitivity**, **directional silhouettes and movement**, **compound-eye motion coverage**, **low-light sensitivity**, **color discrimination**, and rare specialized branches such as ultraviolet or polarized-light perception where the source species supports them.
+- Thermal sensing remains a separate optional adaptation from an appropriate biological source or evolutionary discovery. It is not synonymous with eyes and does not automatically see through opaque barriers.
+- Players can retain chemical and vibration sensing after gaining vision. Sight supplements rather than replaces the Slime's original sensory identity; manual switching remains the default control model unless a later upgrade explicitly enables a limited combined mode.
+
+### Starting locomotion: limbless but expressive
+- Stage 1's baseline toolkit includes **flow crawling, flattening/squeezing, short compression hops, and limited surface climbing** on suitable terrain.
+- Flow crawling is the reliable default. Squeezing depends on gap size, body volume, core placement, and membrane condition. Short hops are useful for small obstacles and brief evasive movement, not sustained jumping.
+- Surface adhesion and climbing depend on texture, moisture, slope, contamination, gravity, body mass, stamina, and injury. Smooth, loose, dry, or otherwise unsuitable surfaces can prevent climbing.
+- These actions consume resources according to exertion and conditions; repeated hops or difficult climbs cannot be spammed without recovery. Stamina is important but does not replace health, biomass, metabolic energy, stability, anatomy, or environmental effects.
+- Advanced launch, wall traversal, tendril pulling, gliding, swimming propulsion, and flight-like movement remain later unlocks rather than assumed base abilities.
 
 ## 4. Slime-specific body systems
 
