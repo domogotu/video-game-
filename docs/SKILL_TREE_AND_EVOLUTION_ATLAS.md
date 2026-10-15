@@ -145,3 +145,18 @@ Every ultimate or secret skill must define its action-gated prerequisites, compa
 **Absolute Nullification** is the slime's actual activated ultimate, unlocked through a connected defensive/offensive capstone path. It nullifies defined incoming damage only while the skill is active and qualified; it uses explicit conversion routes, caps, overflow, and boundaries for non-damage control effects. The shared standard and cross-route candidate examples are documented in [Ultimate and Secret Skill Framework](ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md).
 
 This remains design-only. No ultimate unlock logic, Atlas node implementation, activation UI, or gameplay test is claimed implemented or verified.
+
+
+## 15. Cross-linked species and phenotype evolution
+
+The Evolution Atlas is a **cross-linked graph**, not one linear tree and not a fixed class selector. Characters begin at the cellular scale and develop into body plans through acquired traits, environment, diet, research, training, survival, and player choices. Branches may diverge, reconnect, or cross-link when anatomy, prerequisites, costs, and trait compatibility permit. Conflicting traits must show their restrictions and trade-offs.
+
+Support four related layers: (1) a sourced, versioned real-organism reference catalogue; (2) a normalized ontology of reusable traits; (3) a typed evolution graph with prerequisite, alternative, compatibility, conflict, discovery, mastery, and transformation links; and (4) phenotype assembly from validated body-plan templates and compatible traits. The Codex must distinguish real-world reference facts, gameplay abstractions inspired by real traits, fictional species, hybrids, and unconfirmed hypotheses.
+
+For example, a starting cell might eventually qualify for a terrestrial predator route, a serpentine route, an aquatic route, or a fantasy draconic route. Those are staged game outcomes, not claims that real organisms literally evolve into dinosaurs or dragons by selecting one node. A hybrid requires compatible traits and explicit costs; it is not automatically the strongest option.
+
+Millions of possible characters should come from reusable traits, authored body-plan templates, validated combinations, and controlled procedural variation—not millions of disconnected hand-authored trees. Use indexed, on-demand combination evaluation and save the character's state and generation seed. The interface should show route divergence/reconnection, compatibility, conflicts, previews, and the history behind each major body change.
+
+See [Ecology and Cross-Linked Evolution Atlas](ECOLOGY_AND_CROSSLINKED_EVOLUTION_ATLAS.md) for the detailed catalogue, data model, discovery loop, licensing/provenance, variation strategy, and acceptance gates.
+
+**Implementation status:** Design-only. The catalogue, trait ontology, graph, phenotype generator, and interface are not claimed implemented or tested.
