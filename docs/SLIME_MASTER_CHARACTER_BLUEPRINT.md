@@ -468,9 +468,9 @@ The Null Sovereign is the endpoint of the slime life path and a secret-boss test
 - The secret-boss build can be more capable than a normal player build, but must obey legible resource and timing rules.
 - If this boss is the narrative's ultimate body, tie its origin to the existing endgame consciousness/replica concept only after the story connection is deliberately approved.
 
-## 8A. Secret ultimate skill: Absolute Nullification
+## 8A. Activated secret ultimate: Absolute Nullification
 
-**Purpose:** This is the slime's final defensive-offensive capstone. After mastering the connected defensive, resource-conversion, adaptation, and absorption branches, the slime can activate a state where all defined incoming hostile damage is nullified and converted into useful reserves. It is an earned, conditional endgame ability—not a passive buff available from the beginning.
+**Identity:** **Absolute Nullification** is the actual player-activated ultimate skill. It is unlocked through the connected defensive-offensive capstone path, but it is not merely the name of a passive trait or skill-tree branch. After mastering the connected defensive, resource-conversion, adaptation, and absorption branches, the slime can deliberately activate a conditional state where all defined incoming hostile damage is nullified and converted into useful reserves. It is earned and conditional—not available from the beginning or always active.
 
 ### Core effect
 
@@ -511,7 +511,7 @@ At the final rank, every defined incoming damage class—including mixed and pre
 5. **Trait Knowledge:** Threat Signature Archive → Compatibility Map → Counter-Adaptation → Unknown-Signature Analysis.
 6. **Stability and Control:** Fusion Stabilizer → Advanced Fusion Regulator → Parallel Cognition → Null-State Control.
 7. **Offensive Absorption:** Engulf → Adhesive Snare / Tendril Bind → Absorption Preparation → Sovereign Capture.
-8. **Capstone:** **Absolute Nullification** → **Null Sovereign: Unanswerable State**.
+8. **Capstone path:** the connected branches unlock and qualify **Absolute Nullification**, the active ultimate. **Null Sovereign: Unanswerable State** is a proposed mastery/form-state label for the fully developed expression of that skill, not a replacement name for the activated skill.
 
 These are linked progression prerequisites, not final numeric costs. Exact level gates, points, duration, and resource values require prototyping.
 
@@ -526,7 +526,7 @@ These are linked progression prerequisites, not final numeric costs. Exact level
 - The active state ends at its stated duration, when its reserve is spent, or when the player cancels it. A visible cooldown/recovery period follows.
 - Fully mastering the skill can improve conversion and shorten setup, but permanent uninterrupted uptime is not assumed unless explicitly approved as a separate endgame rule.
 
-**Design promise:** once properly unlocked and activated, the slime cannot be defeated by simply increasing damage, changing damage type, stacking damage-over-time, or repeating attacks. Those attacks feed the slime instead. The ability's activation window and resource limits are explicit; it does not require changing everyone else's base damage.
+**Design promise:** once properly unlocked and activated, the slime cannot be defeated by simply increasing damage, changing damage type, stacking damage-over-time, or repeating attacks within the defined damage classes covered by its final rank. Those attacks feed the slime instead during the qualified window. Its activation conditions, resource limits, duration, and recovery remain explicit; it does not require changing everyone else's base damage.
 
 ### Offensive link: Absorption Preparation → Sovereign Capture
 
@@ -555,7 +555,7 @@ The Null Sovereign may stand motionless while the player attacks. A distinctive 
 
 **Implementation status:** Design-only. Damage routing, skill nodes, status classification, UI, and boss logic have not been implemented or tested.
 
-## 9. Weaknesses and counterplay catalogue
+**Shared design standard:** The shared standard for ultimate and secret skills is documented in [Ultimate and Secret Skill Framework](ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md). Absolute Nullification is the reference example for activation clarity, earned conditions, defined effects, resource limits, edge cases, and acceptance criteria.\n\n## 9. Weaknesses and counterplay catalogue
 
 | Weakness | Why it matters | Counterplay / adaptation |
 |---|---|---|
