@@ -132,3 +132,11 @@ Possible earned combinations include staff combat with short-range shadow moveme
 7. Keep remaining abilities on the approved roadmap; do not silently omit them when scoping a vertical slice.
 
 **Coverage status:** planned/design-only. Not implemented or tested.
+
+## Ultimate and secret-skill quality standard
+
+All six route packages must develop their major ultimates and secret skills to the same level of specificity as the slime's **Absolute Nullification**: action-gated discovery and prerequisites, an explicit activation contract, defined effects and exclusions, resource and recovery rules, counterplay, world response, readable telegraphs, multiplayer safeguards, and acceptance tests. This is a shared quality bar, not a requirement that all characters have nullification or immunity.
+
+Working candidates for deeper design are **Eclipse Dominion** (shadow-command sovereign), **Limit Convergence** (martial ascendant), **Apex Reconfiguration** (goblin reclaimer), **Heaven-Thread Reversal** (mythic staff ascendant), **Sovereign Grand Rite** (undead spell sovereign), and **Absolute Nullification** (slime). These are candidate names and designs, not final implementation commitments. Each must be tied to specific qualifying actions, clues, mastery, prerequisites, limits, counters, and tests. The slime's Absolute Nullification remains the actual activated skill; its capstone branch is the unlock path.
+
+See [Ultimate and Secret Skill Framework](ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md) for the complete common standard and route examples. All of this is design-only, not implemented or tested.
