@@ -1187,3 +1187,14 @@ A separate, bounded encounter director may manage tension and pacing, but cannot
 Canonical specification: [Perception, Investigation, and Adaptive Hunter AI](PERCEPTION_INVESTIGATION_AND_ADAPTIVE_HUNTER_AI.md).
 
 **Status:** Design requirement documented; AI implementation, performance profiling, balancing, and runtime verification remain outstanding.
+
+
+## Ultimate and secret skills: shared design standard
+
+Major ultimates and hidden skills across the roster must be earned through meaningful actions, discoveries, training, environmental survival, research, mastery, or rare combinations of conditions—not handed out by level alone. Hidden routes should provide clues and investigable evidence before revealing their full requirements. Discovery, eligibility, unlock, evolution, mastery, equipping, and activation are separate progression states.
+
+Every ultimate must define activation conditions, compatible form/anatomy, resource costs and caps, startup, duration or completion condition, interruption, cooldown/recovery, effect boundaries, counters, combinations, world consequences, readable telegraphs, and acceptance tests. Ultimates should change how a character plays, not only multiply damage. They must remain distinct by character identity; **Absolute Nullification** is not a universal template for giving every character immunity.
+
+**Absolute Nullification** is the slime's actual activated ultimate. Its connected skill-tree branches establish eligibility and mastery; while activated and fully qualified, it nullifies defined incoming damage and routes it into capped resource channels. Non-damage control effects are outside its protection unless explicitly covered. It is conditional, bounded, and does not change other characters' base damage rules. The shared framework and candidate ultimate directions for other routes are documented in [Ultimate and Secret Skill Framework](ULTIMATE_AND_SECRET_SKILL_FRAMEWORK.md).
+
+Design status only: no ultimate or secret-skill logic is claimed implemented or tested.
