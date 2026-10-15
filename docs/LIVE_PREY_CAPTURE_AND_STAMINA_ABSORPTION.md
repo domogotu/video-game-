@@ -141,6 +141,10 @@ Avoid a universal “absorb now” marker. The encounter state, target animation
 8. Success/failure feedback is clear and supports accessibility without removing player agency.
 9. Absorption results obey digestion, compatibility, mastery, and sapient-agency rules.
 10. PvP protections and multiplayer-authoritative validation cannot be bypassed.
-11. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.\n12. Localized injury changes movement, combat, and escape capabilities according to anatomy and severity.\n13. A creature whose wings are too damaged for lift cannot use powered flight, while compatible alternate movement and defenses remain available.\n14. Capture AI and navigation respect injuries, and limb damage creates opportunities without automatically guaranteeing capture.\n15. Injury recovery, player impact, feedback, and PvP protections are defined and verified before implementation is called complete.
+11. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.
+12. Localized injury changes movement, combat, and escape capabilities according to anatomy and severity.
+13. A creature whose wings are too damaged for lift cannot use powered flight, while compatible alternate movement and defenses remain available.
+14. Capture AI and navigation respect injuries, and limb damage creates opportunities without automatically guaranteeing capture.
+15. Injury recovery, player impact, feedback, and PvP protections are defined and verified before implementation is called complete.
 
 **Implementation status:** Design-only. This document does not claim the combat, stamina, capture, AI response, absorption, UI, or tests are implemented.
