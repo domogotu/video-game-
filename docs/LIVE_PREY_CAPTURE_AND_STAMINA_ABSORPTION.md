@@ -82,7 +82,35 @@ Capture can fail if:
 
 Failure should have readable causes and meaningful consequences, not arbitrary hidden rolls. The target may escape, reposition, call for help, or resume fighting. The player should retain control and be able to respond.
 
-## 9. Tuning and fairness
+## 9. Localized limb damage and escape capability
+
+Limb and appendage damage is part of the same combat, hunting, and capture system. Injury must change what a creature can physically do; it is not merely a health penalty. This applies across eligible creature species and body plans, including player forms where the rules allow localized injury.
+
+### Injury model
+
+- **Damage is localized:** track relevant limbs or functional appendages separately from overall health when the creature's anatomy supports it. Injury severity can range from pain/impairment to fracture, structural failure, or loss of function.
+- **Broken legs or locomotor limbs:** running, sprinting, jumping, climbing, and pursuit escape are impaired or disabled according to which limbs are damaged and how the creature moves. A creature that cannot support its body may crawl, drag itself, brace, hide, fight from the ground, or seek help if its anatomy permits.
+- **Broken arms or grasping/forelimbs:** gripping, climbing, blocking, weapon use, grappling, and counter-grappling are impaired when those functions depend on the injured limb. The creature can still use unaffected limbs, jaws, tails, horns, abilities, or other compatible defenses.
+- **Broken wings or flight appendages:** powered takeoff and sustained flight are disabled when the remaining functional wing capacity cannot generate the required lift and control. Partial damage may permit a controlled or hazardous glide only if the species' anatomy and current condition plausibly support it. Grounding a flyer does not automatically prevent running, hiding, fighting, or using other movement abilities.
+- **Species-specific locomotion:** tails, fins, tentacles, locomotor cilia, levitation organs, multiple leg pairs, distributed bodies, and supernatural movement sources must use their own functional rules. Do not apply a humanoid limb template to every organism.
+- **Functional thresholds are data-driven:** the effect depends on anatomy, injury severity, limb role, remaining functional appendages, body mass, terrain, pain/condition, adaptations, and abilities. Avoid one universal “broken limb = helpless” rule.
+
+### Capture and escape interaction
+
+Localized injury can remove specific escape options and create tactical openings, but it must not automatically guarantee capture. A grounded winged creature may still flee on foot; a creature with a broken leg may crawl, defend itself, or use a compatible ability; a creature with one broken arm may still struggle with its other limbs. The player must still approach, establish a valid hold, spend stamina, and overcome resistance.
+
+Injury also affects the player: a damaged limb may impair the player's own pursuit, grip, mobility, or ability to maintain a hold. The system must communicate consequential injuries clearly and provide recovery rules appropriate to anatomy, severity, treatment, time, and available resources. Damage to a player's build must not randomly or silently erase permanent progression.
+
+### Agency and fairness
+
+- AI selects escape, defense, assistance-seeking, or continued combat based on the capabilities it actually retains.
+- A creature with flight disabled should not take off through an animation or navigation shortcut that ignores its injury state.
+- Navigation and combat AI must account for injury when choosing movement modes, routes, and actions.
+- Allies may protect or assist an injured creature where plausible; the player can also exploit terrain and separation to prevent rescue.
+- Injuries must have counters and recovery paths. Do not use hidden random limb breakage as a substitute for readable combat, and do not make permanent injury the default.
+- PvP safeguards remain unchanged: players cannot permanently kill other player characters or permanently steal their assets or progression.
+
+## 10. Tuning and fairness
 
 Exact stamina costs, capture windows, hold duration, struggle strength, health eligibility, and resistance scaling are intentionally not hard-coded in this design document. They should be data-driven and tuned per target family, player form, ability rank, and difficulty.
 
@@ -90,7 +118,7 @@ Avoid a single dominant strategy. Fast damage, stamina preservation, tracking, a
 
 PvP cannot permanently kill the player or permanently remove owned assets/progression. If live capture is permitted in PvP, it must obey those protections and have explicit release, rescue, duration, and counter rules.
 
-## 10. HUD and feedback requirements
+## 11. HUD and feedback requirements
 
 During a hold, show enough information to support decisions:
 - Player stamina remaining and current drain.
@@ -101,7 +129,7 @@ During a hold, show enough information to support decisions:
 
 Avoid a universal “absorb now” marker. The encounter state, target animation, prior knowledge, and the player's deliberate held input should communicate the opportunity.
 
-## 11. Acceptance criteria before implementation is considered complete
+## 12. Acceptance criteria before implementation is considered complete
 
 1. The mechanic works across eligible species and body plans, not only Slime.
 2. A dead target cannot be live-captured; the player must begin before health reaches zero.
@@ -113,6 +141,6 @@ Avoid a universal “absorb now” marker. The encounter state, target animation
 8. Success/failure feedback is clear and supports accessibility without removing player agency.
 9. Absorption results obey digestion, compatibility, mastery, and sapient-agency rules.
 10. PvP protections and multiplayer-authoritative validation cannot be bypassed.
-11. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.
+11. Save/load, multiplayer synchronization, resource accounting, and edge cases are tested against actual implementation before claiming completion.\n12. Localized injury changes movement, combat, and escape capabilities according to anatomy and severity.\n13. A creature whose wings are too damaged for lift cannot use powered flight, while compatible alternate movement and defenses remain available.\n14. Capture AI and navigation respect injuries, and limb damage creates opportunities without automatically guaranteeing capture.\n15. Injury recovery, player impact, feedback, and PvP protections are defined and verified before implementation is called complete.
 
 **Implementation status:** Design-only. This document does not claim the combat, stamina, capture, AI response, absorption, UI, or tests are implemented.
