@@ -86,6 +86,7 @@ The current concept roster contains **100 proposed original base species** acros
 
 - **[Full Game Design Bible](docs/GAME_DESIGN_BIBLE.md)** — consolidated specification for progression, combat, evolution, anatomy, hunting, species, PvP, world persistence, investigations, NPC behavior, planetary completion, biological spaceflight, modular anatomy upgrades, unresolved decisions, and governing rules.
 - **[Skill Tree and Evolution Atlas](docs/SKILL_TREE_AND_EVOLUTION_ATLAS.md)** — detailed design for interconnected evolution nodes, ability progression, mastery, prerequisites, cross-branch synergies, build planning, respec, and future implementation acceptance gates. Design-only; not implemented or tested.
+- **[Slime Master Character Blueprint](docs/SLIME_MASTER_CHARACTER_BLUEPRINT.md)** — the first full life-path reference, from a limbless cell to the Null Sovereign secret boss, including movement, absorption, anatomy, defense, combat, elements, splitting, transformations, cosmic progression, weaknesses, and implementation gates. Design-only; not implemented or tested.
 
 ## Inspirations
 
