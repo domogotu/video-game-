@@ -1,6 +1,6 @@
 # Lethal Absorption — Canonical Species Index for Veyra
 
-> **Status:** Working inventory; design-only, not implemented or tested.
+> **Status:** Working inventory; two species dossiers authored as design records; runtime remains unimplemented and untested.
 > **Purpose:** One index for species references used by Veyra's biome, ecology, skill, trainer, and evolution documents.
 > **Authority:** `docs/BASE_PLANET_MASTER_ATLAS.md` defines the planet template; `docs/SPECIES_SKILLS_AND_TRAINERS_ATLAS.md` defines species-skill and trainer coverage.
 
@@ -37,8 +37,8 @@ All rows marked Candidate need a full species dossier. Habitat anchors are inten
 
 | Stable ID | Working name | Functional role | Habitat anchors | Status |
 |---|---|---|---|---|
-| LA-PLN-SLM-001 | Null Slime | Player-capable flexible opportunist | Wet woodland edge, river basin, caves | Foundational blueprint exists; dossier integration pending |
-| LA-PLN-MIC-001 | Glassfilm Microbe | Biofilm producer | Wet rock, lake shallows, caves | Candidate |
+| LA-PLN-SLM-001 | Null Slime | Player-capable flexible opportunist | Wet woodland edge, river basin, caves | Designed — [species dossier](species/LA-PLN-SLM-001_NULL_SLIME.md); runtime not implemented |
+| LA-PLN-MIC-001 | Glassfilm Microbe | Biofilm producer | Wet rock, lake shallows, caves | Designed — [species dossier](species/LA-PLN-MIC-001_GLASSFILM_MICROBE.md); ecology links are hypotheses |
 | LA-PLN-MIC-002 | Ember Mat | Heat-tolerant microbial producer | Geothermal field, volcanic ash | Candidate |
 | LA-PLN-MIC-003 | Brine Lace | Salt-tolerant microbial producer | Salt flat, brine pool | Candidate |
 | LA-PLN-INV-001 | Reed Skipper | Small wetland grazer / prey | Marsh, river delta | Candidate |
