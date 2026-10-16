@@ -48,11 +48,11 @@ All rows marked Candidate need a full species dossier. Habitat anchors are inten
 | LA-PLN-INV-005 | Gloam Moth | Night pollinator / prey | Forest, cave mouth, old growth | Candidate |
 | LA-PLN-AMP-001 | Glass-Eyed Pouncer | Small ambush predator | Scrub, canyon, rocky woodland | Designed — [species dossier](species/LA-PLN-AMP-001_GLASS_EYED_POUNCER.md); prey links provisional |
 | LA-PLN-AMP-002 | Mire Needle | Wetland ambush predator | Marsh, bog, river edge | Designed — [species dossier](species/LA-PLN-AMP-002_MIRE_NEEDLE.md); prey links provisional |
-| LA-PLN-HER-001 | Moss-Horn Browser | Medium herbivore / seed disperser | Temperate forest, old growth | Candidate |
+| LA-PLN-HER-001 | Moss-Horn Browser | Medium herbivore / seed disperser | Temperate forest, old growth | Designed — [species dossier](species/LA-PLN-HER-001_MOSS_HORN_BROWSER.md); ecology links provisional |
 | LA-PLN-HER-002 | Longstride Grazer | Herd grazer / migration driver | Grassland, savanna, floodplain | Candidate |
 | LA-PLN-HER-003 | Frostveil Grazer | Cold-adapted herd grazer | Boreal forest, tundra, alpine meadow | Candidate |
 | LA-PLN-OMN-001 | Cinder Rummager | Omnivorous scavenger | Ash field, dry canyon, scrub | Candidate |
-| LA-PLN-OMN-002 | Root-Crown Forager | Burrowing omnivore / soil engineer | Forest, grassland, root labyrinth | Candidate |
+| LA-PLN-OMN-002 | Root-Crown Forager | Burrowing omnivore / soil engineer | Forest, grassland, root labyrinth | Designed — [species dossier](species/LA-PLN-OMN-002_ROOT_CROWN_FORAGER.md); ecology links provisional |
 | LA-PLN-PRE-001 | Reedstalker | Medium pursuit / ambush predator | Wetland, floodplain, river edge | Candidate |
 | LA-PLN-PRE-002 | Duskcoil | Serpentine predator | Scrub, canyon, dry forest | Candidate |
 | LA-PLN-PRE-003 | Ridge Prowler | Pack hunter | Alpine foothills, plateau, grassland | Candidate |
@@ -100,7 +100,7 @@ Complete the first local food web before trying to finish every planetary specie
 2. Glassfilm Microbe — a defined nutrient/biofilm source that makes the first environment legible.
 3. Reed Skipper and Silt Burrower — [Reed Skipper dossier](species/LA-PLN-INV-001_REED_SKIPPER.md) and [Silt Burrower dossier](species/LA-PLN-INV-004_SILT_BURROWER.md), small prey with contrasting wetland/river microhabitats.
 4. Glass-Eyed Pouncer and Mire Needle — [Glass-Eyed Pouncer dossier](species/LA-PLN-AMP-001_GLASS_EYED_POUNCER.md) and [Mire Needle dossier](species/LA-PLN-AMP-002_MIRE_NEEDLE.md), early predator pressure with different warning cues and counters.
-5. Moss-Horn Browser and Root-Crown Forager — larger herbivore/omnivore roles that connect plant matter, soil and predators.
+5. Moss-Horn Browser and Root-Crown Forager — [Moss-Horn Browser dossier](species/LA-PLN-HER-001_MOSS_HORN_BROWSER.md) and [Root-Crown Forager dossier](species/LA-PLN-OMN-002_ROOT_CROWN_FORAGER.md), larger herbivore/omnivore roles connecting plant matter, soil, and predators.
 6. Current Dart and Reedstalker — freshwater food web and aquatic movement.
 7. Bark Lantern and Gloam Moth — pollination, night activity and early sensory teaching.
 8. One non-hostile symbiont and one rare/ancient lineage only after the baseline network is coherent.
