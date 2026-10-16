@@ -41,10 +41,10 @@ All rows marked Candidate need a full species dossier. Habitat anchors are inten
 | LA-PLN-MIC-001 | Glassfilm Microbe | Biofilm producer | Wet rock, lake shallows, caves | Designed — [species dossier](species/LA-PLN-MIC-001_GLASSFILM_MICROBE.md); ecology links are hypotheses |
 | LA-PLN-MIC-002 | Ember Mat | Heat-tolerant microbial producer | Geothermal field, volcanic ash | Candidate |
 | LA-PLN-MIC-003 | Brine Lace | Salt-tolerant microbial producer | Salt flat, brine pool | Candidate |
-| LA-PLN-INV-001 | Reed Skipper | Small wetland grazer / prey | Marsh, river delta | Candidate |
+| LA-PLN-INV-001 | Reed Skipper | Small wetland grazer / prey | Marsh, river delta | Designed — [species dossier](species/LA-PLN-INV-001_REED_SKIPPER.md); food-web links provisional |
 | LA-PLN-INV-002 | Bark Lantern | Nocturnal pollinator / prey | Forest, scrub, canopy | Candidate |
 | LA-PLN-INV-003 | Stoneback Grazerling | Armored detritivore / prey | Grassland, woodland edge | Candidate |
-| LA-PLN-INV-004 | Silt Burrower | Sediment feeder / prey | Riverbank, wetland, estuary | Candidate |
+| LA-PLN-INV-004 | Silt Burrower | Sediment feeder / prey | Riverbank, wetland, estuary | Designed — [species dossier](species/LA-PLN-INV-004_SILT_BURROWER.md); food-web links provisional |
 | LA-PLN-INV-005 | Gloam Moth | Night pollinator / prey | Forest, cave mouth, old growth | Candidate |
 | LA-PLN-AMP-001 | Glass-Eyed Pouncer | Small ambush predator | Scrub, canyon, rocky woodland | Candidate |
 | LA-PLN-AMP-002 | Mire Needle | Wetland ambush predator | Marsh, bog, river edge | Candidate |
@@ -98,7 +98,7 @@ Complete the first local food web before trying to finish every planetary specie
 
 1. Null Slime — starting player organism and its Stage 0/Stage 1 rules.
 2. Glassfilm Microbe — a defined nutrient/biofilm source that makes the first environment legible.
-3. Reed Skipper and Silt Burrower — small prey with contrasting wetland/river microhabitats.
+3. Reed Skipper and Silt Burrower — [Reed Skipper dossier](species/LA-PLN-INV-001_REED_SKIPPER.md) and [Silt Burrower dossier](species/LA-PLN-INV-004_SILT_BURROWER.md), small prey with contrasting wetland/river microhabitats.
 4. Glass-Eyed Pouncer and Mire Needle — early predator pressure with different warning cues and counters.
 5. Moss-Horn Browser and Root-Crown Forager — larger herbivore/omnivore roles that connect plant matter, soil and predators.
 6. Current Dart and Reedstalker — freshwater food web and aquatic movement.
