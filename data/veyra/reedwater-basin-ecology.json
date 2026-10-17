@@ -1,0 +1,656 @@
+{
+  "schema_version": "1.0.0",
+  "planet_id": "VEYRA",
+  "region_id": "VEYRA-REEDWATER-BASIN",
+  "evidence_policy": {
+    "default_interaction_status": "design_hypothesis",
+    "implemented_requires_evidence": true,
+    "tested_requires_evidence": true
+  },
+  "habitats": [
+    {
+      "id": "VEY-START-01",
+      "name": "First Drip Hollow",
+      "conditions": [
+        "damp shaded source hollow",
+        "wet rock",
+        "small sheltered pockets"
+      ],
+      "seasonal_pressures": [
+        "source-flow variation",
+        "drying",
+        "cold"
+      ]
+    },
+    {
+      "id": "VEY-START-02",
+      "name": "Reedwater Run",
+      "conditions": [
+        "flowing freshwater",
+        "vegetated banks",
+        "submerged cover"
+      ],
+      "seasonal_pressures": [
+        "flood speed",
+        "turbidity",
+        "channel connectivity"
+      ]
+    },
+    {
+      "id": "VEY-START-03",
+      "name": "Reedglass Marsh",
+      "conditions": [
+        "shallow channels",
+        "reeds",
+        "saturated soil"
+      ],
+      "seasonal_pressures": [
+        "flooding",
+        "oxygen swings",
+        "dry-down"
+      ]
+    },
+    {
+      "id": "VEY-START-04",
+      "name": "Mossbank Edge",
+      "conditions": [
+        "woodland-marsh transition",
+        "shaded humid cover"
+      ],
+      "seasonal_pressures": [
+        "humidity",
+        "flowering",
+        "cover changes"
+      ]
+    },
+    {
+      "id": "VEY-START-05",
+      "name": "Longgrass Shelf",
+      "conditions": [
+        "open grassland",
+        "damp margins",
+        "flower patches"
+      ],
+      "seasonal_pressures": [
+        "drought",
+        "exposure",
+        "host-plant availability"
+      ]
+    },
+    {
+      "id": "VEY-START-06",
+      "name": "Flintback Rise",
+      "conditions": [
+        "rocky upland",
+        "scrub",
+        "exposed routes"
+      ],
+      "seasonal_pressures": [
+        "temperature",
+        "wind",
+        "scarce cover"
+      ]
+    },
+    {
+      "id": "VEY-START-07",
+      "name": "Quietroot Grotto",
+      "conditions": [
+        "small cave",
+        "damp stone",
+        "sediment"
+      ],
+      "seasonal_pressures": [
+        "humidity",
+        "oxygen",
+        "entrance disturbance"
+      ]
+    },
+    {
+      "id": "VEY-START-08",
+      "name": "Siltbend Oxbows",
+      "conditions": [
+        "slow water",
+        "mud banks",
+        "seasonally disconnected pools"
+      ],
+      "seasonal_pressures": [
+        "pool isolation",
+        "low oxygen",
+        "crowding"
+      ]
+    },
+    {
+      "id": "VEY-START-09",
+      "name": "Elderbank Stand",
+      "conditions": [
+        "mature woodland",
+        "retained deadwood",
+        "deep hollows"
+      ],
+      "seasonal_pressures": [
+        "drought",
+        "deadwood removal",
+        "host-plant cycle"
+      ]
+    },
+    {
+      "id": "VEY-START-10",
+      "name": "Southwash Fan",
+      "conditions": [
+        "seasonal channels",
+        "deposits",
+        "shallow pools"
+      ],
+      "seasonal_pressures": [
+        "flood deposition",
+        "channel shift",
+        "dry-down"
+      ]
+    }
+  ],
+  "species": [
+    {
+      "id": "LA-PLN-SLM-001",
+      "name": "Null Slime",
+      "role": "starting player organism",
+      "habitat_ids": [
+        "VEY-START-01",
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-07"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "moisture",
+        "compatible nutrients",
+        "terrain-compatible movement"
+      ]
+    },
+    {
+      "id": "LA-PLN-MIC-001",
+      "name": "Glassfilm Microbe",
+      "role": "wet-surface biofilm producer",
+      "habitat_ids": [
+        "VEY-START-01",
+        "VEY-START-02",
+        "VEY-START-07"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "suitable wet surface",
+        "dissolved nutrients"
+      ]
+    },
+    {
+      "id": "LA-PLN-INV-001",
+      "name": "Reed Skipper",
+      "role": "wetland grazer and prey",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-08"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "wetland food source",
+        "shelter",
+        "viable breeding margins"
+      ]
+    },
+    {
+      "id": "LA-PLN-INV-004",
+      "name": "Silt Burrower",
+      "role": "sediment feeder and soil engineer",
+      "habitat_ids": [
+        "VEY-START-03",
+        "VEY-START-07",
+        "VEY-START-08"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "moist stable substrate",
+        "oxygen",
+        "sediment organic matter"
+      ]
+    },
+    {
+      "id": "LA-PLN-AMP-001",
+      "name": "Glass-Eyed Pouncer",
+      "role": "small ambush predator",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-06"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "small prey",
+        "concealment",
+        "resting cover"
+      ]
+    },
+    {
+      "id": "LA-PLN-AMP-002",
+      "name": "Mire Needle",
+      "role": "shallow-water ambush predator",
+      "habitat_ids": [
+        "VEY-START-03",
+        "VEY-START-08",
+        "VEY-START-10"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "shallow water",
+        "concealment",
+        "small aquatic prey"
+      ]
+    },
+    {
+      "id": "LA-PLN-HER-001",
+      "name": "Moss-Horn Browser",
+      "role": "woodland herbivore and seed disperser",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-09"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "renewing browse plants",
+        "water",
+        "herd refuge"
+      ]
+    },
+    {
+      "id": "LA-PLN-OMN-002",
+      "name": "Root-Crown Forager",
+      "role": "burrowing omnivore and soil engineer",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "roots",
+        "detritus",
+        "small soil organisms",
+        "diggable soil"
+      ]
+    },
+    {
+      "id": "LA-PLN-AQU-001",
+      "name": "Current Dart",
+      "role": "freshwater swimmer and prey",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-08",
+        "VEY-START-10"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "oxygenated freshwater",
+        "drifting food",
+        "connected nursery shallows"
+      ]
+    },
+    {
+      "id": "LA-PLN-PRE-001",
+      "name": "Reedstalker",
+      "role": "shoreline stalking predator",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-08",
+        "VEY-START-10"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "small shoreline prey",
+        "concealment",
+        "nesting cover"
+      ]
+    },
+    {
+      "id": "LA-PLN-INV-002",
+      "name": "Bark Lantern",
+      "role": "bark-dwelling detritivore and prey",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "retained deadwood",
+        "fungal films",
+        "stable humidity"
+      ]
+    },
+    {
+      "id": "LA-PLN-INV-005",
+      "name": "Gloam Moth",
+      "role": "night-flying flower visitor and prey",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09",
+        "VEY-START-03"
+      ],
+      "design_status": "designed",
+      "evidence_status": "design_only",
+      "resource_dependencies": [
+        "larval host plant",
+        "adult food source",
+        "sheltered pupation site"
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "VEY-EDGE-001",
+      "type": "habitat_dependency",
+      "source_id": "LA-PLN-MIC-001",
+      "target_id": "VEY-START-01",
+      "conditions": [
+        "surface remains damp",
+        "surface nutrients remain available"
+      ],
+      "status": "mechanic_specified",
+      "evidence": [
+        "Glassfilm Microbe dossier",
+        "Reedwater Basin food-web specification"
+      ],
+      "notes": "Habitat dependency only; no universal coverage of all wet surfaces."
+    },
+    {
+      "id": "VEY-EDGE-002",
+      "type": "consumes",
+      "source_id": "LA-PLN-INV-001",
+      "target_id": "resource:wetland-surface-food",
+      "conditions": [
+        "food is present",
+        "water conditions permit foraging"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Reed Skipper dossier"
+      ],
+      "notes": "Exact resource source still needs a named plant or microbial resource."
+    },
+    {
+      "id": "VEY-EDGE-003",
+      "type": "consumes",
+      "source_id": "LA-PLN-INV-004",
+      "target_id": "resource:sediment-organic-matter",
+      "conditions": [
+        "substrate is moist and stable",
+        "oxygen is sufficient"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Silt Burrower dossier"
+      ],
+      "notes": "Do not model unlimited sediment food."
+    },
+    {
+      "id": "VEY-EDGE-004",
+      "type": "predates",
+      "source_id": "LA-PLN-AMP-001",
+      "target_id": "resource:small-ground-prey",
+      "conditions": [
+        "target is within strike capability",
+        "ambush route and recovery window are valid"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Glass-Eyed Pouncer dossier"
+      ],
+      "notes": "Generic resource target until compatible prey species are assigned."
+    },
+    {
+      "id": "VEY-EDGE-005",
+      "type": "predates",
+      "source_id": "LA-PLN-AMP-002",
+      "target_id": "resource:small-aquatic-prey",
+      "conditions": [
+        "shallow-water strike geometry is valid",
+        "target is within range"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Mire Needle dossier"
+      ],
+      "notes": "Generic resource target until specific prey links are validated."
+    },
+    {
+      "id": "VEY-EDGE-006",
+      "type": "consumes",
+      "source_id": "LA-PLN-HER-001",
+      "target_id": "resource:renewing-woodland-browse",
+      "conditions": [
+        "browse is available",
+        "local plant renewal exceeds consumption"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Moss-Horn Browser dossier"
+      ],
+      "notes": "Plant species must be named before simulation."
+    },
+    {
+      "id": "VEY-EDGE-007",
+      "type": "consumes",
+      "source_id": "LA-PLN-OMN-002",
+      "target_id": "resource:roots-detritus-soil-prey",
+      "conditions": [
+        "resource patch is accessible",
+        "digging cost is affordable"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Root-Crown Forager dossier"
+      ],
+      "notes": "Resource bundle requires later decomposition into typed records."
+    },
+    {
+      "id": "VEY-EDGE-008",
+      "type": "consumes",
+      "source_id": "LA-PLN-AQU-001",
+      "target_id": "resource:drifting-microfood",
+      "conditions": [
+        "food density is sufficient",
+        "oxygen and current are suitable"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Current Dart dossier"
+      ],
+      "notes": "Do not infer that Current Dart eats Glassfilm Microbe directly."
+    },
+    {
+      "id": "VEY-EDGE-009",
+      "type": "predates",
+      "source_id": "LA-PLN-PRE-001",
+      "target_id": "LA-PLN-INV-001",
+      "conditions": [
+        "Reed Skipper is exposed at shoreline",
+        "Reedstalker has a valid approach and capture route"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Reedstalker dossier",
+        "Reed Skipper dossier"
+      ],
+      "notes": "Provisional edge; requires encounter and capture validation."
+    },
+    {
+      "id": "VEY-EDGE-010",
+      "type": "consumes",
+      "source_id": "LA-PLN-INV-002",
+      "target_id": "resource:fungal-film-dead-plant-matter",
+      "conditions": [
+        "humid bark crevice exists",
+        "food film is available"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Bark Lantern dossier"
+      ],
+      "notes": "Finite resource stock with renewal conditions."
+    },
+    {
+      "id": "VEY-EDGE-011",
+      "type": "consumes",
+      "source_id": "LA-PLN-INV-005",
+      "target_id": "resource:named-larval-host-plant",
+      "conditions": [
+        "host plant is named and present",
+        "larval stage can access it"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Gloam Moth dossier"
+      ],
+      "notes": "Blocked from runtime until a compatible host plant is named."
+    },
+    {
+      "id": "VEY-EDGE-012",
+      "type": "mutualism",
+      "source_id": "LA-PLN-INV-005",
+      "target_id": "resource:compatible-night-flower",
+      "conditions": [
+        "flower is compatible",
+        "pollen transfer occurs",
+        "plant reproductive benefit is demonstrated"
+      ],
+      "status": "design_hypothesis",
+      "evidence": [
+        "Gloam Moth dossier"
+      ],
+      "notes": "Potential pollination only; not a confirmed mutualism."
+    },
+    {
+      "id": "VEY-EDGE-013",
+      "type": "predates",
+      "source_id": "LA-PLN-PRE-001",
+      "target_id": "LA-PLN-AQU-001",
+      "conditions": [
+        "aquatic capture behavior is implemented and validated",
+        "water depth and approach route permit capture"
+      ],
+      "status": "rejected",
+      "evidence": [
+        "Reedstalker dossier",
+        "Reedwater Basin food-web specification"
+      ],
+      "notes": "Explicitly disabled until aquatic capture capability is established."
+    },
+    {
+      "id": "VEY-EDGE-014",
+      "type": "material_flow",
+      "source_id": "resource:organism-remains",
+      "target_id": "resource:finite-detritus-pool",
+      "conditions": [
+        "remains exist",
+        "conversion is finite and tracked"
+      ],
+      "status": "mechanic_specified",
+      "evidence": [
+        "Reedwater Basin food-web specification"
+      ],
+      "notes": "Future implementation must prevent infinite resource loops."
+    }
+  ],
+  "seasonal_scenarios": [
+    {
+      "id": "VEY-SEASON-01",
+      "name": "Rain-swollen river",
+      "effects": [
+        "flow increases",
+        "visibility may fall",
+        "connected margins may open"
+      ],
+      "validation_expectations": [
+        "current movement cost increases under stronger flow",
+        "habitat connectivity changes only where channels physically connect",
+        "flooding does not grant universal survival benefits"
+      ]
+    },
+    {
+      "id": "VEY-SEASON-02",
+      "name": "Seasonal flood",
+      "effects": [
+        "temporary channels connect",
+        "some nests and shelters are lost",
+        "sediment is redistributed"
+      ],
+      "validation_expectations": [
+        "migration requires passable routes",
+        "reproduction can be harmed by nest loss",
+        "no instant population reset"
+      ]
+    },
+    {
+      "id": "VEY-SEASON-03",
+      "name": "Dry spell",
+      "effects": [
+        "shallow pools shrink",
+        "oxygen may fall",
+        "prey may concentrate"
+      ],
+      "validation_expectations": [
+        "crowding and predation can increase locally",
+        "low oxygen harms sensitive aquatic species",
+        "harvest recovery depends on viable source populations"
+      ]
+    },
+    {
+      "id": "VEY-SEASON-04",
+      "name": "Fog",
+      "effects": [
+        "visual detection range changes",
+        "sound and chemical cues remain environment-dependent"
+      ],
+      "validation_expectations": [
+        "sensory modes have separate range and confidence limits",
+        "no omniscient target outline through cover"
+      ]
+    },
+    {
+      "id": "VEY-SEASON-05",
+      "name": "Overharvest",
+      "effects": [
+        "local prey and resource stocks decline",
+        "predator activity may shift where dependencies are real"
+      ],
+      "validation_expectations": [
+        "stock never goes negative",
+        "recovery requires resource renewal",
+        "unrelated habitats do not change without a causal link"
+      ]
+    },
+    {
+      "id": "VEY-SEASON-06",
+      "name": "Deadwood removal",
+      "effects": [
+        "Bark Lantern shelter and fungal substrate decline"
+      ],
+      "validation_expectations": [
+        "Bark Lantern habitat quality responds locally",
+        "river populations remain unaffected unless a documented causal path exists"
+      ]
+    }
+  ]
+}
