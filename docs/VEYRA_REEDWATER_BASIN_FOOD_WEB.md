@@ -114,6 +114,10 @@ The starting Slime begins mostly blind and relies on chemical and vibration sens
 
 This document and linked dossiers are authored design. No runtime food web, AI, population model, procedural biome generation, or ecological balancing is claimed implemented. Future code should be built from these contracts, with data-driven species and edge records, deterministic test fixtures, and explicit test results.
 
+## 10. Resource source of truth
+
+The [Veyra Native Plant and Resource Atlas](VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md) establishes initial named resource candidates, habitat dependencies, harvest/renewal invariants, and the unresolved Gloam Moth larval-host requirement. Use it when converting generic resource labels into machine-readable records. Duskbell Bloom is an adult food/potential pollination partner only; it is **not** approved as the Gloam Moth larval host.
+
 ## 10. Immediate build order
 
 1. Finalize at least one named plant/host resource for Reed Skipper, Moss-Horn Browser, and Gloam Moth larvae.
