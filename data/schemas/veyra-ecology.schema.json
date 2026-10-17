@@ -2,58 +2,234 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/domogotu/video-game-/blob/main/data/schemas/veyra-ecology.schema.json",
   "title": "Lethal Absorption Veyra Ecology Dataset",
-  "description": "Data contract for authored species, habitat anchors, and provisional ecological interactions. Schema validation does not imply simulation implementation.",
+  "description": "Data contract for authored species, named resource patches, habitat anchors, and provisional ecological interactions. Schema validation does not imply simulation implementation.",
   "type": "object",
-  "required": ["schema_version", "planet_id", "region_id", "evidence_policy", "habitats", "species", "interactions", "seasonal_scenarios"],
+  "required": [
+    "schema_version",
+    "planet_id",
+    "region_id",
+    "evidence_policy",
+    "habitats",
+    "resources",
+    "species",
+    "interactions",
+    "seasonal_scenarios"
+  ],
   "additionalProperties": false,
   "properties": {
-    "schema_version": { "type": "string", "const": "1.0.0" },
-    "planet_id": { "type": "string", "const": "VEYRA" },
-    "region_id": { "type": "string", "const": "VEYRA-REEDWATER-BASIN" },
+    "schema_version": {
+      "type": "string",
+      "const": "1.0.0"
+    },
+    "planet_id": {
+      "type": "string",
+      "const": "VEYRA"
+    },
+    "region_id": {
+      "type": "string",
+      "const": "VEYRA-REEDWATER-BASIN"
+    },
     "evidence_policy": {
       "type": "object",
-      "required": ["default_interaction_status", "implemented_requires_evidence", "tested_requires_evidence"],
+      "required": [
+        "default_interaction_status",
+        "implemented_requires_evidence",
+        "tested_requires_evidence"
+      ],
       "additionalProperties": false,
       "properties": {
-        "default_interaction_status": { "type": "string", "const": "design_hypothesis" },
-        "implemented_requires_evidence": { "type": "boolean", "const": true },
-        "tested_requires_evidence": { "type": "boolean", "const": true }
+        "default_interaction_status": {
+          "type": "string",
+          "const": "design_hypothesis"
+        },
+        "implemented_requires_evidence": {
+          "type": "boolean",
+          "const": true
+        },
+        "tested_requires_evidence": {
+          "type": "boolean",
+          "const": true
+        }
       }
     },
     "habitats": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "name", "conditions", "seasonal_pressures"],
+        "required": [
+          "id",
+          "name",
+          "conditions",
+          "seasonal_pressures"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^VEY-START-[0-9]{2}$" },
-          "name": { "type": "string", "minLength": 2 },
-          "conditions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-          "seasonal_pressures": { "type": "array", "items": { "type": "string" } }
+          "id": {
+            "type": "string",
+            "pattern": "^VEY-START-[0-9]{2}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "seasonal_pressures": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         }
       }
     },
     "species": {
-      "type": "array", "minItems": 1,
+      "type": "array",
+      "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["id", "name", "role", "habitat_ids", "design_status", "evidence_status", "resource_dependencies"],
+        "required": [
+          "id",
+          "name",
+          "role",
+          "habitat_ids",
+          "design_status",
+          "evidence_status",
+          "resource_dependencies"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^LA-PLN-[A-Z]{3}-[0-9]{3}$" },
-          "name": { "type": "string", "minLength": 2 },
-          "role": { "type": "string", "minLength": 2 },
-          "habitat_ids": { "type": "array", "items": { "type": "string", "pattern": "^VEY-START-[0-9]{2}$" }, "minItems": 1, "uniqueItems": true },
-          "design_status": { "type": "string", "enum": ["candidate", "designed", "implemented", "tested"] },
-          "evidence_status": { "type": "string", "enum": ["design_only", "implementation_evidence", "test_evidence"] },
-          "resource_dependencies": { "type": "array", "items": { "type": "string" } }
+          "id": {
+            "type": "string",
+            "pattern": "^LA-PLN-[A-Z]{3}-[0-9]{3}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "role": {
+            "type": "string",
+            "minLength": 2
+          },
+          "habitat_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^VEY-START-[0-9]{2}$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "design_status": {
+            "type": "string",
+            "enum": [
+              "candidate",
+              "designed",
+              "implemented",
+              "tested"
+            ]
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "design_only",
+              "implementation_evidence",
+              "test_evidence"
+            ]
+          },
+          "resource_dependencies": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
         },
         "allOf": [
-          { "if": { "properties": { "design_status": { "const": "candidate" } }, "required": ["design_status"] }, "then": { "properties": { "evidence_status": { "const": "design_only" } } } },
-          { "if": { "properties": { "design_status": { "const": "designed" } }, "required": ["design_status"] }, "then": { "properties": { "evidence_status": { "const": "design_only" } } } },
-          { "if": { "properties": { "design_status": { "const": "implemented" } }, "required": ["design_status"] }, "then": { "properties": { "evidence_status": { "enum": ["implementation_evidence", "test_evidence"] } } } },
-          { "if": { "properties": { "design_status": { "const": "tested" } }, "required": ["design_status"] }, "then": { "properties": { "evidence_status": { "const": "test_evidence" } } } }
+          {
+            "if": {
+              "properties": {
+                "design_status": {
+                  "const": "candidate"
+                }
+              },
+              "required": [
+                "design_status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_status": {
+                  "const": "design_only"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "design_status": {
+                  "const": "designed"
+                }
+              },
+              "required": [
+                "design_status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_status": {
+                  "const": "design_only"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "design_status": {
+                  "const": "implemented"
+                }
+              },
+              "required": [
+                "design_status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_status": {
+                  "enum": [
+                    "implementation_evidence",
+                    "test_evidence"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "design_status": {
+                  "const": "tested"
+                }
+              },
+              "required": [
+                "design_status"
+              ]
+            },
+            "then": {
+              "properties": {
+                "evidence_status": {
+                  "const": "test_evidence"
+                }
+              }
+            }
+          }
         ]
       }
     },
@@ -61,30 +237,195 @@
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["id", "type", "source_id", "target_id", "conditions", "status", "evidence"],
+        "required": [
+          "id",
+          "type",
+          "source_id",
+          "target_id",
+          "conditions",
+          "status",
+          "evidence"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^VEY-EDGE-[0-9]{3}$" },
-          "type": { "type": "string", "enum": ["consumes", "predates", "competes", "mutualism", "habitat_dependency", "material_flow", "behavioral_clue"] },
-          "source_id": { "type": "string" },
-          "target_id": { "type": "string" },
-          "conditions": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-          "status": { "type": "string", "enum": ["design_hypothesis", "mechanic_specified", "implemented", "tested", "rejected"] },
-          "evidence": { "type": "array", "items": { "type": "string" } },
-          "notes": { "type": "string" }
+          "id": {
+            "type": "string",
+            "pattern": "^VEY-EDGE-[0-9]{3}$"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "consumes",
+              "predates",
+              "competes",
+              "mutualism",
+              "habitat_dependency",
+              "material_flow",
+              "behavioral_clue"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "target_id": {
+            "type": "string"
+          },
+          "conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "design_hypothesis",
+              "mechanic_specified",
+              "implemented",
+              "tested",
+              "rejected"
+            ]
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "string"
+          }
         }
       }
     },
     "seasonal_scenarios": {
-      "type": "array", "items": {
+      "type": "array",
+      "items": {
         "type": "object",
-        "required": ["id", "name", "effects", "validation_expectations"],
+        "required": [
+          "id",
+          "name",
+          "effects",
+          "validation_expectations"
+        ],
         "additionalProperties": false,
         "properties": {
-          "id": { "type": "string", "pattern": "^VEY-SEASON-[0-9]{2}$" },
-          "name": { "type": "string" },
-          "effects": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
-          "validation_expectations": { "type": "array", "items": { "type": "string" }, "minItems": 1 }
+          "id": {
+            "type": "string",
+            "pattern": "^VEY-SEASON-[0-9]{2}$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "effects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "validation_expectations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "resources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "resource_class",
+          "habitat_ids",
+          "finite_stock",
+          "stock_model",
+          "producer_or_source",
+          "consumers",
+          "renewal_conditions",
+          "depletion_effects",
+          "evidence_status"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^VEY-RES-[A-Z]{3}-[0-9]{3}$"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 2
+          },
+          "resource_class": {
+            "type": "string",
+            "enum": [
+              "plant",
+              "fungal",
+              "aquatic_microfood",
+              "detritus"
+            ]
+          },
+          "habitat_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^VEY-START-[0-9]{2}$"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "finite_stock": {
+            "type": "boolean",
+            "const": true
+          },
+          "stock_model": {
+            "type": "string",
+            "enum": [
+              "unbalanced_provisional",
+              "fixed_test_fixture",
+              "runtime"
+            ]
+          },
+          "producer_or_source": {
+            "type": "string",
+            "minLength": 2
+          },
+          "consumers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "renewal_conditions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "depletion_effects": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "evidence_status": {
+            "type": "string",
+            "enum": [
+              "design_only",
+              "implementation_evidence",
+              "test_evidence"
+            ]
+          }
         }
       }
     }
