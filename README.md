@@ -183,5 +183,6 @@ The initial Reedwater Basin ecology dataset is now available as structured JSON,
 - [Veyra ecology schema](data/schemas/veyra-ecology.schema.json)
 - [Reedwater Basin seed dataset](data/veyra/reedwater-basin-ecology.json)
 - [Reedwater Basin food-web specification](docs/VEYRA_REEDWATER_BASIN_FOOD_WEB.md)
+- [Veyra native plant and resource atlas](docs/VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md)
 
 These are design data, not a claim that runtime simulation is implemented. Interaction status and evidence fields intentionally separate hypotheses from implemented or tested behavior.
