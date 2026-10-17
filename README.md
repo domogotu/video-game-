@@ -174,3 +174,14 @@ Enemies react to evidence the player creates—sight, sound, scent, vibration, e
 - [Perception, Investigation, and Adaptive Hunter AI](docs/PERCEPTION_INVESTIGATION_AND_ADAPTIVE_HUNTER_AI.md)
 
 This is a design requirement, not evidence of implemented or tested AI.
+
+
+## Veyra base-planet ecology data
+
+The initial Reedwater Basin ecology dataset is now available as structured JSON, paired with a JSON Schema contract:
+
+- [Veyra ecology schema](data/schemas/veyra-ecology.schema.json)
+- [Reedwater Basin seed dataset](data/veyra/reedwater-basin-ecology.json)
+- [Reedwater Basin food-web specification](docs/VEYRA_REEDWATER_BASIN_FOOD_WEB.md)
+
+These are design data, not a claim that runtime simulation is implemented. Interaction status and evidence fields intentionally separate hypotheses from implemented or tested behavior.
