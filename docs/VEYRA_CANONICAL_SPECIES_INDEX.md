@@ -42,10 +42,10 @@ All rows marked Candidate need a full species dossier. Habitat anchors are inten
 | LA-PLN-MIC-002 | Ember Mat | Heat-tolerant microbial producer | Geothermal field, volcanic ash | Candidate |
 | LA-PLN-MIC-003 | Brine Lace | Salt-tolerant microbial producer | Salt flat, brine pool | Candidate |
 | LA-PLN-INV-001 | Reed Skipper | Small wetland grazer / prey | Marsh, river delta | Designed — [species dossier](species/LA-PLN-INV-001_REED_SKIPPER.md); food-web links provisional |
-| LA-PLN-INV-002 | Bark Lantern | Nocturnal pollinator / prey | Forest, scrub, canopy | Candidate |
+| LA-PLN-INV-002 | Bark Lantern | Nocturnal detritivore / prey | Forest, scrub, canopy | Designed — [species dossier](species/LA-PLN-INV-002_BARK_LANTERN.md); ecological links provisional |
 | LA-PLN-INV-003 | Stoneback Grazerling | Armored detritivore / prey | Grassland, woodland edge | Candidate |
 | LA-PLN-INV-004 | Silt Burrower | Sediment feeder / prey | Riverbank, wetland, estuary | Designed — [species dossier](species/LA-PLN-INV-004_SILT_BURROWER.md); food-web links provisional |
-| LA-PLN-INV-005 | Gloam Moth | Night pollinator / prey | Forest, cave mouth, old growth | Candidate |
+| LA-PLN-INV-005 | Gloam Moth | Night-flying flower visitor / prey | Forest edge, marsh margin, old growth | Designed — [species dossier](species/LA-PLN-INV-005_GLOAM_MOTH.md); pollination links provisional |
 | LA-PLN-AMP-001 | Glass-Eyed Pouncer | Small ambush predator | Scrub, canyon, rocky woodland | Designed — [species dossier](species/LA-PLN-AMP-001_GLASS_EYED_POUNCER.md); prey links provisional |
 | LA-PLN-AMP-002 | Mire Needle | Wetland ambush predator | Marsh, bog, river edge | Designed — [species dossier](species/LA-PLN-AMP-002_MIRE_NEEDLE.md); prey links provisional |
 | LA-PLN-HER-001 | Moss-Horn Browser | Medium herbivore / seed disperser | Temperate forest, old growth | Designed — [species dossier](species/LA-PLN-HER-001_MOSS_HORN_BROWSER.md); ecology links provisional |
@@ -102,7 +102,7 @@ Complete the first local food web before trying to finish every planetary specie
 4. Glass-Eyed Pouncer and Mire Needle — [Glass-Eyed Pouncer dossier](species/LA-PLN-AMP-001_GLASS_EYED_POUNCER.md) and [Mire Needle dossier](species/LA-PLN-AMP-002_MIRE_NEEDLE.md), early predator pressure with different warning cues and counters.
 5. Moss-Horn Browser and Root-Crown Forager — [Moss-Horn Browser dossier](species/LA-PLN-HER-001_MOSS_HORN_BROWSER.md) and [Root-Crown Forager dossier](species/LA-PLN-OMN-002_ROOT_CROWN_FORAGER.md), larger herbivore/omnivore roles connecting plant matter, soil, and predators.
 6. Current Dart and Reedstalker — [Current Dart dossier](species/LA-PLN-AQU-001_CURRENT_DART.md) and [Reedstalker dossier](species/LA-PLN-PRE-001_REEDSTALKER.md), freshwater food web and aquatic movement.
-7. Bark Lantern and Gloam Moth — pollination, night activity and early sensory teaching.
+7. Bark Lantern and Gloam Moth — [Bark Lantern dossier](species/LA-PLN-INV-002_BARK_LANTERN.md) and [Gloam Moth dossier](species/LA-PLN-INV-005_GLOAM_MOTH.md), deadwood ecology, night activity, and flight-related sensory clues.
 8. One non-hostile symbiont and one rare/ancient lineage only after the baseline network is coherent.
 
 This order is a production priority, not a claim that these species have final mechanics. Any food-web edge must be supported in the species dossiers.
@@ -116,4 +116,4 @@ This order is a production priority, not a claim that these species have final m
 - Do not add exact drop rates, stats or reproduction rates without a design rationale and later balance validation.
 - Completion counts must distinguish rostered, dossier-complete, implemented and tested entries.
 
-**Current status:** Initial candidate roster reconciled with known repository documents listed above. This is not yet an exhaustive repository-wide species inventory, and the dossiers, regional population data, biome instances and simulation remain incomplete.
+**Current status:** Initial candidate roster reconciled with known repository documents listed above. The [Reedwater Basin Food-Web and Biome Linkage Specification](VEYRA_REEDWATER_BASIN_FOOD_WEB.md) defines provisional edge types, regional habitat links, seasonal scenarios, and validation gates. This is not yet an exhaustive repository-wide species inventory; population data, biome instances, and runtime simulation remain incomplete.
