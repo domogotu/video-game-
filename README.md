@@ -184,5 +184,8 @@ The initial Reedwater Basin ecology dataset is now available as structured JSON,
 - [Reedwater Basin seed dataset](data/veyra/reedwater-basin-ecology.json)
 - [Reedwater Basin food-web specification](docs/VEYRA_REEDWATER_BASIN_FOOD_WEB.md)
 - [Veyra native plant and resource atlas](docs/VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md)
+- [Veyra ecology validator](tools/validate_veyra_ecology.py) — standard-library structural/reference checks
+
+Run locally from the repository root with `python tools/validate_veyra_ecology.py`. This validates dataset structure and cross-record references only; it does not run the ecology simulation or certify proposed feeding relationships.
 
 These are design data, not a claim that runtime simulation is implemented. Interaction status and evidence fields intentionally separate hypotheses from implemented or tested behavior.
