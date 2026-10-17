@@ -179,8 +179,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "suitable wet surface",
-        "dissolved nutrients"
+        "VEY-RES-PLT-005"
       ]
     },
     {
@@ -195,9 +194,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "wetland food source",
-        "shelter",
-        "viable breeding margins"
+        "VEY-RES-PLT-001"
       ]
     },
     {
@@ -212,9 +209,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "moist stable substrate",
-        "oxygen",
-        "sediment organic matter"
+        "VEY-RES-DET-001"
       ]
     },
     {
@@ -262,9 +257,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "renewing browse plants",
-        "water",
-        "herd refuge"
+        "VEY-RES-PLT-002"
       ]
     },
     {
@@ -279,10 +272,8 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "roots",
-        "detritus",
-        "small soil organisms",
-        "diggable soil"
+        "VEY-RES-PLT-004",
+        "VEY-RES-DET-001"
       ]
     },
     {
@@ -298,9 +289,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "oxygenated freshwater",
-        "drifting food",
-        "connected nursery shallows"
+        "VEY-RES-AQU-001"
       ]
     },
     {
@@ -333,9 +322,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "retained deadwood",
-        "fungal films",
-        "stable humidity"
+        "VEY-RES-FNG-001"
       ]
     },
     {
@@ -351,9 +338,8 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "larval host plant",
-        "adult food source",
-        "sheltered pupation site"
+        "resource:unresolved-gloam-moth-larval-host",
+        "VEY-RES-PLT-003"
       ]
     }
   ],
@@ -378,7 +364,7 @@
       "id": "VEY-EDGE-002",
       "type": "consumes",
       "source_id": "LA-PLN-INV-001",
-      "target_id": "resource:wetland-surface-food",
+      "target_id": "VEY-RES-PLT-001",
       "conditions": [
         "food is present",
         "water conditions permit foraging"
@@ -387,13 +373,13 @@
       "evidence": [
         "Reed Skipper dossier"
       ],
-      "notes": "Exact resource source still needs a named plant or microbial resource."
+      "notes": "Candidate Reedglass Reedgrass feeding link; remains a hypothesis until the species dossier and feeding behavior agree."
     },
     {
       "id": "VEY-EDGE-003",
       "type": "consumes",
       "source_id": "LA-PLN-INV-004",
-      "target_id": "resource:sediment-organic-matter",
+      "target_id": "VEY-RES-DET-001",
       "conditions": [
         "substrate is moist and stable",
         "oxygen is sufficient"
@@ -402,7 +388,7 @@
       "evidence": [
         "Silt Burrower dossier"
       ],
-      "notes": "Do not model unlimited sediment food."
+      "notes": "Basin Detritus Pool is a finite candidate resource; stock and conversion rates are not yet numerically balanced."
     },
     {
       "id": "VEY-EDGE-004",
@@ -438,7 +424,7 @@
       "id": "VEY-EDGE-006",
       "type": "consumes",
       "source_id": "LA-PLN-HER-001",
-      "target_id": "resource:renewing-woodland-browse",
+      "target_id": "VEY-RES-PLT-002",
       "conditions": [
         "browse is available",
         "local plant renewal exceeds consumption"
@@ -447,13 +433,13 @@
       "evidence": [
         "Moss-Horn Browser dossier"
       ],
-      "notes": "Plant species must be named before simulation."
+      "notes": "Silverleaf Bankfern is a candidate browse resource; browse compatibility remains a hypothesis."
     },
     {
       "id": "VEY-EDGE-007",
       "type": "consumes",
       "source_id": "LA-PLN-OMN-002",
-      "target_id": "resource:roots-detritus-soil-prey",
+      "target_id": "VEY-RES-PLT-004",
       "conditions": [
         "resource patch is accessible",
         "digging cost is affordable"
@@ -462,13 +448,13 @@
       "evidence": [
         "Root-Crown Forager dossier"
       ],
-      "notes": "Resource bundle requires later decomposition into typed records."
+      "notes": "Rootmilk Tuber is a candidate resource; Basin Detritus Pool is represented by a separate finite-resource record, not an unlimited bundle."
     },
     {
       "id": "VEY-EDGE-008",
       "type": "consumes",
       "source_id": "LA-PLN-AQU-001",
-      "target_id": "resource:drifting-microfood",
+      "target_id": "VEY-RES-AQU-001",
       "conditions": [
         "food density is sufficient",
         "oxygen and current are suitable"
@@ -477,7 +463,7 @@
       "evidence": [
         "Current Dart dossier"
       ],
-      "notes": "Do not infer that Current Dart eats Glassfilm Microbe directly."
+      "notes": "Driftplankton Cloud is a candidate resource; do not infer that Current Dart eats Glassfilm Microbe directly."
     },
     {
       "id": "VEY-EDGE-009",
@@ -499,7 +485,7 @@
       "id": "VEY-EDGE-010",
       "type": "consumes",
       "source_id": "LA-PLN-INV-002",
-      "target_id": "resource:fungal-film-dead-plant-matter",
+      "target_id": "VEY-RES-FNG-001",
       "conditions": [
         "humid bark crevice exists",
         "food film is available"
@@ -508,13 +494,13 @@
       "evidence": [
         "Bark Lantern dossier"
       ],
-      "notes": "Finite resource stock with renewal conditions."
+      "notes": "Glasscap Fungal Film is a finite candidate resource with conditional renewal."
     },
     {
       "id": "VEY-EDGE-011",
       "type": "consumes",
       "source_id": "LA-PLN-INV-005",
-      "target_id": "resource:named-larval-host-plant",
+      "target_id": "resource:unresolved-gloam-moth-larval-host",
       "conditions": [
         "host plant is named and present",
         "larval stage can access it"
@@ -523,13 +509,13 @@
       "evidence": [
         "Gloam Moth dossier"
       ],
-      "notes": "Blocked from runtime until a compatible host plant is named."
+      "notes": "Larval-host endpoint is intentionally unresolved; blocked from runtime until a compatible host plant is named. Duskbell Bloom is not assumed to be the host."
     },
     {
       "id": "VEY-EDGE-012",
       "type": "mutualism",
       "source_id": "LA-PLN-INV-005",
-      "target_id": "resource:compatible-night-flower",
+      "target_id": "VEY-RES-PLT-003",
       "conditions": [
         "flower is compatible",
         "pollen transfer occurs",
@@ -539,7 +525,7 @@
       "evidence": [
         "Gloam Moth dossier"
       ],
-      "notes": "Potential pollination only; not a confirmed mutualism."
+      "notes": "Potential pollination involving Duskbell Bloom only; this remains a hypothesis, not a confirmed mutualism."
     },
     {
       "id": "VEY-EDGE-013",
@@ -561,7 +547,7 @@
       "id": "VEY-EDGE-014",
       "type": "material_flow",
       "source_id": "resource:organism-remains",
-      "target_id": "resource:finite-detritus-pool",
+      "target_id": "VEY-RES-DET-001",
       "conditions": [
         "remains exist",
         "conversion is finite and tracked"
@@ -570,7 +556,7 @@
       "evidence": [
         "Reedwater Basin food-web specification"
       ],
-      "notes": "Future implementation must prevent infinite resource loops."
+      "notes": "Finite material-flow concept retained as an abstract transformation; runtime must prevent infinite loops and conserve tracked material."
     }
   ],
   "seasonal_scenarios": [
@@ -652,5 +638,232 @@
         "river populations remain unaffected unless a documented causal path exists"
       ]
     }
-  ]
+  ],
+  "resources": [
+    {
+      "id": "VEY-RES-PLT-001",
+      "name": "Reedglass Reedgrass",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-08"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Rooted emergent plant stands; patch-local biomass and seed stock",
+      "consumers": [
+        "LA-PLN-INV-001"
+      ],
+      "renewal_conditions": [
+        "Living roots remain anchored",
+        "Water level and seasonal light remain within tolerance",
+        "Regrowth is slower than immediate harvest and must be modeled explicitly"
+      ],
+      "depletion_effects": [
+        "Reduced cover and hiding places",
+        "Lower seed availability",
+        "Patch remains depleted until growth conditions permit renewal"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PLT-002",
+      "name": "Silverleaf Bankfern",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-07",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Moist understory fern patches",
+      "consumers": [
+        "LA-PLN-HER-001"
+      ],
+      "renewal_conditions": [
+        "Rhizomes survive harvest",
+        "Moisture and shade remain suitable",
+        "Harvested fronds regrow over a defined interval"
+      ],
+      "depletion_effects": [
+        "Reduced understory cover",
+        "Lower candidate browse stock",
+        "No renewal during unsuitable dry conditions"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PLT-003",
+      "name": "Duskbell Bloom",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Night-opening flowering plant patches",
+      "consumers": [
+        "LA-PLN-INV-005"
+      ],
+      "renewal_conditions": [
+        "Adult plants survive",
+        "Flowering season and pollination conditions are suitable",
+        "Flower production follows a finite seasonal schedule"
+      ],
+      "depletion_effects": [
+        "Reduced nectar/flower availability for adults",
+        "Potential pollination interaction weakens",
+        "Does not count as the Gloam Moth larval host"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PLT-004",
+      "name": "Rootmilk Tuber",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Subsurface tuber patches",
+      "consumers": [
+        "LA-PLN-OMN-002"
+      ],
+      "renewal_conditions": [
+        "Some viable plant tissue remains or reproduction replenishes the patch",
+        "Soil moisture and nutrient conditions permit growth",
+        "Digging disturbance is tracked"
+      ],
+      "depletion_effects": [
+        "Local edible stock falls",
+        "Repeated digging may damage future yield",
+        "Patch recovery requires growth time"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PLT-005",
+      "name": "Mossveil Groundmat",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-01",
+        "VEY-START-02",
+        "VEY-START-07"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Damp ground-cover mats",
+      "consumers": [
+        "LA-PLN-MIC-001"
+      ],
+      "renewal_conditions": [
+        "Substrate remains damp",
+        "Unharvested mat margins remain viable",
+        "Light and nutrient conditions support spread"
+      ],
+      "depletion_effects": [
+        "Reduced microbial substrate area",
+        "Exposed substrate dries more quickly",
+        "Recovery pauses during dry spells"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-FNG-001",
+      "name": "Glasscap Fungal Film",
+      "resource_class": "fungal",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Fungal film colonizing damp deadwood and bark crevices",
+      "consumers": [
+        "LA-PLN-INV-002"
+      ],
+      "renewal_conditions": [
+        "Suitable deadwood remains",
+        "Humidity supports regrowth",
+        "Colonization has a finite delay after disturbance"
+      ],
+      "depletion_effects": [
+        "Bark Lantern food stock falls",
+        "Old deadwood remains but may be temporarily food-poor",
+        "No instant replenishment after feeding"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-AQU-001",
+      "name": "Driftplankton Cloud",
+      "resource_class": "aquatic_microfood",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-08",
+        "VEY-START-10"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Suspended microscopic aquatic food in moving water",
+      "consumers": [
+        "LA-PLN-AQU-001"
+      ],
+      "renewal_conditions": [
+        "Upstream production and nutrient input remain available",
+        "Current and oxygen conditions support the cloud",
+        "Local density is replenished over time rather than created on demand"
+      ],
+      "depletion_effects": [
+        "Current Dart feeding efficiency drops below density threshold",
+        "Flow can redistribute rather than create stock",
+        "Low-flow or polluted periods can delay recovery"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-DET-001",
+      "name": "Basin Detritus Pool",
+      "resource_class": "detritus",
+      "habitat_ids": [
+        "VEY-START-03",
+        "VEY-START-07",
+        "VEY-START-08",
+        "VEY-START-09",
+        "VEY-START-10"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Patch-local dead plant matter and organic remains",
+      "consumers": [
+        "LA-PLN-INV-004",
+        "LA-PLN-OMN-002"
+      ],
+      "renewal_conditions": [
+        "New dead matter enters through tracked ecological events",
+        "Decomposition and consumption remove finite amounts",
+        "Material conversion conserves tracked mass and cannot loop infinitely"
+      ],
+      "depletion_effects": [
+        "Burrower/forager food availability falls",
+        "Decomposition and scavenging behavior shifts",
+        "Pool remains depleted until tracked inputs arrive"
+      ],
+      "evidence_status": "design_only"
+    }
+  ],
+  "counts": {
+    "habitats": 10,
+    "species": 12,
+    "resources": 8,
+    "interactions": 14,
+    "seasonal_scenarios": 6
+  }
 }
