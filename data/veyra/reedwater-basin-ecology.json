@@ -224,7 +224,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "small prey",
+        "VEY-RES-PRY-001",
         "concealment",
         "resting cover"
       ]
@@ -243,7 +243,7 @@
       "resource_dependencies": [
         "shallow water",
         "concealment",
-        "small aquatic prey"
+        "VEY-RES-PRY-002"
       ]
     },
     {
@@ -338,7 +338,7 @@
       "design_status": "designed",
       "evidence_status": "design_only",
       "resource_dependencies": [
-        "resource:unresolved-gloam-moth-larval-host",
+        "VEY-RES-PLT-006",
         "VEY-RES-PLT-003"
       ]
     }
@@ -394,7 +394,7 @@
       "id": "VEY-EDGE-004",
       "type": "predates",
       "source_id": "LA-PLN-AMP-001",
-      "target_id": "resource:small-ground-prey",
+      "target_id": "VEY-RES-PRY-001",
       "conditions": [
         "target is within strike capability",
         "ambush route and recovery window are valid"
@@ -409,7 +409,7 @@
       "id": "VEY-EDGE-005",
       "type": "predates",
       "source_id": "LA-PLN-AMP-002",
-      "target_id": "resource:small-aquatic-prey",
+      "target_id": "VEY-RES-PRY-002",
       "conditions": [
         "shallow-water strike geometry is valid",
         "target is within range"
@@ -500,7 +500,7 @@
       "id": "VEY-EDGE-011",
       "type": "consumes",
       "source_id": "LA-PLN-INV-005",
-      "target_id": "resource:unresolved-gloam-moth-larval-host",
+      "target_id": "VEY-RES-PLT-006",
       "conditions": [
         "host plant is named and present",
         "larval stage can access it"
@@ -509,7 +509,7 @@
       "evidence": [
         "Gloam Moth dossier"
       ],
-      "notes": "Larval-host endpoint is intentionally unresolved; blocked from runtime until a compatible host plant is named. Duskbell Bloom is not assumed to be the host."
+      "notes": "Proposed larval host only; Reedlace Hostleaf remains unapproved and this feeding edge must stay inactive until compatibility is established."
     },
     {
       "id": "VEY-EDGE-012",
@@ -546,7 +546,7 @@
     {
       "id": "VEY-EDGE-014",
       "type": "material_flow",
-      "source_id": "resource:organism-remains",
+      "source_id": "VEY-RES-DET-001",
       "target_id": "VEY-RES-DET-001",
       "conditions": [
         "remains exist",
@@ -855,6 +855,84 @@
         "Burrower/forager food availability falls",
         "Decomposition and scavenging behavior shifts",
         "Pool remains depleted until tracked inputs arrive"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PRY-001",
+      "name": "Small Ground Prey Pool",
+      "resource_class": "prey_aggregate",
+      "habitat_ids": [
+        "VEY-START-03",
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Unresolved aggregate of small ground-dwelling prey; constituent species are not yet named.",
+      "consumers": [
+        "LA-PLN-AMP-001"
+      ],
+      "renewal_conditions": [
+        "Constituent species and population model are named before simulation",
+        "Local reproduction and immigration replenish finite populations"
+      ],
+      "depletion_effects": [
+        "Reduced ambush opportunities",
+        "Local population collapse is possible under excess predation"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PRY-002",
+      "name": "Small Aquatic Prey Pool",
+      "resource_class": "prey_aggregate",
+      "habitat_ids": [
+        "VEY-START-02",
+        "VEY-START-03",
+        "VEY-START-08",
+        "VEY-START-10"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Unresolved aggregate of small aquatic prey; constituent species are not yet named.",
+      "consumers": [
+        "LA-PLN-AMP-002"
+      ],
+      "renewal_conditions": [
+        "Constituent species and population model are named before simulation",
+        "Water quality and recruitment remain suitable"
+      ],
+      "depletion_effects": [
+        "Reduced shallow-water feeding opportunities",
+        "Local population collapse is possible under excess predation"
+      ],
+      "evidence_status": "design_only"
+    },
+    {
+      "id": "VEY-RES-PLT-006",
+      "name": "Reedlace Hostleaf",
+      "resource_class": "plant",
+      "habitat_ids": [
+        "VEY-START-04",
+        "VEY-START-05",
+        "VEY-START-09"
+      ],
+      "finite_stock": true,
+      "stock_model": "unbalanced_provisional",
+      "producer_or_source": "Proposed native host plant; biological compatibility with Gloam Moth larvae is unresolved.",
+      "consumers": [
+        "LA-PLN-INV-005"
+      ],
+      "renewal_conditions": [
+        "Plant identity and life cycle are defined",
+        "Larval feeding compatibility is observed and approved",
+        "Host plants reproduce and recover from feeding"
+      ],
+      "depletion_effects": [
+        "Potential larval food shortage if compatibility is eventually confirmed",
+        "No feeding link may activate until host compatibility is approved"
       ],
       "evidence_status": "design_only"
     }
