@@ -369,7 +369,8 @@
               "plant",
               "fungal",
               "aquatic_microfood",
-              "detritus"
+              "detritus",
+              "prey_aggregate"
             ]
           },
           "habitat_ids": {
