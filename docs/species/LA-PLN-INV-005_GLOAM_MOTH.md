@@ -10,7 +10,7 @@
 **Role:** Nocturnal flying invertebrate; nectar visitor and prey species.  
 **Originality:** Original fictional organism; ecological effects are provisional.
 
-The Gloam Moth is a soft-winged, dusk-active flier with broad wings and feathery sensory antennae. Adults visit night-opening flowers and feed on nectar or other energy-rich plant secretions. Larvae feed on a limited range of leaves, soft stems, or fungal growth depending on the local host plant; exact host species remain to be assigned. Adults can transfer pollen between compatible flowers, but pollination effectiveness must be validated rather than assumed for every plant.
+The Gloam Moth is a soft-winged, dusk-active flier with broad wings and feathery sensory antennae. Adults visit night-opening flowers and feed on nectar or other energy-rich plant secretions. Larvae use **Reedlace Hostleaf (VEY-RES-PLT-006)** as the initial host candidate, consuming limited leaf tissue when seasonal leaf stock is available. This is a design hypothesis, not a validated biological interaction. Adults can transfer pollen between compatible flowers, but pollination effectiveness must be validated rather than assumed for every plant.
 
 ## 2. Anatomy and life stages
 
@@ -51,7 +51,7 @@ Minimum states: rest in cover → emerge when conditions are suitable → follow
 ## 6. Ecology and proposed food-web links
 
 - Adults may pollinate compatible night-opening flowers when their body and feeding behavior transfer pollen.
-- Larvae consume host resources and can suppress plant growth when locally abundant; populations are constrained by food and predators.
+- Larvae consume Reedlace Hostleaf leaf tissue when available and can suppress plant growth when locally abundant; populations are constrained by host stock, season, weather, and predators.
 - Adults and larvae may be prey for insectivores, including the Glass-Eyed Pouncer only if its size and capture mechanics support the interaction.
 - The Bark Lantern is not automatically a predator of the moth; their overlap does not prove predation.
 - Moth visitation can provide a readable clue to flowering patches, but not a universal indicator of plant safety or rarity.
@@ -98,9 +98,10 @@ They remain regional forms of one species. Discovery clues include dusk flight, 
 
 - [x] Identity, life stages, host dependence, habitat, senses, behavior, ecological role, and absorption limits documented.
 - [ ] Implement weather- and time-sensitive emergence, flight energy, feeding, reproduction, and pupation.
-- [ ] Define at least one compatible host plant and verify the larval diet.
+- [x] Assign Reedlace Hostleaf (VEY-RES-PLT-006) as the initial larval-host design hypothesis.
+- [ ] Verify larval feeding, host-plant recovery, and seasonal recruitment in simulation.
 - [ ] Test pollination transfer and plant-reproduction effects before labeling it a validated service.
 - [ ] Validate flight-path readability and accessible nonvisual clues.
 - [ ] Connect finalized learning hooks to skill records.
 
-**Evidence status:** Design authored; not implemented or tested.
+**Evidence status:** Design authored; Reedlace Hostleaf is the assigned host candidate; interaction not implemented or tested.
