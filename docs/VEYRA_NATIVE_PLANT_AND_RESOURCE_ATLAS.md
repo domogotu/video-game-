@@ -62,6 +62,16 @@ No numeric stock, growth rate, harvest amount, or respawn timer is locked until 
 - **Failure modes:** Repeated excavation, soil compaction, prolonged drought, or waterlogging outside tolerance.
 - **Ecology links:** Candidate resource for Root-Crown Forager. Harvesting the whole tuber can kill the individual plant; partial harvest rules must be defined.
 
+### VEY-RES-PLT-006 — Reedlace Hostleaf
+
+- **Class:** Narrow-leaf marsh-edge perennial.
+- **Primary habitat:** Reedglass Marsh margins, sheltered Reedwater Run banks, and seasonally wet Southwash Fan.
+- **Function:** Candidate larval host for Gloam Moth; flexible leaf cover along wetland margins.
+- **Dependencies:** Moist rooted substrate, light, viable soil chemistry, and periodic oxygen access around roots.
+- **Renewal:** Surviving root crowns and seed restore patches only when moisture, light, and undisturbed growth time are available.
+- **Failure modes:** Prolonged deep submersion, severe dry-down, trampling, contamination, and removal of the root crown.
+- **Ecology links:** Gloam Moth larvae may consume limited leaf tissue when suitable leaves are available. Host depletion reduces local moth recruitment; feeding does not automatically kill the entire plant. See [Reedlace Hostleaf resource dossier](resources/VEY-RES-PLT-006_REEDLACE_HOSTLEAF.md).
+
 ### VEY-RES-PLT-005 — Mossveil Groundmat
 
 - **Class:** Low-growing moss-like ground cover.
@@ -106,9 +116,7 @@ No numeric stock, growth rate, harvest amount, or respawn timer is locked until 
 
 **Initial host candidate:** Duskbell Bloom is the adult food/potential pollination partner, but it is not automatically the larval host.
 
-The larval host remains **unassigned** until a separate plant life-stage record confirms that Gloam Moth larvae can consume a named plant part without immediately killing the host population. Do not enable larval feeding against Duskbell Bloom just because adults visit its flowers.
-
-Recommended next plant record: **VEY-RES-PLT-006 — Reedlace Hostleaf**, a narrow-leaf marsh-edge plant proposed as a Gloam Moth larval host. It should remain a hypothesis until a dossier defines larval feeding tolerance, plant recovery, seasonal availability, and whether feeding is destructive or sustainable.
+The initial larval host candidate is now assigned as **VEY-RES-PLT-006 — Reedlace Hostleaf**. This is a design hypothesis, not a validated interaction. Larvae may consume limited leaf tissue only when host stock is available; seasonal absence, host depletion, and plant recovery must affect reproduction. Duskbell Bloom remains the separate adult food/potential pollination partner and is not approved as a larval host. See [Reedlace Hostleaf resource dossier](resources/VEY-RES-PLT-006_REEDLACE_HOSTLEAF.md).
 
 ## 5. Harvest and renewal invariants
 
