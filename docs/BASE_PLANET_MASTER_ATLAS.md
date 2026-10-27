@@ -306,6 +306,14 @@ Every completed species page must link its relationships using stable IDs:
 
 Relationships must be directional where appropriate and should identify life stage or conditions if the relationship only applies sometimes.
 
+### 6.4 Landscape restoration and ecological counter-pressure
+
+The [Landscape Restoration and Ecological Balance System](LANDSCAPE_RESTORATION_AND_ECOLOGICAL_BALANCE_SYSTEM.md) defines how organisms and sapient societies repair damaged habitats, disperse seeds and propagules, rebuild soil, manage waterways, pollinate plants, recycle nutrients, and construct habitat. It also defines counter-pressures such as seed predation, over-browsing, trampling, root feeding, territorial exclusion, and disturbance. These are ecological functions, not moral alignments.
+
+Every restoration role must specify its mechanism, target, conditions, cost, rate, side effects, density response, and counterplay. Ecosystem movement requires viable routes or documented transfer, destination compatibility, source-population safeguards, and ecological-risk tracking. Landscape succession is separate from the short repair timer for structures and simple objects.
+
+Veyra candidates include Moss-Horn Browser as a proposed seed disperser and Root-Crown Forager as a proposed soil engineer. These remain hypotheses until their mechanisms and relationship edges are documented. Future planets inherit the data contract, not Veyra's exact species or ecological outcomes.
+
 ## 7. Climate, weather, seasons, and hazards
 
 ### Climate and seasons
