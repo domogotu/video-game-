@@ -16,6 +16,7 @@ This atlas links to:
 - `docs/SLIME_MASTER_CHARACTER_BLUEPRINT.md`
 - `docs/SKILL_TREE_AND_EVOLUTION_ATLAS.md`
 - `docs/LIVE_PREY_CAPTURE_AND_STAMINA_ABSORPTION.md`
+- `docs/COHABITATION_BREEDING_AND_HERITABLE_TRAITS_SYSTEM.md` — planet-wide relationship, breeding, inheritance, and population-selection rules
 
 Those documents remain the authority for their respective system-level rules. This document defines the first shared planetary reference and the contracts every planet-generation pass must obey.
 
