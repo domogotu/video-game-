@@ -13,6 +13,12 @@
 5. Do not invent exact stats, reproduction, compatibility, trainer knowledge, or ecological relationships without adding a reasoned design record.
 6. Each completed record must cross-link biome instances, food-web edges, skills, trainer sources, resources, and evolution compatibility.
 
+## 2. Cross-species relationship and inheritance requirements
+
+Every species record must eventually link to the [Cohabitation, Breeding, and Heritable Traits System](COHABITATION_BREEDING_AND_HERITABLE_TRAITS_SYSTEM.md). Cohabitation labels summarize underlying directional rules; they do not replace specific predation, competition, mutualism, habitat, reproductive compatibility, or life-stage conditions. Unknown relationships remain unknown rather than defaulting to neutral.
+
+Species dossiers must document reproductive mode, maturity, breeding habitat/season, offspring stages, inherited trait candidates, and relevant costs/trade-offs when those facts are defined. Do not infer sexual reproduction, cross-species compatibility, or hybridization from shared habitat. Current entries remain design-only until implemented and tested.
+
 ## 2. Repository source inventory
 
 | Source | What it contributes | Reconciliation rule |
