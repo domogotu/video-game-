@@ -62,7 +62,7 @@ Species in the matrix are intended presences, not a claim of final population nu
 | Reedstalker | Small shoreline prey | Predates | Current Dart link remains disabled until aquatic capture is designed and tested | Design hypothesis |
 | Bark Lantern | Fungal film and decaying plant material | Consumes / material flow | Needs humid crevices and retained deadwood | Design hypothesis |
 | Gloam Moth adult | Compatible night-opening flowers | Potential mutualism | Only if pollen transfer and plant reproduction benefit are demonstrated | Design hypothesis |
-| Gloam Moth larva | Specified host plant | Consumes | Host plant must be named before simulation | Design hypothesis |
+| Gloam Moth larva | Reedlace Hostleaf (VEY-RES-PLT-006) | Consumes | Limited leaf tissue only; seasonal availability and finite leaf stock constrain recruitment. Plant recovery and larval survival must be simulated | Design hypothesis |
 | Organism remains | Detrital resource pool | Material flow | Conversion must be finite and avoid infinite resource loops | Mechanic specified |
 | Flood pulse | River/marsh/oxbow connections | Habitat dependency | May connect isolated habitats temporarily; does not guarantee survival or migration | Mechanic specified |
 
@@ -116,7 +116,7 @@ This document and linked dossiers are authored design. No runtime food web, AI, 
 
 ## 10. Resource source of truth
 
-The [Veyra Native Plant and Resource Atlas](VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md) establishes initial named resource candidates, habitat dependencies, harvest/renewal invariants, and the unresolved Gloam Moth larval-host requirement. Use it when converting generic resource labels into machine-readable records. Duskbell Bloom is an adult food/potential pollination partner only; it is **not** approved as the Gloam Moth larval host.
+The [Veyra Native Plant and Resource Atlas](VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md) establishes named resource candidates, habitat dependencies, and harvest/renewal invariants. The Gloam Moth larval-host candidate is now **Reedlace Hostleaf (VEY-RES-PLT-006)**, documented in [its resource dossier](resources/VEY-RES-PLT-006_REEDLACE_HOSTLEAF.md). Duskbell Bloom remains an adult food/potential pollination partner only; it is **not** the larval host. These interactions remain unvalidated.
 
 ## 10. Immediate build order
 
