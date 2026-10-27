@@ -91,9 +91,13 @@ A species dossier must specify its reproductive mode before the system enables b
 - Reproduction consumes or depends on finite resources and available habitat capacity.
 - Population growth is limited by food, shelter, territory, juvenile survival, and environmental constraints.
 - Inbreeding effects are species-specific and should not be applied as a universal penalty without defined biology.
-- Hybridization is allowed only for explicitly compatible lineages with a documented mechanism and viable offspring rules.
-- Cross-species breeding is never assumed just because two species share a habitat.
-- Player-controlled breeding must not bypass species compatibility, resource costs, or world ecology.
+- Cross-species breeding and genetic/trait exchange are supported possibilities, but each pairing must use a documented compatibility class and mechanism.
+- Sharing a habitat, being visually similar, or having a friendly relationship does not establish reproductive compatibility.
+- Hybrid offspring may be viable, nonviable, sterile, reduced-fertility, or fertile according to the documented lineage rules.
+- A single hybrid individual is not automatically a new species; stable derived species require multi-generation lineage and population criteria.
+- Trait transfer, symbiosis, grafting, and player absorption must remain distinct from ordinary hybrid reproduction unless a specific species rule connects them.
+- Player-controlled breeding must not bypass compatibility, resource costs, population limits, or world ecology.
+- See the [Cross-Species Hybridization and Species Emergence System](CROSS_SPECIES_HYBRIDIZATION_AND_SPECIES_EMERGENCE_SYSTEM.md) for compatibility classes, mechanisms, lineage tracking, and acceptance tests.
 - Population management may include protection, selective pairing, habitat restoration, or removal, with visible consequences.
 
 ## 6. Heritable trait model
@@ -118,7 +122,7 @@ Every trait definition needs:
 
 ### Inheritance and variation
 
-Offspring inherit only traits supported by their lineage and reproductive mechanism. The model may combine parental values, dominance, recombination, and bounded variation when appropriate. Mutation is possible but uncommon, bounded, and explainable; it is not a free upgrade roll.
+Offspring inherit only traits supported by their lineage and reproductive mechanism. For cross-species offspring, the [Cross-Species Hybridization and Species Emergence System](CROSS_SPECIES_HYBRIDIZATION_AND_SPECIES_EMERGENCE_SYSTEM.md) defines compatibility, allowed trait transfer, viability, fertility, parentage, and the criteria for recognizing a derived species. The model may combine parental values, dominance, recombination, and bounded variation when appropriate. Mutation is possible but uncommon, bounded, and explainable; it is not a free upgrade roll.
 
 Traits should have trade-offs. Examples:
 - Larger body may improve intimidation and defense but require more food and make hiding harder.
