@@ -19,6 +19,10 @@ Every species record must eventually link to the [Cohabitation, Breeding, and He
 
 Species dossiers must document reproductive mode, maturity, breeding habitat/season, offspring stages, inherited trait candidates, and relevant costs/trade-offs when those facts are defined. Do not infer sexual reproduction, cross-species compatibility, or hybridization from shared habitat. Current entries remain design-only until implemented and tested.
 
+Every species dossier must also identify any supported **restoration or counter-restoration role**: seed/propagule dispersal, soil engineering, planting/tending, pollination, waterway maintenance, decomposition, habitat building, sapient stewardship, seed predation, browsing, trampling, root feeding, territorial suppression, or disturbance. Record the mechanism, target, conditions, costs, side effects, population-density effects, and evidence state. Do not assign ecological roles from a species name or broad archetype alone.
+
+Use the [Landscape Restoration and Ecological Balance System](LANDSCAPE_RESTORATION_AND_ECOLOGICAL_BALANCE_SYSTEM.md) as the shared contract for damaged-patch recovery, assisted migration, ecosystem-transfer risks, and long-term succession. Veyra-specific examples remain hypotheses until the corresponding species and relationship records support them.
+
 ## 2. Repository source inventory
 
 | Source | What it contributes | Reconciliation rule |
