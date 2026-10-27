@@ -184,6 +184,7 @@ The initial Reedwater Basin ecology dataset is now available as structured JSON,
 - [Reedwater Basin seed dataset](data/veyra/reedwater-basin-ecology.json)
 - [Reedwater Basin food-web specification](docs/VEYRA_REEDWATER_BASIN_FOOD_WEB.md)
 - [Cohabitation, breeding, and heritable traits system](docs/COHABITATION_BREEDING_AND_HERITABLE_TRAITS_SYSTEM.md) — relationship rules, reproductive compatibility, inherited variation, and population change
+- [Landscape restoration and ecological balance system](docs/LANDSCAPE_RESTORATION_AND_ECOLOGICAL_BALANCE_SYSTEM.md) — species and sapient restoration roles, counter-restoration traits, assisted migration, and long-term landscape recovery
 - [Veyra native plant and resource atlas](docs/VEYRA_NATIVE_PLANT_AND_RESOURCE_ATLAS.md)
 - [Veyra ecology validator](tools/validate_veyra_ecology.py) — standard-library structural/reference checks
 - [Veyra resource-balance test fixture](tools/test_veyra_resource_balance.py) — deterministic tests for flood redistribution, drought-paused renewal, and overharvesting
