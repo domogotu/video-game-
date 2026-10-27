@@ -75,6 +75,10 @@ All rows marked Candidate need a full species dossier. Habitat anchors are inten
 | LA-PLN-ANC-001 | Rootbound Elder | Ancient lineage / possible keystone | Ancient woodland refugium | Candidate |
 | LA-PLN-ANM-001 | Rift-Touched Organism | Anomalous rare lineage | Anomalous reserve, if physics rules permit | Candidate |
 
+### Resource linkage note
+
+The Gloam Moth larval-host candidate is **Reedlace Hostleaf (VEY-RES-PLT-006)**, documented at [`docs/resources/VEY-RES-PLT-006_REEDLACE_HOSTLEAF.md`](resources/VEY-RES-PLT-006_REEDLACE_HOSTLEAF.md). This is a design hypothesis only; the plant-feeding edge is not implemented or tested.
+
 ## 4. Species-dossier completion checklist
 
 For each ID, create a dedicated dossier with:
