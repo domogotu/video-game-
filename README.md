@@ -193,3 +193,5 @@ The initial Reedwater Basin ecology dataset is now available as structured JSON,
 Run locally from the repository root with `python tools/validate_veyra_ecology.py`. This validates dataset structure and cross-record references only; it does not run the ecology simulation or certify proposed feeding relationships. Run the resource-balance fixture with `python tools/test_veyra_resource_balance.py`; its numeric values are synthetic tests, not canonical world-balance values.
 
 These are design data, not a claim that runtime simulation is implemented. Interaction status and evidence fields intentionally separate hypotheses from implemented or tested behavior.
+
+- **[Genetic Inheritance Catalogue and Compatibility Matrix](docs/GENETIC_INHERITANCE_CATALOGUE_AND_COMPATIBILITY_MATRIX.md)** — trait families, inheritance conflicts, latent genes, Veyra research candidates, lineage tracking, and species-emergence validation (design only).
