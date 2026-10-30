@@ -195,3 +195,5 @@ Run locally from the repository root with `python tools/validate_veyra_ecology.p
 These are design data, not a claim that runtime simulation is implemented. Interaction status and evidence fields intentionally separate hypotheses from implemented or tested behavior.
 
 - **[Genetic Inheritance Catalogue and Compatibility Matrix](docs/GENETIC_INHERITANCE_CATALOGUE_AND_COMPATIBILITY_MATRIX.md)** — trait families, inheritance conflicts, latent genes, Veyra research candidates, lineage tracking, and species-emergence validation (design only).
+
+- **[Reedwater Founding Genetics Dossiers](docs/VEYRA_REEDWATER_FOUNDING_GENETICS_DOSSIERS.md)** — first four Veyra species, 20 candidate inherited modules, six unresolved pairing records, and ecological inheritance requirements (design only).
