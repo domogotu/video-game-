@@ -71,7 +71,7 @@ class Simulation:
         self.events.append(Event(len(self.events) + 1, kind, species, cell, amount, detail))
 
     def feed(self, cell: str, species: str, resource: str, units: int) -> int:
-        if units <= 0 or self.count(cell, species) <= 0:
+        if type(units) is not int or units <= 0 or self.count(cell, species) <= 0:
             raise ValueError("invalid feed request")
         habitat = self.cells[cell]
         available = habitat.resources.get(resource, 0)
@@ -82,7 +82,7 @@ class Simulation:
         return taken
 
     def predation(self, cell: str, predator: str, prey: str, amount: int = 1) -> int:
-        if predator == prey or amount <= 0 or self.count(cell, predator) <= 0:
+        if predator == prey or type(amount) is not int or amount <= 0 or self.count(cell, predator) <= 0:
             raise ValueError("invalid predation")
         prey_cohort = self.cohorts.get((cell, prey, "adult"))
         if prey_cohort is None:
@@ -95,7 +95,7 @@ class Simulation:
         return killed
 
     def migrate(self, origin: str, destination: str, species: str, amount: int) -> int:
-        if amount <= 0 or destination not in self.cells[origin].neighbors:
+        if type(amount) is not int or amount <= 0 or destination not in self.cells[origin].neighbors:
             raise ValueError("invalid migration route")
         source = self.cohorts.get((origin, species, "adult"))
         if source is None:
@@ -114,7 +114,7 @@ class Simulation:
         return sum(c.count for c in self.cohorts.values() if c.cell == cell)
 
     def recruit(self, cell: str, species: str, amount: int, *, evidence: bool = False) -> int:
-        if amount <= 0 or not evidence or SPECIES[species] == "unknown":
+        if type(amount) is not int or amount <= 0 or not evidence or SPECIES[species] == "unknown":
             raise ValueError("recruitment requires known reproduction and evidence")
         habitat = self.cells[cell]
         if species in ("current_dart", "mire_needle") and (not habitat.water_connected or habitat.oxygen < 40):
@@ -132,7 +132,7 @@ class Simulation:
 
     def step(self, ticks: int = 1) -> None:
         """Advance bounded environmental ticks; no automatic breeding or AI."""
-        if not isinstance(ticks, int) or not 1 <= ticks <= 1000:
+        if type(ticks) is not int or not 1 <= ticks <= 1000:
             raise ValueError("ticks must be an integer in 1..1000")
         for _ in range(ticks):
             self.tick += 1
