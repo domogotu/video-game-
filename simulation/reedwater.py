@@ -145,6 +145,51 @@ class Simulation:
                 self._record("environment_tick", "", cell_id, 1)
             self.validate()
 
+    def ecology_tick(self, *, season: str = "wet") -> None:
+        """One explicit ecological turn with finite feeding, aging and mortality.
+
+        Prototype rules are deliberately conservative: no automatic births and
+        no assumptions about species with undocumented diets/reproduction.
+        """
+        if season not in ("wet", "dry"):
+            raise ValueError("season must be wet or dry")
+        self.tick += 1
+        diets = {"current_dart": "plankton", "bark_lantern": "fungal_film"}
+        for cell_id in sorted(self.cells):
+            habitat = self.cells[cell_id]
+            if season == "dry":
+                habitat.humidity = max(0, habitat.humidity - 5)
+                if habitat.water_connected:
+                    habitat.oxygen = max(0, habitat.oxygen - 5)
+            else:
+                habitat.humidity = min(100, habitat.humidity + 2)
+                if habitat.water_connected:
+                    habitat.oxygen = min(100, habitat.oxygen + 2)
+            for key in sorted(self.cohorts):
+                cohort = self.cohorts[key]
+                if cohort.cell != cell_id or cohort.count == 0:
+                    continue
+                food = diets.get(cohort.species)
+                if food is None:
+                    continue  # No unsupported species diet invented.
+                stock = habitat.resources.get(food, 0)
+                eaten = min(stock, cohort.count)
+                habitat.resources[food] = stock - eaten
+                if eaten:
+                    self._record("ecology_feed", cohort.species, cell_id, eaten, food)
+                shortage = cohort.count - eaten
+                if cohort.species == "current_dart" and habitat.oxygen < 40:
+                    shortage = cohort.count
+                if cohort.species == "bark_lantern" and habitat.humidity < 30:
+                    shortage = cohort.count
+                deaths = min(cohort.count, shortage)
+                cohort.count -= deaths
+                if deaths:
+                    habitat.resources["detritus"] = habitat.resources.get("detritus", 0) + deaths
+                    self._record("ecology_death", cohort.species, cell_id, deaths, "starvation_or_habitat")
+            self._record("ecology_tick", "", cell_id, 1, season)
+        self.validate()
+
     @classmethod
     def from_snapshot(cls, snapshot: str) -> "Simulation":
         """Restore exact model state from versioned JSON."""
