@@ -18,9 +18,22 @@ class ReedwaterWorld:
             self.sim.step()
             self.sim.ecology_tick(season=season)
             self.life.advance()
-            for cell in sorted(self.sim.cells):
-                for species in ("current_dart", "bark_lantern", "gloam_moth"):
-                    self.life.seek_habitat(cell, species)
+            # Each source is evaluated once; destinations do not become new sources
+            # until the next turn.
+            origins = [(cell, species) for cell in sorted(self.sim.cells)
+                       for species in ("current_dart", "bark_lantern", "gloam_moth")
+                       if self.sim.count(cell, species) > 0]
+            moved_into = set()
+            for cell, species in origins:
+                if (cell, species) in moved_into:
+                    continue
+                before = {n: self.sim.count(n, species)
+                          for n in self.sim.cells[cell].neighbors}
+                moved = self.life.seek_habitat(cell, species)
+                if moved:
+                    for n, previous in before.items():
+                        if self.sim.count(n, species) > previous:
+                            moved_into.add((n, species))
             self.turn += 1
             self.sim._record("world_turn", "", "", 1, season)
 
