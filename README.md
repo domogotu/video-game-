@@ -207,11 +207,15 @@ These are design data, not a claim that runtime simulation is implemented. Inter
 ## Executable ecology prototype (early Phase B)
 
 - [Reedwater Python simulator](simulation/reedwater.py) — standard-library habitat cells, 12-species registry, population cohorts, resource consumption, migration, predation, gated recruitment and serialized snapshots.
-- [Reedwater unit tests](tests/test_reedwater.py) — twelve authored tests; **execution result not yet verified**. Run from repository root: `python -m unittest discover -s tests -v`.
+- [Reedwater unit tests](tests/test_reedwater.py) — fifteen authored tests; **execution result not yet verified**. Run from repository root: `python -m unittest discover -s tests -v`.
 - [Ecosystem integration contract](docs/VEYRA_REEDWATER_ECOSYSTEM_SIMULATION_CONTRACT.md) — requirements and outstanding implementation gates.
 
 **Limitations:** No actual time-stepping loop, persistent storage adapter, real genetics inheritance, creature AI, networking, or playable scene yet. This prototype is an initial scaffold, not completion of Phase B.
 
 ### Phase B continuation
 
-The standalone simulator now supports bounded deterministic environmental ticks and versioned JSON snapshot restoration. Twelve authored unit tests cover basic invariants, tick bounds and save/load round-trips. [GitHub Actions workflow](.github/workflows/reedwater-tests.yml) is committed to run tests on relevant pushes or manually. **No passing workflow result has been verified yet.** Environmental regeneration uses temporary abstract limits; it is not the complete seasonal ecosystem, real genetics, AI or persistent multiplayer server.
+The standalone simulator now supports bounded deterministic environmental ticks and versioned JSON snapshot restoration. Fifteen authored unit tests cover basic invariants, tick bounds and save/load round-trips. [GitHub Actions workflow](.github/workflows/reedwater-tests.yml) is committed to run tests on relevant pushes or manually. **No passing workflow result has been verified yet.** Environmental regeneration uses temporary abstract limits; it is not the complete seasonal ecosystem, real genetics, AI or persistent multiplayer server.
+
+### Phase B seasonal ecology increment
+
+The [Reedwater prototype](simulation/reedwater.py) now has an explicit `ecology_tick(season='wet'|'dry')` method. It applies bounded humidity/oxygen changes, finite Current Dart plankton and Bark Lantern fungal-film consumption, mortality when resources/habitat are inadequate, and logged ecological events. Other species do not yet receive automatic feeding or lifecycle rules. [Fifteen authored tests](tests/test_reedwater.py) cover the expanded code. **No passing test execution has been confirmed**; this remains a prototype with placeholder ecological rates, not a balanced ecosystem.
