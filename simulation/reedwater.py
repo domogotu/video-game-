@@ -47,6 +47,7 @@ class Simulation:
         self.cells = {c.id: c for c in cells}
         self.cohorts = {(c.cell, c.species, c.stage): c for c in cohorts}
         self.seed = seed
+        self.tick = 0
         self.rng = random.Random(seed)
         self.events: list[Event] = []
         self.validate()
@@ -129,8 +130,40 @@ class Simulation:
         self.validate()
         return added
 
+    def step(self, ticks: int = 1) -> None:
+        """Advance bounded environmental ticks; no automatic breeding or AI."""
+        if not isinstance(ticks, int) or not 1 <= ticks <= 1000:
+            raise ValueError("ticks must be an integer in 1..1000")
+        for _ in range(ticks):
+            self.tick += 1
+            for cell_id in sorted(self.cells):
+                cell = self.cells[cell_id]
+                for resource, limit in (("plankton", 20), ("fruit", 12),
+                                        ("fungal_film", 7), ("hostleaf", 3)):
+                    if resource in cell.resources:
+                        cell.resources[resource] = min(limit, cell.resources[resource] + 1)
+                self._record("environment_tick", "", cell_id, 1)
+            self.validate()
+
+    @classmethod
+    def from_snapshot(cls, snapshot: str) -> "Simulation":
+        """Restore exact model state from versioned JSON."""
+        data = json.loads(snapshot)
+        if data.get("version") != 1:
+            raise ValueError("unsupported snapshot version")
+        sim = cls([Cell(**c) for c in data["cells"]],
+                  [Cohort(**c) for c in data["cohorts"]], seed=data["seed"])
+        sim.tick = data["tick"]
+        if not isinstance(sim.tick, int) or sim.tick < 0:
+            raise ValueError("invalid tick")
+        sim.events = [Event(**e) for e in data["events"]]
+        if any(e.seq != i for i, e in enumerate(sim.events, start=1)):
+            raise ValueError("invalid event sequence")
+        sim.validate()
+        return sim
+
     def snapshot(self) -> str:
-        payload = {"seed": self.seed, "cells": [asdict(self.cells[k]) for k in sorted(self.cells)],
+        payload = {"version": 1, "tick": self.tick, "seed": self.seed, "cells": [asdict(self.cells[k]) for k in sorted(self.cells)],
                    "cohorts": [asdict(self.cohorts[k]) for k in sorted(self.cohorts)],
                    "events": [asdict(e) for e in self.events]}
         return json.dumps(payload, sort_keys=True, separators=(",", ":"))
