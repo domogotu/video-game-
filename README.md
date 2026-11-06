@@ -199,3 +199,5 @@ These are design data, not a claim that runtime simulation is implemented. Inter
 - **[Reedwater Founding Genetics Dossiers](docs/VEYRA_REEDWATER_FOUNDING_GENETICS_DOSSIERS.md)** — first four Veyra species, 20 candidate inherited modules, six unresolved pairing records, and ecological inheritance requirements (design only).
 
 - **[Reedwater Genetics Pass 2](docs/VEYRA_REEDWATER_GENETICS_PASS_2.md)** — Glass-Eyed Pouncer, Mire Needle, Moss-Horn Browser and Root-Crown Forager genetics and landscape effects (design only).
+
+- **[Reedwater Genetics Pass 3](docs/VEYRA_REEDWATER_GENETICS_PASS_3.md)** — Current Dart, Reedstalker, Bark Lantern and Gloam Moth candidate genetics, reproductive uncertainties, and ecology (design only).
