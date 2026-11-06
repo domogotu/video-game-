@@ -43,5 +43,28 @@ class DemoTests(unittest.TestCase):
         loaded = ReedwaterWorld.load(world.save())
         self.assertEqual(loaded.life.juvenile_age[("river", "current_dart")], 1)
 
+    def test_world_blocks_multi_hop_migration(self):
+        from simulation.world import ReedwaterWorld
+        from simulation.reedwater import Cell, Cohort, Simulation
+        cells = [
+            Cell("a", {"plankton": 1}, 20, True, neighbors=["b"]),
+            Cell("b", {"plankton": 5}, 20, True, neighbors=["a", "c"]),
+            Cell("c", {"plankton": 15}, 20, True, neighbors=["b"]),
+        ]
+        world = ReedwaterWorld(Simulation(cells, [Cohort("current_dart", "a", 3)]))
+        world.run(1)
+        self.assertEqual(world.sim.count("c", "current_dart"), 0)
+
+    def test_world_rejects_duplicate_age_records(self):
+        import json
+        from simulation.world import ReedwaterWorld
+        from simulation.reedwater import example, Cohort
+        world = ReedwaterWorld(example())
+        world.sim.cohorts[("river", "current_dart", "juvenile")] = Cohort("current_dart", "river", 2, "juvenile")
+        data = json.loads(world.save())
+        data["ages"] = [["river", "current_dart", 1], ["river", "current_dart", 1]]
+        with self.assertRaises(ValueError):
+            ReedwaterWorld.load(json.dumps(data))
+
 if __name__ == "__main__":
     unittest.main()
