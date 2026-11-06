@@ -4,7 +4,7 @@
 
 Lethal Absorption is an original open-world multiplayer action RPG concept in which a player begins as a single cell and evolves through increasingly complex life, superhuman forms, planetary apexes, cosmic entities, and potentially godlike existence. What the player consumes, studies, survives, creates, and masters shapes their body, abilities, and available evolution paths.
 
-> **Project status:** This repository currently stores the game’s design documentation. The design systems described here are proposals/specifications, not claims that a playable game or these systems have been implemented or verified.
+> **Project status:** This repository primarily stores game design documentation and now includes an initial standalone Python Reedwater ecosystem simulation prototype with an unexecuted unit-test suite. This is not a playable game; most designed systems have not been implemented or verified.
 
 ## Core pillars
 
@@ -203,3 +203,11 @@ These are design data, not a claim that runtime simulation is implemented. Inter
 - **[Reedwater Genetics Pass 3](docs/VEYRA_REEDWATER_GENETICS_PASS_3.md)** — Current Dart, Reedstalker, Bark Lantern and Gloam Moth candidate genetics, reproductive uncertainties, and ecology (design only).
 
 - **[Reedwater Ecosystem Simulation Contract](docs/VEYRA_REEDWATER_ECOSYSTEM_SIMULATION_CONTRACT.md)** — integrated lifecycle, habitat, food web, genetics, multiplayer persistence, and verification gates for the first 12 species (design only).
+
+## Executable ecology prototype (early Phase B)
+
+- [Reedwater Python simulator](simulation/reedwater.py) — standard-library habitat cells, 12-species registry, population cohorts, resource consumption, migration, predation, gated recruitment and serialized snapshots.
+- [Reedwater unit tests](tests/test_reedwater.py) — nine authored tests; **not yet executed or verified**. Run from repository root: `python -m unittest discover -s tests -v`.
+- [Ecosystem integration contract](docs/VEYRA_REEDWATER_ECOSYSTEM_SIMULATION_CONTRACT.md) — requirements and outstanding implementation gates.
+
+**Limitations:** No actual time-stepping loop, persistent storage adapter, real genetics inheritance, creature AI, networking, or playable scene yet. This prototype is an initial scaffold, not completion of Phase B.
