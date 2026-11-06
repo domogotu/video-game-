@@ -1,6 +1,6 @@
 """World turn coordinator for the Reedwater ecology prototype."""
 import json
-from .reedwater import Simulation
+from .reedwater import Simulation, SPECIES
 from .lifecycle import LifecycleManager
 
 class ReedwaterWorld:
@@ -53,7 +53,7 @@ class ReedwaterWorld:
         world = cls(Simulation.from_snapshot(json.dumps(data["simulation"])))
         world.turn = data["turn"]
         for cell, species, age in data["ages"]:
-            if cell not in world.sim.cells or type(age) is not int or age < 0:
+            if cell not in world.sim.cells or species not in SPECIES or type(age) is not int or age < 0:
                 raise ValueError("invalid age record")
             if world.sim.count(cell, species, "juvenile") <= 0:
                 raise ValueError("orphaned age record")
