@@ -207,14 +207,14 @@ These are design data, not a claim that runtime simulation is implemented. Inter
 ## Executable ecology prototype (early Phase B)
 
 - [Reedwater Python simulator](simulation/reedwater.py) — standard-library habitat cells, 12-species registry, population cohorts, resource consumption, migration, predation, gated recruitment and serialized snapshots.
-- [Reedwater unit tests](tests/test_reedwater.py) — twenty-two authored tests; **execution result not yet verified**. Run from repository root: `python -m unittest discover -s tests -v`.
+- [Reedwater unit tests](tests/test_reedwater.py) — twenty-eight authored tests; **execution result not yet verified**. Run from repository root: `python -m unittest discover -s tests -v`.
 - [Ecosystem integration contract](docs/VEYRA_REEDWATER_ECOSYSTEM_SIMULATION_CONTRACT.md) — requirements and outstanding implementation gates.
 
 **Limitations:** No actual time-stepping loop, persistent storage adapter, real genetics inheritance, creature AI, networking, or playable scene yet. This prototype is an initial scaffold, not completion of Phase B.
 
 ### Phase B continuation
 
-The standalone simulator now supports bounded deterministic environmental ticks and versioned JSON snapshot restoration. Twenty-two authored unit tests cover basic invariants, tick bounds and save/load round-trips. [GitHub Actions workflow](.github/workflows/reedwater-tests.yml) is committed to run tests on relevant pushes or manually. **No passing workflow result has been verified yet.** Environmental regeneration uses temporary abstract limits; it is not the complete seasonal ecosystem, real genetics, AI or persistent multiplayer server.
+The standalone simulator now supports bounded deterministic environmental ticks and versioned JSON snapshot restoration. Twenty-eight authored unit tests cover basic invariants, tick bounds and save/load round-trips. [GitHub Actions workflow](.github/workflows/reedwater-tests.yml) is committed to run tests on relevant pushes or manually. **No passing workflow result has been verified yet.** Environmental regeneration uses temporary abstract limits; it is not the complete seasonal ecosystem, real genetics, AI or persistent multiplayer server.
 
 ### Phase B seasonal ecology increment
 
@@ -222,4 +222,8 @@ The [Reedwater prototype](simulation/reedwater.py) now has an explicit `ecology_
 
 ### Phase B larger integration batch
 
-Added [lifecycle manager](simulation/lifecycle.py) (juvenile maturation, explicit evidence-gated same-species breeding, neighboring habitat seeking), [runnable demo](simulation/demo.py), [developer guide](simulation/README.md), and [lifecycle](tests/test_lifecycle.py) plus [demo](tests/test_demo.py) tests. **22 tests authored; passing execution remains unverified.** Run `python -m unittest discover -s tests -v` and `python -m simulation.demo` from repository root. The lifecycle manager's age counters are not yet persisted; no full autonomous ecosystem, aging-to-death, multiplayer, or playable game exists.
+Added [lifecycle manager](simulation/lifecycle.py) (juvenile maturation, explicit evidence-gated same-species breeding, neighboring habitat seeking), [runnable demo](simulation/demo.py), [developer guide](simulation/README.md), and [lifecycle](tests/test_lifecycle.py) plus [demo](tests/test_demo.py) tests. **28 tests authored; passing execution remains unverified.** Run `python -m unittest discover -s tests -v` and `python -m simulation.demo` from repository root. The lifecycle manager's age counters are not yet persisted; no full autonomous ecosystem, aging-to-death, multiplayer, or playable game exists.
+
+### World coordinator regression batch
+
+The [world coordinator](simulation/world.py) now prevents a migrating cohort from moving through multiple cells in the same world turn. Six [world regression tests](tests/test_demo.py) were added to the existing test file, bringing the authored suite to **28 tests**. They cover deterministic world turns, full save/load, juvenile maturation clocks, season rejection, migration hop bounds, and malformed duplicate age records. **Passing CI or local execution has not been verified.**
