@@ -71,6 +71,28 @@ class ReedwaterTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             type(sim).from_snapshot('{"version":2}')
 
+    def test_ecology_food_shortage_is_finite(self):
+        sim = example()
+        sim.cells["river"].resources["plankton"] = 3
+        sim.ecology_tick()
+        self.assertEqual(sim.count("river", "current_dart"), 3)
+        self.assertEqual(sim.cells["river"].resources["plankton"], 0)
+        self.assertEqual(sim.cells["river"].resources["detritus"], 7)
+
+    def test_ecology_dry_habitat_and_snapshot(self):
+        sim = example()
+        sim.ecology_tick(season="dry")
+        self.assertEqual(sim.cells["wood"].humidity, 75)
+        self.assertEqual(sim.cells["river"].oxygen, 80)
+        self.assertEqual(type(sim).from_snapshot(sim.snapshot()).snapshot(), sim.snapshot())
+
+    def test_ecology_invalid_season_no_mutation(self):
+        sim = example()
+        before = sim.snapshot()
+        with self.assertRaises(ValueError):
+            sim.ecology_tick(season="winter")
+        self.assertEqual(sim.snapshot(), before)
+
     def test_negative_resource_rejected(self):
         sim = example()
         sim.cells["wood"].resources["fruit"] = -1
