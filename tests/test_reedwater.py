@@ -51,6 +51,26 @@ class ReedwaterTests(unittest.TestCase):
         b.feed("river", "current_dart", "plankton", 3)
         self.assertEqual(a.snapshot(), b.snapshot())
 
+    def test_tick_and_roundtrip(self):
+        sim = example()
+        sim.feed("river", "current_dart", "plankton", 5)
+        sim.step(3)
+        self.assertEqual(sim.tick, 3)
+        self.assertEqual(sim.cells["river"].resources["plankton"], 18)
+        restored = type(sim).from_snapshot(sim.snapshot())
+        self.assertEqual(restored.snapshot(), sim.snapshot())
+
+    def test_tick_rejects_invalid_bounds(self):
+        sim = example()
+        for ticks in (0, -1, 1001, 1.5):
+            with self.assertRaises(ValueError):
+                sim.step(ticks)
+
+    def test_snapshot_version_rejected(self):
+        sim = example()
+        with self.assertRaises(ValueError):
+            type(sim).from_snapshot('{"version":2}')
+
     def test_negative_resource_rejected(self):
         sim = example()
         sim.cells["wood"].resources["fruit"] = -1
