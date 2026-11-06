@@ -93,6 +93,19 @@ class ReedwaterTests(unittest.TestCase):
             sim.ecology_tick(season="winter")
         self.assertEqual(sim.snapshot(), before)
 
+    def test_integer_quantities_required(self):
+        sim = example()
+        with self.assertRaises(ValueError):
+            sim.feed("river", "current_dart", "plankton", 1.5)
+        with self.assertRaises(ValueError):
+            sim.predation("oxbow", "mire_needle", "current_dart", 1.5)
+        with self.assertRaises(ValueError):
+            sim.migrate("river", "oxbow", "current_dart", 1.5)
+        with self.assertRaises(ValueError):
+            sim.recruit("river", "current_dart", 1.5, evidence=True)
+        with self.assertRaises(ValueError):
+            sim.step(True)
+
     def test_negative_resource_rejected(self):
         sim = example()
         sim.cells["wood"].resources["fruit"] = -1
