@@ -1,0 +1,18 @@
+name: Reedwater Python tests
+on:
+  push:
+    paths:
+      - 'simulation/**'
+      - 'tests/**'
+      - '.github/workflows/reedwater-tests.yml'
+  workflow_dispatch:
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run Reedwater tests
+        run: python -m unittest discover -s tests -v
